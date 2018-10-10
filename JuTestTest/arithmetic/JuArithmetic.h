@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface JuArithmetic : NSObject
-
++(void)juBubbling;
++(void)juInsertionSorting;
 @end

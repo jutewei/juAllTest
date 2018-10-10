@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface JuTestEncrypt : NSObject
-
++(void)juTest;
 @end

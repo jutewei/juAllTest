@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JuNextViewController : UIViewController
+@interface JuNextViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *sh_tableView;
 
 @end

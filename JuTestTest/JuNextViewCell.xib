@@ -1,21 +1,104 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JuNextViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="KGk-i7-Jjw" customClass="JuNextViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="52.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="img6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8qN-VX-XZi" customClass="JuImageView">
+                        <rect key="frame" x="10" y="11" width="39" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="d04-ut-bW3"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img7.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CVT-O9-ZAX" customClass="JuImageView">
+                        <rect key="frame" x="50" y="10" width="30" height="32.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="r1x-Pq-jIF"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img8.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Br1-Nm-wiW" customClass="JuImageView">
+                        <rect key="frame" x="288" y="11" width="30" height="30.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="G9e-vV-cgP"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CNs-FF-z8b" customClass="JuImageView">
+                        <rect key="frame" x="88" y="11" width="30" height="30.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="pmh-b1-5MV"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="r2b-pk-J7k" customClass="JuImageView">
+                        <rect key="frame" x="133" y="11" width="30" height="30.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="ZF6-Tg-CVo"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0ho-49-7d7" customClass="JuImageView">
+                        <rect key="frame" x="180" y="11" width="30" height="30.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Haf-De-hsS"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="udW-y9-c1g" customClass="JuImageView">
+                        <rect key="frame" x="227" y="11" width="30" height="30.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="wmH-08-Tro"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="CVT-O9-ZAX" firstAttribute="leading" secondItem="8qN-VX-XZi" secondAttribute="trailing" constant="10" id="0Qm-c2-Wyz"/>
+                    <constraint firstItem="CNs-FF-z8b" firstAttribute="height" secondItem="Br1-Nm-wiW" secondAttribute="height" id="2ce-pI-xRU"/>
+                    <constraint firstItem="Br1-Nm-wiW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="6v0-QN-PIW"/>
+                    <constraint firstItem="udW-y9-c1g" firstAttribute="leading" secondItem="0ho-49-7d7" secondAttribute="trailing" constant="17" id="7uJ-VR-4c7"/>
+                    <constraint firstItem="r2b-pk-J7k" firstAttribute="centerY" secondItem="CNs-FF-z8b" secondAttribute="centerY" id="BqX-Tn-SnL"/>
+                    <constraint firstItem="r2b-pk-J7k" firstAttribute="height" secondItem="Br1-Nm-wiW" secondAttribute="height" id="BvN-2k-4OU"/>
+                    <constraint firstItem="r2b-pk-J7k" firstAttribute="leading" secondItem="CNs-FF-z8b" secondAttribute="trailing" constant="15" id="IJo-BN-pjM"/>
+                    <constraint firstAttribute="bottom" secondItem="CVT-O9-ZAX" secondAttribute="bottom" constant="10" id="O24-sM-r0m"/>
+                    <constraint firstAttribute="bottom" secondItem="8qN-VX-XZi" secondAttribute="bottom" constant="10.5" id="Usb-f7-REH"/>
+                    <constraint firstItem="CVT-O9-ZAX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VcW-yv-z0s"/>
+                    <constraint firstItem="udW-y9-c1g" firstAttribute="centerY" secondItem="CNs-FF-z8b" secondAttribute="centerY" id="aFc-Ht-gcx"/>
+                    <constraint firstItem="Br1-Nm-wiW" firstAttribute="centerY" secondItem="CNs-FF-z8b" secondAttribute="centerY" id="aXF-FO-nzw"/>
+                    <constraint firstItem="8qN-VX-XZi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="caX-ES-voq"/>
+                    <constraint firstItem="udW-y9-c1g" firstAttribute="height" secondItem="Br1-Nm-wiW" secondAttribute="height" id="dsA-Zd-Whe"/>
+                    <constraint firstItem="0ho-49-7d7" firstAttribute="leading" secondItem="r2b-pk-J7k" secondAttribute="trailing" constant="17" id="eth-T9-yFL"/>
+                    <constraint firstAttribute="bottom" secondItem="Br1-Nm-wiW" secondAttribute="bottom" constant="11" id="h6i-cV-Ad8"/>
+                    <constraint firstAttribute="trailing" secondItem="Br1-Nm-wiW" secondAttribute="trailing" constant="2" id="jRK-eo-NVu"/>
+                    <constraint firstItem="CNs-FF-z8b" firstAttribute="leading" secondItem="CVT-O9-ZAX" secondAttribute="trailing" constant="8" id="n62-W9-VIn"/>
+                    <constraint firstItem="0ho-49-7d7" firstAttribute="height" secondItem="Br1-Nm-wiW" secondAttribute="height" id="sui-OP-2IP"/>
+                    <constraint firstItem="8qN-VX-XZi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="tBR-ie-7xD"/>
+                    <constraint firstItem="0ho-49-7d7" firstAttribute="centerY" secondItem="CNs-FF-z8b" secondAttribute="centerY" id="v0g-nl-Wj0"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="sh_imageView2" destination="CVT-O9-ZAX" id="7x4-ah-0hK"/>
+                <outlet property="sh_imageView3" destination="Br1-Nm-wiW" id="8NS-Uz-2ZL"/>
+                <outlet property="sh_imgeView1" destination="8qN-VX-XZi" id="aV8-8v-aIl"/>
+            </connections>
+            <point key="canvasLocation" x="-291" y="-87.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="img6.jpg" width="640" height="892"/>
+        <image name="img7.jpg" width="709" height="698"/>
+        <image name="img8.jpg" width="511" height="740"/>
+    </resources>
 </document>

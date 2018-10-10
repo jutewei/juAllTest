@@ -9,5 +9,7 @@
 #import "JuResloveOjc.h"
 
 @implementation JuResloveOjc
-
+-(void)addObject:(id)object{
+    NSLog(@"这是个转发的类");
+}
 @end

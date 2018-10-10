@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface JuResloveOjc : NSObject
-
+-(void)addObject:(id)object;
 @end

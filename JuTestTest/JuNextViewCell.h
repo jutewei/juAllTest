@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JuNextViewCell : UITableViewCell
+@interface JuNextViewCell : UITableViewCell{
+    
+    __weak IBOutlet UIImageView *sh_imgeView1;
+    __weak IBOutlet UIImageView *sh_imageView2;
+    __weak IBOutlet UIImageView *sh_imageView3;
+}
+-(void)shSetView;
+@end
 
+@interface JuImageView : UIImageView
 @end

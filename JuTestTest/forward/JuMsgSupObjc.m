@@ -9,5 +9,7 @@
 #import "JuMsgSupObjc.h"
 
 @implementation JuMsgSupObjc
-
+//-(void)addObject:(id)object{
+//    NSLog(@"父类有此方法");
+//}
 @end

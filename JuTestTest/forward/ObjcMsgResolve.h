@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface ObjcMsgResolve : NSObject
-
+#import "JuMsgSupObjc.h"
+@interface ObjcMsgResolve : JuMsgSupObjc
+-(void)addObject:(id)object;
+-(void)juFirstMethod;
 @end
