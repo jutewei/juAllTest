@@ -159,11 +159,9 @@
 		EB9D865B216DE5A300B75BA4 /* encryption */ = {
 			isa = PBXGroup;
 			children = (
+				EB9D8677216DFAD200B75BA4 /* java */,
+				EB9D8676216DFAC700B75BA4 /* ios */,
 				EB9D8674216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf */,
-				EB9D8668216DEDD400B75BA4 /* pkcs8_private_key.pem */,
-				EB9D866A216DEDD400B75BA4 /* private_key.p12 */,
-				EB9D8669216DEDD400B75BA4 /* public_key.der */,
-				EB9D8666216DEDD400B75BA4 /* rsa_public_key.pem */,
 				EB9D8667216DEDD400B75BA4 /* rsaCerReq.csr */,
 				EB9D8665216DEDD400B75BA4 /* rsaCert.crt */,
 				EB9D865C216DE5C400B75BA4 /* JuRSAEncrypt.h */,
@@ -172,6 +170,24 @@
 				EB9D8672216DF27C00B75BA4 /* JuTestEncrypt.m */,
 			);
 			path = encryption;
+			sourceTree = "<group>";
+		};
+		EB9D8676216DFAC700B75BA4 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				EB9D866A216DEDD400B75BA4 /* private_key.p12 */,
+				EB9D8669216DEDD400B75BA4 /* public_key.der */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		EB9D8677216DFAD200B75BA4 /* java */ = {
+			isa = PBXGroup;
+			children = (
+				EB9D8668216DEDD400B75BA4 /* pkcs8_private_key.pem */,
+				EB9D8666216DEDD400B75BA4 /* rsa_public_key.pem */,
+			);
+			path = java;
 			sourceTree = "<group>";
 		};
 		EBAC0D4B216C442D00B610B1 /* draw */ = {
