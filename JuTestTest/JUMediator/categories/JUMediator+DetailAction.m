@@ -9,9 +9,8 @@
 #import "JUMediator+DetailAction.h"
 NSString * const kCTMediatorTargetA = @"Detail";
 @implementation JUMediator (DetailAction)
-- (UIViewController *)JUMediator_Detail:(void(^)(void))complete
-{
-
+- (UIViewController *)JUMediator_Detail:(void(^)(void))complete{
+    
     UIViewController *viewController = [self performActtionWithTarget:kCTMediatorTargetA action:@"nativeDetailVC" parameter:@{@"name":@"Juvid",@"complete":complete} cacheTarget:NO];
     if ([viewController isKindOfClass:[UIViewController class]]) {
         // view controller 交付出去之后，可以由外界选择是push还是present

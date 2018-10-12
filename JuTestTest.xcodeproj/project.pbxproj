@@ -283,10 +283,9 @@
 		EBBEC74921707C88003EEE50 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				EBBEC75421708690003EEE50 /* Actions */,
 				EBBEC74A21707CAA003EEE50 /* JuDetailViewController.h */,
 				EBBEC74B21707CAA003EEE50 /* JuDetailViewController.m */,
-				EBBEC74D21707CE4003EEE50 /* JuTarget_Detail.h */,
-				EBBEC74E21707CE4003EEE50 /* JuTarget_Detail.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -298,6 +297,15 @@
 				EBBEC75121707D0E003EEE50 /* JUMediator+DetailAction.m */,
 			);
 			path = categories;
+			sourceTree = "<group>";
+		};
+		EBBEC75421708690003EEE50 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				EBBEC74D21707CE4003EEE50 /* JuTarget_Detail.h */,
+				EBBEC74E21707CE4003EEE50 /* JuTarget_Detail.m */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
