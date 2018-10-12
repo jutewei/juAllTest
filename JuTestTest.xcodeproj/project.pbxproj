@@ -31,6 +31,10 @@
 		EBAC0D5E216C4A6600B610B1 /* JuMsgSupObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D5D216C4A6600B610B1 /* JuMsgSupObjc.m */; };
 		EBAC0D61216C584700B610B1 /* JuResloveOjc.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D60216C584700B610B1 /* JuResloveOjc.m */; };
 		EBAC0D65216C89C100B610B1 /* JuArithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D64216C89C100B610B1 /* JuArithmetic.m */; };
+		EBBEC74821703CEE003EEE50 /* JUMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC74721703CEE003EEE50 /* JUMediator.m */; };
+		EBBEC74C21707CAA003EEE50 /* JuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC74B21707CAA003EEE50 /* JuDetailViewController.m */; };
+		EBBEC74F21707CE4003EEE50 /* JuTarget_Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC74E21707CE4003EEE50 /* JuTarget_Detail.m */; };
+		EBBEC75221707D0E003EEE50 /* JUMediator+DetailAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC75121707D0E003EEE50 /* JUMediator+DetailAction.m */; };
 		EBD0ADF12159C93E00605EE0 /* JuRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0ADF02159C93E00605EE0 /* JuRunLoop.m */; };
 		EBD0ADF42159C98300605EE0 /* JuThread.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0ADF32159C98300605EE0 /* JuThread.m */; };
 		EBD0ADF7215A03B200605EE0 /* JuNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0ADF6215A03B200605EE0 /* JuNextViewController.m */; };
@@ -82,6 +86,14 @@
 		EBAC0D60216C584700B610B1 /* JuResloveOjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuResloveOjc.m; sourceTree = "<group>"; };
 		EBAC0D63216C89C100B610B1 /* JuArithmetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuArithmetic.h; sourceTree = "<group>"; };
 		EBAC0D64216C89C100B610B1 /* JuArithmetic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuArithmetic.m; sourceTree = "<group>"; };
+		EBBEC74621703CEE003EEE50 /* JUMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JUMediator.h; sourceTree = "<group>"; };
+		EBBEC74721703CEE003EEE50 /* JUMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JUMediator.m; sourceTree = "<group>"; };
+		EBBEC74A21707CAA003EEE50 /* JuDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuDetailViewController.h; sourceTree = "<group>"; };
+		EBBEC74B21707CAA003EEE50 /* JuDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuDetailViewController.m; sourceTree = "<group>"; };
+		EBBEC74D21707CE4003EEE50 /* JuTarget_Detail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuTarget_Detail.h; sourceTree = "<group>"; };
+		EBBEC74E21707CE4003EEE50 /* JuTarget_Detail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuTarget_Detail.m; sourceTree = "<group>"; };
+		EBBEC75021707D0E003EEE50 /* JUMediator+DetailAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JUMediator+DetailAction.h"; sourceTree = "<group>"; };
+		EBBEC75121707D0E003EEE50 /* JUMediator+DetailAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JUMediator+DetailAction.m"; sourceTree = "<group>"; };
 		EBD0ADEF2159C93E00605EE0 /* JuRunLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuRunLoop.h; sourceTree = "<group>"; };
 		EBD0ADF02159C93E00605EE0 /* JuRunLoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuRunLoop.m; sourceTree = "<group>"; };
 		EBD0ADF22159C98300605EE0 /* JuThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuThread.h; sourceTree = "<group>"; };
@@ -128,6 +140,7 @@
 		EB88D4222154C29000BA082B /* JuTestTest */ = {
 			isa = PBXGroup;
 			children = (
+				EBBEC74521703CD2003EEE50 /* JUMediator */,
 				EB9D865B216DE5A300B75BA4 /* encryption */,
 				EBAC0D62216C898D00B610B1 /* arithmetic */,
 				EBAC0D58216C44DB00B610B1 /* forward */,
@@ -256,6 +269,37 @@
 			path = arithmetic;
 			sourceTree = "<group>";
 		};
+		EBBEC74521703CD2003EEE50 /* JUMediator */ = {
+			isa = PBXGroup;
+			children = (
+				EBBEC75321708617003EEE50 /* categories */,
+				EBBEC74921707C88003EEE50 /* Demo */,
+				EBBEC74621703CEE003EEE50 /* JUMediator.h */,
+				EBBEC74721703CEE003EEE50 /* JUMediator.m */,
+			);
+			path = JUMediator;
+			sourceTree = "<group>";
+		};
+		EBBEC74921707C88003EEE50 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				EBBEC74A21707CAA003EEE50 /* JuDetailViewController.h */,
+				EBBEC74B21707CAA003EEE50 /* JuDetailViewController.m */,
+				EBBEC74D21707CE4003EEE50 /* JuTarget_Detail.h */,
+				EBBEC74E21707CE4003EEE50 /* JuTarget_Detail.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		EBBEC75321708617003EEE50 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				EBBEC75021707D0E003EEE50 /* JUMediator+DetailAction.h */,
+				EBBEC75121707D0E003EEE50 /* JUMediator+DetailAction.m */,
+			);
+			path = categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -337,13 +381,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBBEC74F21707CE4003EEE50 /* JuTarget_Detail.m in Sources */,
 				EB88D4282154C29000BA082B /* ViewController.m in Sources */,
 				EB88D4332154C29200BA082B /* main.m in Sources */,
 				EBD0ADFB215A291E00605EE0 /* JuNextViewCell.m in Sources */,
+				EBBEC74821703CEE003EEE50 /* JUMediator.m in Sources */,
 				EB9D8673216DF27C00B75BA4 /* JuTestEncrypt.m in Sources */,
 				EBAC0D53216C443C00B610B1 /* JuDrawView.m in Sources */,
 				EBAC0D61216C584700B610B1 /* JuResloveOjc.m in Sources */,
 				EB88D4252154C29000BA082B /* AppDelegate.m in Sources */,
+				EBBEC75221707D0E003EEE50 /* JUMediator+DetailAction.m in Sources */,
 				EBAC0D65216C89C100B610B1 /* JuArithmetic.m in Sources */,
 				EB9D865E216DE5C400B75BA4 /* JuRSAEncrypt.m in Sources */,
 				EBD0ADF42159C98300605EE0 /* JuThread.m in Sources */,
@@ -356,6 +403,7 @@
 				EB88D43E2154DBD800BA082B /* JuFirstView.m in Sources */,
 				EBD0AE05215A29D100605EE0 /* UIImage+HWCorner.m in Sources */,
 				EBAC0D54216C443C00B610B1 /* JuDrawPumpkin.m in Sources */,
+				EBBEC74C21707CAA003EEE50 /* JuDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

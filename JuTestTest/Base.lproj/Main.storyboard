@@ -38,19 +38,29 @@
                                     <constraint firstAttribute="width" constant="300" id="k53-eu-qNq"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqE-na-Hyb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqE-na-Hyb">
                                 <rect key="frame" x="164" y="143" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="baK-J9-8b2" kind="modal" id="7NX-Oq-I5Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3p-e1-Wvi">
+                                <rect key="frame" x="172" y="187" width="31" height="30"/>
+                                <state key="normal" title="路由"/>
+                                <connections>
+                                    <action selector="juRunDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8F-a0-M6z"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dzN-ka-k4Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Xb-xi-fiE"/>
+                            <constraint firstItem="rqE-na-Hyb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="Hfy-GG-Rct"/>
                             <constraint firstItem="dzN-ka-k4Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dD1-ru-3sS"/>
+                            <constraint firstItem="rqE-na-Hyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mr5-gX-Giw"/>
+                            <constraint firstItem="G3p-e1-Wvi" firstAttribute="top" secondItem="rqE-na-Hyb" secondAttribute="bottom" constant="14" id="vNZ-CC-hym"/>
+                            <constraint firstItem="G3p-e1-Wvi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w79-Mz-euP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

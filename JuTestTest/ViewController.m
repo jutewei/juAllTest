@@ -12,7 +12,7 @@
 #import "JuNextViewController.h"
 #import "JuArithmetic.h"
 #import "JuTestEncrypt.h"
-
+#import "JUMediator+DetailAction.h"
 @interface ViewController (){
     JuRunLoop *ju_runLoop;
 }
@@ -60,6 +60,13 @@
     NSLog(@"%d", aString == aString3);
     NSLog(@"%p %p %p %p", aString , aString3,aString2,bString);
 }
+- (IBAction)juRunDetail:(id)sender {
+    UIViewController *vc=[[JUMediator sharedInstance]JUMediator_Detail:^{
+        NSLog(@"显示了");
+    }];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 -(void)juEqualNum{
     id maybeAnArray = @[];
     if ([maybeAnArray class] == [NSArray class]) {
