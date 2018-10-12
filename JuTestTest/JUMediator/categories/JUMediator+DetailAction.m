@@ -20,4 +20,14 @@ NSString * const kCTMediatorTargetA = @"Detail";
         return [[UIViewController alloc] init];
     }
 }
+- (UIViewController *)JUMediator_WebDetail:(void(^)(void))complete{
+    UIViewController *viewController = [self performActtionWithTarget:kCTMediatorTargetA action:@"nativeWebVC" parameter:@{@"name":@"Juvid",@"complete":complete} cacheTarget:NO];
+    if ([viewController isKindOfClass:[UIViewController class]]) {
+        // view controller 交付出去之后，可以由外界选择是push还是present
+        return viewController;
+    } else {
+        // 这里处理异常场景，具体如何处理取决于产品
+        return [[UIViewController alloc] init];
+    }
+}
 @end

@@ -35,6 +35,8 @@
 		EBBEC74C21707CAA003EEE50 /* JuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC74B21707CAA003EEE50 /* JuDetailViewController.m */; };
 		EBBEC74F21707CE4003EEE50 /* JuTarget_Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC74E21707CE4003EEE50 /* JuTarget_Detail.m */; };
 		EBBEC75221707D0E003EEE50 /* JUMediator+DetailAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC75121707D0E003EEE50 /* JUMediator+DetailAction.m */; };
+		EBBEC75921708A38003EEE50 /* JuWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC75821708A38003EEE50 /* JuWebViewController.m */; };
+		EBBEC76C217094EA003EEE50 /* WeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC76B217094EA003EEE50 /* WeakScriptMessageDelegate.m */; };
 		EBD0ADF12159C93E00605EE0 /* JuRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0ADF02159C93E00605EE0 /* JuRunLoop.m */; };
 		EBD0ADF42159C98300605EE0 /* JuThread.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0ADF32159C98300605EE0 /* JuThread.m */; };
 		EBD0ADF7215A03B200605EE0 /* JuNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0ADF6215A03B200605EE0 /* JuNextViewController.m */; };
@@ -94,6 +96,10 @@
 		EBBEC74E21707CE4003EEE50 /* JuTarget_Detail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuTarget_Detail.m; sourceTree = "<group>"; };
 		EBBEC75021707D0E003EEE50 /* JUMediator+DetailAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JUMediator+DetailAction.h"; sourceTree = "<group>"; };
 		EBBEC75121707D0E003EEE50 /* JUMediator+DetailAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JUMediator+DetailAction.m"; sourceTree = "<group>"; };
+		EBBEC75721708A38003EEE50 /* JuWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuWebViewController.h; sourceTree = "<group>"; };
+		EBBEC75821708A38003EEE50 /* JuWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuWebViewController.m; sourceTree = "<group>"; };
+		EBBEC76A217094EA003EEE50 /* WeakScriptMessageDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakScriptMessageDelegate.h; sourceTree = "<group>"; };
+		EBBEC76B217094EA003EEE50 /* WeakScriptMessageDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakScriptMessageDelegate.m; sourceTree = "<group>"; };
 		EBD0ADEF2159C93E00605EE0 /* JuRunLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuRunLoop.h; sourceTree = "<group>"; };
 		EBD0ADF02159C93E00605EE0 /* JuRunLoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuRunLoop.m; sourceTree = "<group>"; };
 		EBD0ADF22159C98300605EE0 /* JuThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuThread.h; sourceTree = "<group>"; };
@@ -311,6 +317,10 @@
 		EBBEC75521708714003EEE50 /* WebJS */ = {
 			isa = PBXGroup;
 			children = (
+				EBBEC75721708A38003EEE50 /* JuWebViewController.h */,
+				EBBEC75821708A38003EEE50 /* JuWebViewController.m */,
+				EBBEC76A217094EA003EEE50 /* WeakScriptMessageDelegate.h */,
+				EBBEC76B217094EA003EEE50 /* WeakScriptMessageDelegate.m */,
 			);
 			path = WebJS;
 			sourceTree = "<group>";
@@ -424,7 +434,9 @@
 				EBAC0D52216C443C00B610B1 /* TestView.m in Sources */,
 				EBD0ADF12159C93E00605EE0 /* JuRunLoop.m in Sources */,
 				EBD0ADF7215A03B200605EE0 /* JuNextViewController.m in Sources */,
+				EBBEC76C217094EA003EEE50 /* WeakScriptMessageDelegate.m in Sources */,
 				EB88D43E2154DBD800BA082B /* JuFirstView.m in Sources */,
+				EBBEC75921708A38003EEE50 /* JuWebViewController.m in Sources */,
 				EBD0AE05215A29D100605EE0 /* UIImage+HWCorner.m in Sources */,
 				EBAC0D54216C443C00B610B1 /* JuDrawPumpkin.m in Sources */,
 				EBBEC74C21707CAA003EEE50 /* JuDetailViewController.m in Sources */,

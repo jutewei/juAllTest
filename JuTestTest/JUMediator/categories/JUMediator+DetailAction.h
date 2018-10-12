@@ -10,4 +10,5 @@
 
 @interface JUMediator (DetailAction)
 - (UIViewController *)JUMediator_Detail:(void(^)(void))complete;
+- (UIViewController *)JUMediator_WebDetail:(void(^)(void))complete;
 @end

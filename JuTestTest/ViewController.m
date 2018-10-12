@@ -61,7 +61,7 @@
     NSLog(@"%p %p %p %p", aString , aString3,aString2,bString);
 }
 - (IBAction)juRunDetail:(id)sender {
-    UIViewController *vc=[[JUMediator sharedInstance]JUMediator_Detail:^{
+    UIViewController *vc=[[JUMediator sharedInstance]JUMediator_WebDetail:^{
         NSLog(@"显示了");
     }];
     [self presentViewController:vc animated:YES completion:nil];
