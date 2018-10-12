@@ -141,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				EBBEC74521703CD2003EEE50 /* JUMediator */,
+				EBBEC75521708714003EEE50 /* WebJS */,
 				EB9D865B216DE5A300B75BA4 /* encryption */,
 				EBAC0D62216C898D00B610B1 /* arithmetic */,
 				EBAC0D58216C44DB00B610B1 /* forward */,
@@ -272,10 +273,9 @@
 		EBBEC74521703CD2003EEE50 /* JUMediator */ = {
 			isa = PBXGroup;
 			children = (
+				EBBEC756217088B0003EEE50 /* JUMediator */,
 				EBBEC75321708617003EEE50 /* categories */,
 				EBBEC74921707C88003EEE50 /* Demo */,
-				EBBEC74621703CEE003EEE50 /* JUMediator.h */,
-				EBBEC74721703CEE003EEE50 /* JUMediator.m */,
 			);
 			path = JUMediator;
 			sourceTree = "<group>";
@@ -306,6 +306,22 @@
 				EBBEC74E21707CE4003EEE50 /* JuTarget_Detail.m */,
 			);
 			path = Actions;
+			sourceTree = "<group>";
+		};
+		EBBEC75521708714003EEE50 /* WebJS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebJS;
+			sourceTree = "<group>";
+		};
+		EBBEC756217088B0003EEE50 /* JUMediator */ = {
+			isa = PBXGroup;
+			children = (
+				EBBEC74621703CEE003EEE50 /* JUMediator.h */,
+				EBBEC74721703CEE003EEE50 /* JUMediator.m */,
+			);
+			path = JUMediator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
