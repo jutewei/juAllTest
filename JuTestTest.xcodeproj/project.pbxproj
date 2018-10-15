@@ -37,6 +37,7 @@
 		EBBEC75221707D0E003EEE50 /* JUMediator+DetailAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC75121707D0E003EEE50 /* JUMediator+DetailAction.m */; };
 		EBBEC75921708A38003EEE50 /* JuWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC75821708A38003EEE50 /* JuWebViewController.m */; };
 		EBBEC76C217094EA003EEE50 /* WeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC76B217094EA003EEE50 /* WeakScriptMessageDelegate.m */; };
+		EBBEC76E21709CB6003EEE50 /* WKWebViewMessageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = EBBEC76D21709CB6003EEE50 /* WKWebViewMessageHandler.html */; };
 		EBD0ADF12159C93E00605EE0 /* JuRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0ADF02159C93E00605EE0 /* JuRunLoop.m */; };
 		EBD0ADF42159C98300605EE0 /* JuThread.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0ADF32159C98300605EE0 /* JuThread.m */; };
 		EBD0ADF7215A03B200605EE0 /* JuNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0ADF6215A03B200605EE0 /* JuNextViewController.m */; };
@@ -46,6 +47,9 @@
 		EBD0AE01215A299600605EE0 /* img6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBD0ADFE215A299600605EE0 /* img6.jpg */; };
 		EBD0AE02215A299600605EE0 /* img7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBD0ADFF215A299600605EE0 /* img7.jpg */; };
 		EBD0AE05215A29D100605EE0 /* UIImage+HWCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0AE04215A29D100605EE0 /* UIImage+HWCorner.m */; };
+		EBD94D3B217436F800E449E9 /* JuWebJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD94D3A217436F800E449E9 /* JuWebJSBridge.m */; };
+		EBD94D3F2174592200E449E9 /* WKWebView+config.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD94D3E2174592200E449E9 /* WKWebView+config.m */; };
+		EBD94D4221745A2D00E449E9 /* NSURL+manage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD94D4121745A2D00E449E9 /* NSURL+manage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +104,7 @@
 		EBBEC75821708A38003EEE50 /* JuWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuWebViewController.m; sourceTree = "<group>"; };
 		EBBEC76A217094EA003EEE50 /* WeakScriptMessageDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakScriptMessageDelegate.h; sourceTree = "<group>"; };
 		EBBEC76B217094EA003EEE50 /* WeakScriptMessageDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakScriptMessageDelegate.m; sourceTree = "<group>"; };
+		EBBEC76D21709CB6003EEE50 /* WKWebViewMessageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewMessageHandler.html; sourceTree = "<group>"; };
 		EBD0ADEF2159C93E00605EE0 /* JuRunLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuRunLoop.h; sourceTree = "<group>"; };
 		EBD0ADF02159C93E00605EE0 /* JuRunLoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuRunLoop.m; sourceTree = "<group>"; };
 		EBD0ADF22159C98300605EE0 /* JuThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuThread.h; sourceTree = "<group>"; };
@@ -114,6 +119,12 @@
 		EBD0ADFF215A299600605EE0 /* img7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img7.jpg; sourceTree = "<group>"; };
 		EBD0AE03215A29D100605EE0 /* UIImage+HWCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HWCorner.h"; sourceTree = "<group>"; };
 		EBD0AE04215A29D100605EE0 /* UIImage+HWCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HWCorner.m"; sourceTree = "<group>"; };
+		EBD94D39217436F800E449E9 /* JuWebJSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuWebJSBridge.h; sourceTree = "<group>"; };
+		EBD94D3A217436F800E449E9 /* JuWebJSBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuWebJSBridge.m; sourceTree = "<group>"; };
+		EBD94D3D2174592200E449E9 /* WKWebView+config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+config.h"; sourceTree = "<group>"; };
+		EBD94D3E2174592200E449E9 /* WKWebView+config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+config.m"; sourceTree = "<group>"; };
+		EBD94D4021745A2D00E449E9 /* NSURL+manage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+manage.h"; sourceTree = "<group>"; };
+		EBD94D4121745A2D00E449E9 /* NSURL+manage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+manage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,10 +328,10 @@
 		EBBEC75521708714003EEE50 /* WebJS */ = {
 			isa = PBXGroup;
 			children = (
+				EBD94D3C217458DC00E449E9 /* JuWebJSBridge */,
+				EBBEC76D21709CB6003EEE50 /* WKWebViewMessageHandler.html */,
 				EBBEC75721708A38003EEE50 /* JuWebViewController.h */,
 				EBBEC75821708A38003EEE50 /* JuWebViewController.m */,
-				EBBEC76A217094EA003EEE50 /* WeakScriptMessageDelegate.h */,
-				EBBEC76B217094EA003EEE50 /* WeakScriptMessageDelegate.m */,
 			);
 			path = WebJS;
 			sourceTree = "<group>";
@@ -332,6 +343,21 @@
 				EBBEC74721703CEE003EEE50 /* JUMediator.m */,
 			);
 			path = JUMediator;
+			sourceTree = "<group>";
+		};
+		EBD94D3C217458DC00E449E9 /* JuWebJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				EBBEC76A217094EA003EEE50 /* WeakScriptMessageDelegate.h */,
+				EBBEC76B217094EA003EEE50 /* WeakScriptMessageDelegate.m */,
+				EBD94D39217436F800E449E9 /* JuWebJSBridge.h */,
+				EBD94D3A217436F800E449E9 /* JuWebJSBridge.m */,
+				EBD94D3D2174592200E449E9 /* WKWebView+config.h */,
+				EBD94D3E2174592200E449E9 /* WKWebView+config.m */,
+				EBD94D4021745A2D00E449E9 /* NSURL+manage.h */,
+				EBD94D4121745A2D00E449E9 /* NSURL+manage.m */,
+			);
+			path = JuWebJSBridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +421,7 @@
 				EBD0AE00215A299600605EE0 /* img8.jpg in Resources */,
 				EB9D866F216DEDD400B75BA4 /* public_key.der in Resources */,
 				EB9D8675216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf in Resources */,
+				EBBEC76E21709CB6003EEE50 /* WKWebViewMessageHandler.html in Resources */,
 				EB9D8670216DEDD400B75BA4 /* private_key.p12 in Resources */,
 				EB88D4302154C29200BA082B /* LaunchScreen.storyboard in Resources */,
 				EB88D42D2154C29200BA082B /* Assets.xcassets in Resources */,
@@ -423,10 +450,13 @@
 				EB9D8673216DF27C00B75BA4 /* JuTestEncrypt.m in Sources */,
 				EBAC0D53216C443C00B610B1 /* JuDrawView.m in Sources */,
 				EBAC0D61216C584700B610B1 /* JuResloveOjc.m in Sources */,
+				EBD94D3B217436F800E449E9 /* JuWebJSBridge.m in Sources */,
 				EB88D4252154C29000BA082B /* AppDelegate.m in Sources */,
 				EBBEC75221707D0E003EEE50 /* JUMediator+DetailAction.m in Sources */,
 				EBAC0D65216C89C100B610B1 /* JuArithmetic.m in Sources */,
+				EBD94D3F2174592200E449E9 /* WKWebView+config.m in Sources */,
 				EB9D865E216DE5C400B75BA4 /* JuRSAEncrypt.m in Sources */,
+				EBD94D4221745A2D00E449E9 /* NSURL+manage.m in Sources */,
 				EBD0ADF42159C98300605EE0 /* JuThread.m in Sources */,
 				EBAC0D5E216C4A6600B610B1 /* JuMsgSupObjc.m in Sources */,
 				EBAC0D5B216C44E300B610B1 /* ObjcMsgResolve.m in Sources */,

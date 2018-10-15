@@ -8,8 +8,10 @@
 
 #import "JuWebViewController.h"
 #import "WeakScriptMessageDelegate.h"
-
-@interface JuWebViewController ()<WKScriptMessageHandler>
+#import "JuWebJSBridge.h"
+@interface JuWebViewController ()<WKScriptMessageHandler>{
+    JuWebJSBridge *bridge;
+}
 
 @end
 
@@ -30,42 +32,30 @@
 //     [_sh_WebView.configuration.userContentController removeScriptMessageHandlerForName:@"Share"];
 //}
 -(void)webConfiguration{
-    /*
-    WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
-    WKPreferences *preferences = [WKPreferences new];
-    preferences.javaScriptCanOpenWindowsAutomatically = YES;
-    preferences.minimumFontSize = 40.0;
-    configuration.preferences = preferences;
-    */
-    WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
-    WKUserContentController *userContentController = [[WKUserContentController alloc] init];
 
+    _sh_WebView=[WKWebView configWithFrame:self.view.bounds];
 
-    [userContentController addScriptMessageHandler:[[WeakScriptMessageDelegate alloc]initWithDelegate:self]name:@"Share"];
-
-//    [userContentController addScriptMessageHandler:self name:@"Share"];
-//    [userContentController addScriptMessageHandler:self name:@"Camera"];
-    configuration.userContentController = userContentController;
-
-    WKPreferences *preferences = [WKPreferences new];
-    preferences.javaScriptCanOpenWindowsAutomatically = YES;
-    preferences.minimumFontSize = 40.0;
-    configuration.preferences = preferences;
-
-
-    NSString *javaScriptSource = @"alert(\"WKUserScript注入js\");";
-    WKUserScript *script = [[WKUserScript alloc] initWithSource:javaScriptSource injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
-    [userContentController addUserScript:script];
-
-
-
-    _sh_WebView=[[WKWebView alloc]initWithFrame:self.view.bounds configuration:configuration];
-    _sh_WebView.allowsBackForwardNavigationGestures=YES;
-    _sh_WebView.backgroundColor=[UIColor whiteColor];
-    self.sh_WebView.opaque = NO;
     _sh_WebView.navigationDelegate = self;
     _sh_WebView.UIDelegate=self;
     [self.view addSubview:_sh_WebView];
+
+    bridge =[JuWebJSBridge bridgeForWebView:_sh_WebView];
+//    NSString *javaScriptSource = @"alert(\"WKUserScript注入js\");";
+//    [bridge juAddUserSeript:javaScriptSource];
+    __weak typeof(self)  weakSelf = self;
+    [bridge juAddScriptMessageName:@"Share" callBackHandler:^(id name, NSDictionary *paramter) {
+        [weakSelf dismissViewControllerAnimated:YES completion:nil];
+    }];
+
+    UIButton *btn =[[UIButton alloc]init];
+    [self.view addSubview:btn];
+    btn.backgroundColor=[UIColor redColor];
+    [btn addTarget:self action:@selector(juTouchFont) forControlEvents:UIControlEventTouchUpInside];
+    btn.frame=CGRectMake(100, 400, 40, 40);
+
+}
+-(void)juTouchFont{
+      [bridge juSetFont:4.8];
 }
 -(void)webLoadJs{
     NSString *javaScriptSource = @"alert(\"WKUserScript注入js\");";
@@ -76,16 +66,31 @@
     [config.userContentController addUserScript:script];
 
 }
+- (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation{
+
+    [bridge juEvaluateJavaScript:@"test" parameter:@[@"提示",@"加载完毕"] completionHandler:^(id name, NSError *error) {
+        ;
+    }];
+}
+/**
+ *  JS 调用 OC 时 webview 会调用此方法
+ *
+ *  @param userContentController  webview中配置的userContentController 信息
+ *  @param message                JS执行传递的消息
+ */
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
 {
     NSLog(@"JS 调用了 %@ 方法，传回参数 %@",message.name,message.body);
-    [self dismissViewControllerAnimated:YES completion:nil];
+
+
+//    [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
     NSLog(@"%s",__FUNCTION__);
     // 确定按钮
     UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         completionHandler();
+
     }];
     // alert弹出框
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:message message:nil preferredStyle:UIAlertControllerStyleAlert];
@@ -94,11 +99,10 @@
 }
 
 -(void)dealloc{
-    [[self.sh_WebView  configuration].userContentController removeScriptMessageHandlerForName:@"Share"];
-
+    ;
 }
 -(void)LoadRequest{
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.8.4/test/openApp.php?_ijt=rqruearu905o3nj8bjq5nf4l0g"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.8.6/test/openApp.php?_ijt=rqruearu905o3nj8bjq5nf4l0g"]];
     [request setTimeoutInterval:30];
     [self.sh_WebView loadRequest:request];
 
