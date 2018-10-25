@@ -12,6 +12,7 @@
 @interface WeakScriptMessageDelegate : NSObject<WKScriptMessageHandler>
 
 @property (nonatomic, weak) id<WKScriptMessageHandler> scriptDelegate;
+
 - (instancetype)initWithDelegate:(id<WKScriptMessageHandler>)scriptDelegate;
 
 @end

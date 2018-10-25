@@ -33,4 +33,40 @@
     configuration.preferences = preferences;
     return configuration;
 }
+
+-(void)juRemoveCache{
+
+    //    iOS9 WKWebView新方法：
+    NSSet *websiteDataTypes = [NSSet setWithArray:@[WKWebsiteDataTypeDiskCache,WKWebsiteDataTypeOfflineWebApplicationCache,WKWebsiteDataTypeMemoryCache,WKWebsiteDataTypeLocalStorage,WKWebsiteDataTypeCookies,WKWebsiteDataTypeSessionStorage,WKWebsiteDataTypeIndexedDBDatabases,WKWebsiteDataTypeWebSQLDatabases]];
+    //你可以选择性的删除一些你需要删除的文件 or 也可以直接全部删除所有缓存的type
+    //NSSet *websiteDataTypes = [WKWebsiteDataStore allWebsiteDataTypes];
+    NSDate *dateFrom = [NSDate dateWithTimeIntervalSince1970:0];
+    [[WKWebsiteDataStore defaultDataStore] removeDataOfTypes:websiteDataTypes
+                                               modifiedSince:dateFrom completionHandler:^{
+                                                   // code
+                                               }];
+
+    //    针对与iOS7.0、iOS8.0、iOS9.0 WebView的缓存，我们找到了一个通吃的办法:
+
+    NSString *libraryDir = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory,
+                                                               NSUserDomainMask, YES)[0];
+    NSString *bundleId  =  [[[NSBundle mainBundle] infoDictionary]
+                            objectForKey:@"CFBundleIdentifier"];
+    NSString *webkitFolderInLib = [NSString stringWithFormat:@"%@/WebKit",libraryDir];
+    NSString *webKitFolderInCaches = [NSString
+                                      stringWithFormat:@"%@/Caches/%@/WebKit",libraryDir,bundleId];
+    NSString *webKitFolderInCachesfs = [NSString
+                                        stringWithFormat:@"%@/Caches/%@/fsCachedData",libraryDir,bundleId];
+
+    NSError *error;
+    /* iOS8.0 WebView Cache的存放路径 */
+    [[NSFileManager defaultManager] removeItemAtPath:webKitFolderInCaches error:&error];
+    [[NSFileManager defaultManager] removeItemAtPath:webkitFolderInLib error:nil];
+
+    /* iOS7.0 WebView Cache的存放路径 */
+    [[NSFileManager defaultManager] removeItemAtPath:webKitFolderInCachesfs error:&error];
+
+    //    H5更新发版的的时候，做一次清除WebView缓存， app的WebView就会显示最新的H5页面了。
+
+}
 @end

@@ -36,7 +36,9 @@
 -(void)juTest{
 //  NSLog(@"%@----执行子线程任务",[NSThread currentThread]);
 }
-//子线程执行的内容
+/*
+ 子线程执行的内容
+ */
 - (void)subThreadTodo
 {
     NSLog(@"%@----开始执行子线程任务",[NSThread currentThread]);

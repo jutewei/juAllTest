@@ -12,6 +12,7 @@ typedef void(^JuCallBackHandler)(id name, NSDictionary *paramter);
 typedef void(^JuCompletionHandler)(id name,NSError *error);
 
 @interface JuWebJSBridge : NSObject
+
 + (instancetype)bridgeForWebView:(id)webView;
 /**注入js*/
 -(void)juAddUserSeript:(NSString *)javaScriptSource;

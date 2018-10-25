@@ -50,7 +50,8 @@ void juDynamicAddMethod(id self, SEL _cmd, id string) {
     return [super methodSignatureForSelector:aSelector];
 }
 
-///**转发到自己的其他方法*/
+/**转发到自己的其他方法*/
+
 - (void)forwardInvocation:(NSInvocation *)anInvocation
 {
     SEL sel = @selector(travel:);

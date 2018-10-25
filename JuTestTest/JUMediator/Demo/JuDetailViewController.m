@@ -7,8 +7,11 @@
 //
 
 #import "JuDetailViewController.h"
+#import "NSObject+Test.h"
 typedef void (^JuComplete)(void);
-@interface JuDetailViewController ()
+@interface JuDetailViewController (){
+    NSObject *object;
+}
 
 @end
 
@@ -17,12 +20,18 @@ typedef void (^JuComplete)(void);
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor whiteColor];
+
     // Do any additional setup after loading the view.
 }
+
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    NSLog(@"%ld",(long)object.ju_integer);
+    NSLog(@"%@",object.ju_number);
+    NSLog(@"%@",object.testObject);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         JuComplete comple= self.diParam[@"complete"];
+
         comple();
     });
 }

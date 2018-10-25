@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @interface JuRunLoop : NSObject
+
 -(void)juStatrThread;
 -(void)juStopThread;
 @end

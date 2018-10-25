@@ -11,6 +11,7 @@
 #import "JuWebJSBridge.h"
 @interface JuWebViewController ()<WKScriptMessageHandler>{
     JuWebJSBridge *bridge;
+    CGFloat scale;
 }
 
 @end
@@ -21,6 +22,18 @@
     [super viewDidLoad];
     [self webConfiguration];
     [self LoadRequest];
+    scale=1;
+//    void (^Test)(int a)=^(int a){
+//
+//    };
+//    void(^JuCallBackHandler)(id name, NSDictionary *paramter);
+//    
+//    JuCallBackHandler=^(id name, NSDictionary *paramter){
+//
+//    };
+//    JuCallBackHandler(@"",nil);
+//    Test(1);
+
     // Do any additional setup after loading the view.
 }
 //-(void)viewWillAppear:(BOOL)animated{
@@ -44,7 +57,7 @@
 //    [bridge juAddUserSeript:javaScriptSource];
     __weak typeof(self)  weakSelf = self;
     [bridge juAddScriptMessageName:@"Share" callBackHandler:^(id name, NSDictionary *paramter) {
-        [weakSelf dismissViewControllerAnimated:YES completion:nil];
+        [weakSelf juCallBack];
     }];
 
     UIButton *btn =[[UIButton alloc]init];
@@ -54,23 +67,18 @@
     btn.frame=CGRectMake(100, 400, 40, 40);
 
 }
--(void)juTouchFont{
-      [bridge juSetFont:4.8];
-}
--(void)webLoadJs{
-    NSString *javaScriptSource = @"alert(\"WKUserScript注入js\");";
-    // 根据JS字符串初始化WKUserScript对象
-    WKUserScript *script = [[WKUserScript alloc] initWithSource:javaScriptSource injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
-    // 根据生成的WKUserScript对象，初始化WKWebViewConfiguration
-    WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
-    [config.userContentController addUserScript:script];
+-(void)juCallBack{
+    [bridge juEvaluateJavaScript:@"test" parameter:@[@"提示",@"加载完毕"] completionHandler:^(id name, NSError *error) {
 
+    }];
 }
+-(void)juTouchFont{
+    scale++;
+    [bridge juSetFont:scale];
+}
+
 - (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation{
 
-    [bridge juEvaluateJavaScript:@"test" parameter:@[@"提示",@"加载完毕"] completionHandler:^(id name, NSError *error) {
-        ;
-    }];
 }
 /**
  *  JS 调用 OC 时 webview 会调用此方法
@@ -102,7 +110,7 @@
     ;
 }
 -(void)LoadRequest{
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.8.6/test/openApp.php?_ijt=rqruearu905o3nj8bjq5nf4l0g"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost/test/openApp.php"]];
     [request setTimeoutInterval:30];
     [self.sh_WebView loadRequest:request];
 
