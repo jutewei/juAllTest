@@ -10,8 +10,23 @@
 #import <CommonCrypto/CommonDigest.h>
 #import "JuCacheAdapter.h"
 
-@interface JuURLCache()
-@property (nonatomic,weak) id<JuCacheAdapterProtocol> juAdapter;
+@interface JuURLCache(){
+    NSMutableString *urlPara;
+    NSString *_urlPath;
+}
+@property(nonatomic,weak) id<JuCacheAdapterProtocol> juAdapter;
+//缓存磁盘路径
+@property(nonatomic,strong) NSString *diskCachePath;
+
+@property(nonatomic,strong) NSString *urlPath;//ulr路径
+
+@property(nonatomic,strong) NSDictionary *parameter;//参数
+//刷新时间
+@property(nonatomic,assign) NSTimeInterval minRefresh;
+//缓存策略
+@property(nonatomic,assign) CacheStoragePolicy cachePolicy;
+//过期保留时间
+//@property (nonatomic, assign) NSTimeInterval minCacheInterval;
 @end
 
 
@@ -19,19 +34,18 @@
 
 @synthesize diskCachePath,urlPath=_urlPath;
 
-
-+(id)initWithPath:(NSString *)paths parameter:(NSDictionary *)para Adapter:(id<JuCacheAdapterProtocol>)dapter{
-    return [[self alloc]initWithPath:paths parameter:para Adapter:dapter];
++(id)initWithPath:(NSString *)path parameter:(NSDictionary *)para Adapter:(id<JuCacheAdapterProtocol>)dapter{
+    return [[self alloc]initWithPath:path parameter:para Adapter:dapter];
 }
 
--(id)initWithPath:(NSString *)paths parameter:(NSDictionary *)para Adapter:(id<JuCacheAdapterProtocol>)dapter{
+-(id)initWithPath:(NSString *)path parameter:(NSDictionary *)para Adapter:(id<JuCacheAdapterProtocol>)dapter{
     self=[super init];
     if (self) {
         self.diskCachePath=[self defaultCachePath];
-        self.urlPath=paths;
+        self.urlPath=path;
         self.juAdapter=dapter?dapter:[JuCacheAdapter new];
         self.parameter=para;
-        _cachePolicy=CacheNotPolicy;
+        _cachePolicy=JuCacheNotPolicy;
     }
     return self;
 }
@@ -46,7 +60,7 @@
 -(void)setMinRefresh:(NSTimeInterval)minRefresh{
     _minRefresh=minRefresh;
     if (_minRefresh>0) {///< 时间大于零有缓存
-        self.cachePolicy=CacheRoutineCachePolicy;
+        self.cachePolicy=JuCacheRoutineCachePolicy;
     }
 }
 /**去除公用参数*/
@@ -73,7 +87,7 @@
 //（写）
 - (void)saveCacheInfo:(id)response{
 
-    if(self.cachePolicy==CacheNotPolicy)return;
+    if(self.cachePolicy==JuCacheNotPolicy)return;
 
     id objData=[self.juAdapter juGetNetData:response];
 
@@ -106,9 +120,9 @@
         NSDate *date=[NSDate date];
         NSDictionary *dic=[self getHeadData];
         if (!dic)return NO;
-        NSTimeInterval timecurret= [date timeIntervalSinceDate:[self dateFromHttpDateString:[NSString stringWithFormat:@"%@",dic[Date]]]];
+        NSTimeInterval timecurret= [date timeIntervalSinceDate:[self dateFromHttpDateString:[NSString stringWithFormat:@"%@",dic[JuDate]]]];
         //    第二步判断缓存是否过期
-        if ([dic[MinRefresh]floatValue]<timecurret) {//  判断是否该重新刷新(缓存过期，缓存未过期直接使用缓存)
+        if ([dic[JuMinRefresh]floatValue]<timecurret) {//  判断是否该重新刷新(缓存过期，缓存未过期直接使用缓存)
             isUseCache=NO;
             //    第三步判断是否需要预先加载缓存
             if ([_parameter[[self.juAdapter juEnptyKey]] intValue]||[_parameter[[self.juAdapter juPageIndexKey]] intValue]){///< 分页数据时不是第一页 或者已经有数据
@@ -118,7 +132,7 @@
         }
     }
     if (loadCacheData) {
-        cacheResult([self getCached]);
+        cacheResult([self juGetCached]);
     }else if(!netConnection){///< 无网络无数据
 //        弹框
         cacheResult(nil);
@@ -132,11 +146,11 @@
     NSDateFormatter  *dateformatter=CreateDateFormatter(@"EEE, dd MMM yyyy HH:mm:ss z");
     NSString *  locationString=[dateformatter stringFromDate:[NSDate date]];
     NSMutableDictionary *dicCacheHead=[NSMutableDictionary dictionary];
-    [dicCacheHead setObject:locationString forKey:Date];
-    [dicCacheHead setObject:[NSNumber numberWithInteger:_cachePolicy] forKey:CachePolicy];
+    [dicCacheHead setObject:locationString forKey:JuDate];
+    [dicCacheHead setObject:[NSNumber numberWithInteger:_cachePolicy] forKey:JuCachePolicy];
     [dicCacheHead setObject:_urlPath forKey:@"url"];
     //    [dicCacheHead setObject:[NSNumber numberWithDouble:_minCacheInterval] forKey:MinCacheInterval];
-    [dicCacheHead setObject:[NSNumber numberWithDouble:_minRefresh] forKey:MinRefresh];
+    [dicCacheHead setObject:[NSNumber numberWithDouble:_minRefresh] forKey:JuMinRefresh];
     return dicCacheHead;
 }
 
@@ -147,7 +161,7 @@
     return [fileManager fileExistsAtPath:filepath];
 }
 /**缓存内容*/
--(id)getCached{
+-(id)juGetCached{
     NSString *filepath=[self.diskCachePath stringByAppendingPathComponent:[self cacheKeyForURL]];
     NSData *data=[NSData dataWithContentsOfFile:filepath];
     if (data) {
@@ -176,7 +190,7 @@
 - (NSString *)defaultCachePath
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-    return [[paths objectAtIndex:0] stringByAppendingPathComponent:ConfigurationPlist];
+    return [[paths objectAtIndex:0] stringByAppendingPathComponent:JuConfigurationPlist];
 }
 -(NSDate *)dateFromHttpDateString:(NSString *)httpDate
 {

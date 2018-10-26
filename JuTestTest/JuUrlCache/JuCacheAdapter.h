@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define Date @"date"
-#define CachePolicy @"cachePolicy"
+#define JuDate @"date"
+#define JuCachePolicy @"cachePolicy"
 //#define MinCacheInterval @"minCacheInterval"
-#define MinRefresh  @"minRefresh"
-#define ConfigurationPlist @"JuvidPlist"
+#define JuMinRefresh  @"minRefresh"
+#define JuConfigurationPlist @"JuvidPlist"
 
 @protocol JuCacheAdapterProtocol <NSObject>
 

@@ -13,12 +13,15 @@
 -(NSString *)juEnptyKey{
     return  @"emptyData";
 }
+
 -(NSString *)juPageIndexKey{
     return @"offset";
 }
+
 -(NSArray *)juNoEncryptKeys{
     return @[@"emptyData",@"common"];
 }
+
 -(CGFloat)juMinRefresh:(NSString *)path{
     return 0;
 }

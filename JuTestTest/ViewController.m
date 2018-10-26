@@ -14,6 +14,7 @@
 #import "JuTestEncrypt.h"
 #import "JUMediator+DetailAction.h"
 #import "JuSubFruits.h"
+#import "JuURLCache.h"
 @interface ViewController ()<JuFruitsDelegate>{
     JuRunLoop *ju_runLoop;
     NSInteger colorIndex;
@@ -41,12 +42,7 @@
     [self setViewAaimation];
 
 
-    NSString *url=@"https://wxhospital.pifubao.com.cn/skin/article?id=291%2C272%2C292%2C293%2C294&title=%E8%82%A4%E8%B4%A8%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0";
-    NSString *url2=[url stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *url3=[url stringByRemovingPercentEncoding];
-    NSString *url1=[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *url4=[url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    [self shEncode:url];
+
 //    [JuTestEncrypt juTest];
 
 //    ju_runLoop=[[JuRunLoop alloc]init];
@@ -67,57 +63,7 @@
 //    [self performSelector:<#(nonnull SEL)#> onThread:<#(nonnull NSThread *)#> withObject:<#(nullable id)#> waitUntilDone:<#(BOOL)#>]
     // Do any additional setup after loading the view, typically from a nib.
 }
--(void)shEncode:(NSString *)url{
-    NSLog(@"原url:%@", url);
-    NSString * url1=[url stringByRemovingPercentEncoding];
-    url1=[url stringByRemovingPercentEncoding];
-//    NSString * url1=url;
-    NSString *encodedString = (NSString *)
-    CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
 
-                                                              (CFStringRef)url1,
-
-                                                              (CFStringRef)@"!$&'()*+,-./:;=?@_~%#[]",
-
-                                                              NULL,
-
-                                                              kCFStringEncodingUTF8));
-    NSLog(@"转码url:%@",  encodedString);
-
-    NSString *charactersToEscape1 = @"!$&'()*+,-./:;=?@_~%#[]";
-
-    NSCharacterSet *allowedCharacters2 = [[NSCharacterSet characterSetWithCharactersInString:charactersToEscape1] invertedSet];
-    NSString *encodedUrl1 = [url1 stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    NSLog(@"\n%@",encodedUrl1);
-
-
-    NSString *charactersToEscape = @"!$&'()*+,-./:;=?@_~%#[]";
-    NSCharacterSet *allowedCharacters = [[NSCharacterSet characterSetWithCharactersInString:charactersToEscape]invertedSet];
-    NSString *encodedUrl = [@"https:!$&'()*+,-./:;=?@_~%#[]&&&&&&" stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
-    NSLog(@"\n%@",encodedUrl);
-
-    NSString * resourcePath = @"https://www.xiaocaobank.com%^=朱朱";
-
-    NSString *urlStr = [resourcePath stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet characterSetWithCharactersInString:@""].invertedSet];
-    NSString *encodedString1 = (NSString *)
-    CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-
-                                                              (CFStringRef)resourcePath,
-
-                                                              (CFStringRef)@"!$&'()*+,-./:;=?@_~%#[]",
-
-                                                              NULL,
-
-                                                              kCFStringEncodingUTF8));
-    [self urlEncodeStr:resourcePath];
-
-}
--(NSString *)urlEncodeStr:(NSString *)input{
-    NSString *charactersToEscape = @" ";
-    NSCharacterSet *allowedCharacters = [[NSCharacterSet characterSetWithCharactersInString:charactersToEscape] invertedSet];
-    NSString *upSign = [input stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
-    return upSign;
-}
 -(void)setViewAaimation{
     if (colorIndex==6) {
         colorIndex=0;
