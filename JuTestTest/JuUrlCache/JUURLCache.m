@@ -6,15 +6,15 @@
 //  Copyright (c) 2014年 Juvid(zhutianwei). All rights reserved.
 //
 
-#import "JuURLCache.h"
+#import "JUURLCache.h"
 #import <CommonCrypto/CommonDigest.h>
 #import "JuCacheAdapter.h"
 
-@interface JuURLCache(){
+@interface JUURLCache(){
     NSMutableString *urlPara;
     NSString *_urlPath;
 }
-@property(nonatomic,weak) id<JuCacheAdapterProtocol> juAdapter;
+@property(nonatomic,strong) id<JuCacheAdapterProtocol> juAdapter;
 //缓存磁盘路径
 @property(nonatomic,strong) NSString *diskCachePath;
 
@@ -30,10 +30,13 @@
 @end
 
 
-@implementation JuURLCache
+@implementation JUURLCache
 
 @synthesize diskCachePath,urlPath=_urlPath;
 
++(id)initWithPath:(NSString *)path parameter:(NSDictionary *)para{
+    return [[self alloc]initWithPath:path parameter:para Adapter:[[JuCacheAdapter alloc]init]];
+}
 +(id)initWithPath:(NSString *)path parameter:(NSDictionary *)para Adapter:(id<JuCacheAdapterProtocol>)dapter{
     return [[self alloc]initWithPath:path parameter:para Adapter:dapter];
 }
@@ -42,10 +45,10 @@
     self=[super init];
     if (self) {
         self.diskCachePath=[self defaultCachePath];
+        self.juAdapter=dapter;
+//        _cachePolicy=JuCacheNotPolicy;
         self.urlPath=path;
-        self.juAdapter=dapter?dapter:[JuCacheAdapter new];
         self.parameter=para;
-        _cachePolicy=JuCacheNotPolicy;
     }
     return self;
 }
@@ -85,7 +88,7 @@
     return strFileName;
 }
 //（写）
-- (void)saveCacheInfo:(id)response{
+- (void)juSaveCacheData:(id)response{
 
     if(self.cachePolicy==JuCacheNotPolicy)return;
 
@@ -108,7 +111,7 @@
     }
 }
 //（读）返回YES不请求网络
--(BOOL)juGetCache:(BOOL)netConnection withResult:(void(^)(id result))cacheResult {
+-(BOOL)juGetCache:(BOOL)netConnection withData:(void(^)(id result))cacheResult {
     BOOL isUseCache=[self isCached]; //    判断是否有缓存 (是否过期,无网络)
     if (!isUseCache) {///< 无缓存直接返回
         return NO;

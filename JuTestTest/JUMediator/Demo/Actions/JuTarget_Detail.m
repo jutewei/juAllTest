@@ -20,4 +20,8 @@
     JuWebViewController *vc=[[JuWebViewController alloc]init];
     return vc;
 }
+- (UIViewController *)JuAction_openWebVC:(NSDictionary *)params{
+    JuWebViewController *vc=[[JuWebViewController alloc]init];
+    return vc;
+}
 @end

@@ -38,7 +38,7 @@ NSString * const kJUMediatorTargetModuleKey = @"kJUMediatorTargetModuleKey";
         if([elts count] < 2) continue;
         [params setObject:[elts lastObject] forKey:[elts firstObject]];
     }
-    // 这里这么写主要是出于安全考虑，防止黑客通过远程方式调用本地模块。这里的做法足以应对绝大多数场景，如果要求更加严苛，也可以做更加复杂的安全逻辑。
+    // 防止远程调用本地私有模块。
     NSString *actionName = [url.path stringByReplacingOccurrencesOfString:@"/" withString:@""];
     if ([actionName hasPrefix:@"native"]) {
         return @(NO);

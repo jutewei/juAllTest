@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB3E96862181C7A9003CE3DB /* JuCacheAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E96822181C7A9003CE3DB /* JuCacheAdapter.m */; };
-		EB3E96872181C7A9003CE3DB /* JuURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E96832181C7A9003CE3DB /* JuURLCache.m */; };
+		EB3E96872181C7A9003CE3DB /* JUURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E96832181C7A9003CE3DB /* JUURLCache.m */; };
 		EB88D4252154C29000BA082B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D4242154C29000BA082B /* AppDelegate.m */; };
 		EB88D4282154C29000BA082B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D4272154C29000BA082B /* ViewController.m */; };
 		EB88D42B2154C29000BA082B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB88D4292154C29000BA082B /* Main.storyboard */; };
@@ -26,6 +26,8 @@
 		EB9D8670216DEDD400B75BA4 /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = EB9D866A216DEDD400B75BA4 /* private_key.p12 */; };
 		EB9D8673216DF27C00B75BA4 /* JuTestEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9D8672216DF27C00B75BA4 /* JuTestEncrypt.m */; };
 		EB9D8675216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf in Resources */ = {isa = PBXBuildFile; fileRef = EB9D8674216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf */; };
+		EBA616A12182E14200F5E1AB /* JUCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA616A02182E14200F5E1AB /* JUCollectionViewLayout.m */; };
+		EBA616A42182E15E00F5E1AB /* JuCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA616A32182E15E00F5E1AB /* JuCollectionViewFlowLayout.m */; };
 		EBAC0D52216C443C00B610B1 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D4E216C443C00B610B1 /* TestView.m */; };
 		EBAC0D53216C443C00B610B1 /* JuDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D50216C443C00B610B1 /* JuDrawView.m */; };
 		EBAC0D54216C443C00B610B1 /* JuDrawPumpkin.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D51216C443C00B610B1 /* JuDrawPumpkin.m */; };
@@ -77,9 +79,9 @@
 
 /* Begin PBXFileReference section */
 		EB3E96822181C7A9003CE3DB /* JuCacheAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuCacheAdapter.m; sourceTree = "<group>"; };
-		EB3E96832181C7A9003CE3DB /* JuURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuURLCache.m; sourceTree = "<group>"; };
+		EB3E96832181C7A9003CE3DB /* JUURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUURLCache.m; sourceTree = "<group>"; };
 		EB3E96842181C7A9003CE3DB /* JuCacheAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuCacheAdapter.h; sourceTree = "<group>"; };
-		EB3E96852181C7A9003CE3DB /* JuURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuURLCache.h; sourceTree = "<group>"; };
+		EB3E96852181C7A9003CE3DB /* JUURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUURLCache.h; sourceTree = "<group>"; };
 		EB88D4202154C29000BA082B /* JuTestTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuTestTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB88D4232154C29000BA082B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB88D4242154C29000BA082B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +107,10 @@
 		EB9D8671216DF27C00B75BA4 /* JuTestEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuTestEncrypt.h; sourceTree = "<group>"; };
 		EB9D8672216DF27C00B75BA4 /* JuTestEncrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuTestEncrypt.m; sourceTree = "<group>"; };
 		EB9D8674216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ios使用rsa加解密 .pdf"; sourceTree = "<group>"; };
+		EBA6169F2182E14200F5E1AB /* JUCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JUCollectionViewLayout.h; sourceTree = "<group>"; };
+		EBA616A02182E14200F5E1AB /* JUCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JUCollectionViewLayout.m; sourceTree = "<group>"; };
+		EBA616A22182E15E00F5E1AB /* JuCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		EBA616A32182E15E00F5E1AB /* JuCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		EBAC0D4C216C443C00B610B1 /* JuDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuDrawView.h; sourceTree = "<group>"; };
 		EBAC0D4D216C443C00B610B1 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
 		EBAC0D4E216C443C00B610B1 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
@@ -210,10 +216,10 @@
 		EB3E96812181C7A9003CE3DB /* JuUrlCache */ = {
 			isa = PBXGroup;
 			children = (
+				EB3E96852181C7A9003CE3DB /* JUURLCache.h */,
+				EB3E96832181C7A9003CE3DB /* JUURLCache.m */,
 				EB3E96842181C7A9003CE3DB /* JuCacheAdapter.h */,
 				EB3E96822181C7A9003CE3DB /* JuCacheAdapter.m */,
-				EB3E96852181C7A9003CE3DB /* JuURLCache.h */,
-				EB3E96832181C7A9003CE3DB /* JuURLCache.m */,
 			);
 			path = JuUrlCache;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 		EB88D4222154C29000BA082B /* JuTestTest */ = {
 			isa = PBXGroup;
 			children = (
+				EBA6169E2182E0F700F5E1AB /* CollectionLayout */,
 				EB3E96812181C7A9003CE3DB /* JuUrlCache */,
 				EBBEC74521703CD2003EEE50 /* JUMediator */,
 				EBF9F243217975C7002FEC0E /* ClassCluster */,
@@ -301,6 +308,17 @@
 				EB9D8666216DEDD400B75BA4 /* rsa_public_key.pem */,
 			);
 			path = java;
+			sourceTree = "<group>";
+		};
+		EBA6169E2182E0F700F5E1AB /* CollectionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EBA6169F2182E14200F5E1AB /* JUCollectionViewLayout.h */,
+				EBA616A02182E14200F5E1AB /* JUCollectionViewLayout.m */,
+				EBA616A22182E15E00F5E1AB /* JuCollectionViewFlowLayout.h */,
+				EBA616A32182E15E00F5E1AB /* JuCollectionViewFlowLayout.m */,
+			);
+			path = CollectionLayout;
 			sourceTree = "<group>";
 		};
 		EBAC0D4B216C442D00B610B1 /* draw */ = {
@@ -643,8 +661,9 @@
 				EBF9F2702179AA04002FEC0E /* SFOperationMantou.m in Sources */,
 				EB88D43B2154CAC400BA082B /* JuChangMethod.m in Sources */,
 				EBF9F2A32179B122002FEC0E /* FFOperationYoutiao.m in Sources */,
-				EB3E96872181C7A9003CE3DB /* JuURLCache.m in Sources */,
+				EB3E96872181C7A9003CE3DB /* JUURLCache.m in Sources */,
 				EBF9F2A02179B111002FEC0E /* FFactoryYoutiao.m in Sources */,
+				EBA616A42182E15E00F5E1AB /* JuCollectionViewFlowLayout.m in Sources */,
 				EBAC0D52216C443C00B610B1 /* TestView.m in Sources */,
 				EBD0ADF12159C93E00605EE0 /* JuRunLoop.m in Sources */,
 				EBD0ADF7215A03B200605EE0 /* JuNextViewController.m in Sources */,
@@ -656,6 +675,7 @@
 				EBBEC74C21707CAA003EEE50 /* JuDetailViewController.m in Sources */,
 				EBF9F28B2179AB66002FEC0E /* FFOperationMantou.m in Sources */,
 				EBF9F26D2179A9E5002FEC0E /* SFOperation.m in Sources */,
+				EBA616A12182E14200F5E1AB /* JUCollectionViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,7 @@
 #import "JuTestEncrypt.h"
 #import "JUMediator+DetailAction.h"
 #import "JuSubFruits.h"
-#import "JuURLCache.h"
+#import "JUURLCache.h"
 @interface ViewController ()<JuFruitsDelegate>{
     JuRunLoop *ju_runLoop;
     NSInteger colorIndex;
@@ -30,19 +30,24 @@
     self.navigationController.view.backgroundColor=[UIColor whiteColor];
 
     [JuArithmetic juBubbling];
+
     JuFruits * tool = [JuFruits buyTool:1];
     tool.delegate=self;
     [tool run];//成员关系从属于CarFactory类，所以调用CarFactory类中的run方法
     NSLog(@"花了:%d钱",[tool shouldPayMoney]);
+
     JuFruits * tool2 = [[JuSubFruits alloc]init];
-   
     tool2.delegate=self;
     [tool2 run];
     NSLog(@"花了:%d钱",[tool2 shouldPayMoney]);
-    [self setViewAaimation];
 
-
-
+    JUURLCache *cache=[JUURLCache initWithPath:@"test" parameter:@{@"name":@"zhu",@"age":@"18"}];
+    NSLog(@"%@",cache.juGetCached);
+    [cache juGetCache:NO withData:^(id result) {
+        NSLog(@"%@",result);
+    }];
+    [cache juSaveCacheData:@{@"name":@"zhu",@"age":@"18",@"sex":@"男"}];
+//这是几个意思呢，这是做好事一定要要先留名嘛
 //    [JuTestEncrypt juTest];
 
 //    ju_runLoop=[[JuRunLoop alloc]init];
@@ -64,33 +69,6 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
--(void)setViewAaimation{
-    if (colorIndex==6) {
-        colorIndex=0;
-        return;
-    }
-
-    [UIView animateWithDuration:3 animations:^{
-        if (self->colorIndex==0) {
-            self.navigationController.navigationBar.barTintColor=[UIColor redColor];
-        }else if (self->colorIndex==1){
-            self.navigationController.navigationBar.barTintColor=[UIColor blueColor];
-        }else if (self->colorIndex==2){
-            self.navigationController.navigationBar.barTintColor=[UIColor yellowColor];
-        }else if (self->colorIndex==3){
-            self.navigationController.navigationBar.barTintColor=[UIColor greenColor];
-        }else if (self->colorIndex==4){
-            self.navigationController.navigationBar.barTintColor=[UIColor orangeColor];
-        }else if (self->colorIndex==5){
-            self.navigationController.navigationBar.barTintColor=[UIColor purpleColor];
-        }else if (self->colorIndex==6){
-            self.navigationController.navigationBar.barTintColor=[UIColor brownColor];
-        }
-    } completion:^(BOOL finished) {
-        self->colorIndex++;
-        [self setViewAaimation];
-    }];
-}
 +(CABasicAnimation *) AlphaLight:(float)time
 {
     CABasicAnimation *animation =[CABasicAnimation animationWithKeyPath:@"opacity"];
@@ -124,8 +102,12 @@
     NSLog(@"%p %p %p %p", aString , aString3,aString2,bString);
 }
 - (IBAction)juRunDetail:(id)sender {
-    UIViewController *vc=[[JUMediator sharedInstance]JUMediator_Detail:^{
-        NSLog(@"显示了");
+//    UIViewController *vc=[[JUMediator sharedInstance]JUMediator_Detail:^{
+//        NSLog(@"显示了");
+//    }];
+
+    UIViewController *vc=[[JUMediator sharedInstance]performActionWithUrl:[NSURL URLWithString:@"juvid://Detail/openWebVC"] completion:^(NSDictionary *parameter) {
+        NSLog(@"");
     }];
     [self.navigationController pushViewController:vc animated:YES];
 }

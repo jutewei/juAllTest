@@ -15,7 +15,10 @@ typedef enum JuCacheStoragePolicy {
 
 } CacheStoragePolicy;
 @protocol JuCacheAdapterProtocol;
-@interface JuURLCache : NSObject
+
+@interface JUURLCache : NSObject
+
++(id)initWithPath:(NSString *)path parameter:(NSDictionary *)para;
 /**
  初始化
 
@@ -38,14 +41,14 @@ typedef enum JuCacheStoragePolicy {
  @param cacheResult 返回本地数据
  @return 是否需要刷新接口
  */
--(BOOL)juGetCache:(BOOL)netConnection withResult:(void(^)(id result))cacheResult;
+-(BOOL)juGetCache:(BOOL)netConnection withData:(void(^)(id result))cacheResult;
 
 /**
  写缓存
 
  @param response 网络数据
  */
-- (void)saveCacheInfo:(id)response;
+- (void)juSaveCacheData:(id)response;
 
 //检测缓存是否存在
 -(BOOL)isCached;

@@ -14,7 +14,12 @@ extern NSString * const kJUMediatorTargetModuleKey;
 @interface JUMediator : NSObject
 
 + (instancetype)sharedInstance;
+/*
+ scheme://[target]/[action]?[params]
 
+ url sample:
+ aaa://targetA/actionB?id=1234
+ */
 // 远程调用
 -(id)performActionWithUrl:(NSURL *)url  completion:(void(^)(NSDictionary *parameter))completion;
 //本地端口调用

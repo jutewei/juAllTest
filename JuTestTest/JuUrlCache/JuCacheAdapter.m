@@ -22,7 +22,17 @@
     return @[@"emptyData",@"common"];
 }
 
+
+/**
+ 设置需要缓存的url
+
+ @param path url路径
+ @return 刷新时间
+ */
 -(CGFloat)juMinRefresh:(NSString *)path{
+    if ([path isEqual:@"test"]) {
+        return 5;
+    }
     return 0;
 }
 
