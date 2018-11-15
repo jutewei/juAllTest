@@ -40,7 +40,7 @@
         }
     }
     int n=(int)arr.count;
-    NSLog(@"循环次数 复杂度%f %f",n*n-n*((n-1)/2.0),n*n);
+    NSLog(@"循环次数 复杂度%f %d",n*n-n*((n-1)/2.0),n*n);
     NSLog(@"选择排序 %@",arr);
     //复杂度 n*n-n*((n-1)/2)
     /*if (i<arr.count-1&&[arr[i] integerValue]>[arr[i+1] integerValue]) {

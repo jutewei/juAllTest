@@ -15,6 +15,8 @@
 #import "JUMediator+DetailAction.h"
 #import "JuSubFruits.h"
 #import "JUURLCache.h"
+#import "JuCollectionViewController.h"
+#define ToRad(deg)         ( (M_PI * (deg-90)) / 180.0 )
 @interface ViewController ()<JuFruitsDelegate>{
     JuRunLoop *ju_runLoop;
     NSInteger colorIndex;
@@ -28,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.view.backgroundColor=[UIColor whiteColor];
+
 
     [JuArithmetic juBubbling];
 
@@ -66,9 +69,64 @@
 //    [self juEqualNum];
 
 //    [self performSelector:<#(nonnull SEL)#> onThread:<#(nonnull NSThread *)#> withObject:<#(nullable id)#> waitUntilDone:<#(BOOL)#>]
+    [self shDraw];
     // Do any additional setup after loading the view, typically from a nib.
 }
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+//    ju_pointView.transform = CGAffineTransformMakeRotation(M_PI/4);
+//    ju_pointView.layer.anchorPoint=CGPointMake(0.5, 1);
+//
+//    ju_pointView.layer.position = CGPointMake(ju_pointView.frame.origin.x+7,  ju_pointView.frame.origin.y+14+7);
+}
 
+-(void)shDraw{
+    [_ju_view.superview layoutIfNeeded];
+
+    // 阴影
+    _ju_view.backgroundColor = nil;
+    _ju_view.layer.masksToBounds = NO;
+    _ju_view.layer.shadowOpacity = 1;
+    _ju_view.layer.shadowOffset = CGSizeZero;
+    _ju_view.layer.shadowRadius = 4;
+
+    // 任意圆角
+    CGPathRef path = [UIBezierPath bezierPathWithRoundedRect:_ju_view.bounds
+                                           byRoundingCorners:UIRectCornerTopLeft cornerRadii:CGSizeMake(40, 40)].CGPath;
+    CAShapeLayer *lay = [CAShapeLayer layer];
+    lay.path = path;
+   _ju_view.layer.mask = lay;
+
+//    UIBezierPath *maskPath= [UIBezierPath bezierPathWithRoundedRect:_ju_view.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(8, 8)];
+//
+//
+////    CAShapeLayer *border = [CAShapeLayer layer];
+////    border.strokeColor = [UIColor redColor].CGColor;
+////    border.fillColor = nil;
+////    border.path = maskPath.CGPath;
+////    border.frame = _ju_view.bounds;
+////    border.shadowOpacity = 1;
+////    border.shadowColor = [UIColor redColor].CGColor;
+////    border.shadowOffset = CGSizeMake(0, 1);
+////    border.lineWidth = 1.0f;
+////    _ju_view.layer.mask=border;
+////    [_ju_view.layer addSublayer:border];
+//
+//   _ju_view.layer.masksToBounds = NO;
+//    _ju_view.layer.shadowOpacity = 1;
+//    _ju_view.layer.shadowOffset = CGSizeZero;
+//    _ju_view.layer.shadowColor=[UIColor redColor].CGColor;
+//    _ju_view.layer.shadowRadius = 10;
+//
+//
+//
+//    CAShapeLayer *maskLayer = [[CAShapeLayer alloc]init];
+//    maskLayer.frame = _ju_view.bounds;
+//    maskLayer.fillColor = [UIColor greenColor].CGColor;
+//    maskLayer.path = maskPath.CGPath;
+////    [_ju_view.layer addSublayer:maskLayer];
+//    _ju_view.layer.mask=maskLayer;
+}
 +(CABasicAnimation *) AlphaLight:(float)time
 {
     CABasicAnimation *animation =[CABasicAnimation animationWithKeyPath:@"opacity"];
@@ -106,9 +164,13 @@
 //        NSLog(@"显示了");
 //    }];
 
-    UIViewController *vc=[[JUMediator sharedInstance]performActionWithUrl:[NSURL URLWithString:@"juvid://Detail/openWebVC"] completion:^(NSDictionary *parameter) {
-        NSLog(@"");
-    }];
+//    UIViewController *vc=[[JUMediator sharedInstance]performActionWithUrl:[NSURL URLWithString:@"juvid://Detail/openWebVC"] completion:^(NSDictionary *parameter) {
+//        NSLog(@"");
+//    }];
+//    [self.navigationController pushViewController:vc animated:YES];
+
+
+    JuCollectionViewController *vc=[[JuCollectionViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

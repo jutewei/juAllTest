@@ -139,7 +139,6 @@
     [linePath addArcWithCenter:CGPointMake(100, 200) radius:50 startAngle:0 endAngle:2*M_PI clockwise:YES];
 
 
-
     //  设置路径画布
     CAShapeLayer *lineLayer = [CAShapeLayer layer];
     lineLayer.bounds = (CGRect){0,0,200,400};
