@@ -8,21 +8,31 @@
 
 #import "JuClockView.h"
 #import "UIView+JuLayout.h"
-
+#define ALapM (2*M_PI)
 @implementation JuClockView{
     UIImageView *imageSecond;
     UIImageView *imgSecondPoint;
     UIImageView *imgMinute;
     UIImageView *imgHour;
-    CGFloat angle;
+
     CGPoint secondCenter;
-    CGFloat minuteCircle;
-    CGFloat hourCircle;
+
+    CGFloat secondAngle;
+    CGFloat minuteAngle;
+    CGFloat hourAngle;
 }
 
 -(void)awakeFromNib{
     [super awakeFromNib];
     CGFloat secondHeight=112;
+
+    UIImageView *imgColock=[[UIImageView alloc]init];
+    imgColock.backgroundColor=[UIColor blackColor];
+    imgColock.image=[UIImage imageNamed:@"colock.jpeg"];
+    [self addSubview:imgColock];
+    imgColock.juSize(CGSizeMake(204, 204));
+    imgColock.juCenterX.equal(0);
+    imgColock.juCenterY.equal(0);
 
     UIView *vieCenter=[[UIView alloc]init];
     vieCenter.backgroundColor=[UIColor blackColor];
@@ -32,28 +42,28 @@
     [vieCenter.layer setCornerRadius:5];
     [vieCenter.layer setMasksToBounds:YES];
 
-    for (int i=0; i<4; i++) {
-        UIView *view=[[UIView alloc]init];
-        view.backgroundColor=[UIColor blackColor];
-        [self addSubview:view];
-        if (i%2==1) {///< 横
-            view.juSize(CGSizeMake(10, 4));
-            view.juCenterY.equal(0);
-            if (i==1) {
-                view.juTrail.equal(0);
-            }else{
-                view.juLead.equal(0);
-            }
-        }else{
-            view.juSize(CGSizeMake(4, 10));
-            view.juCenterX.equal(0);
-            if (i==0) {
-                view.juTop.equal(0);
-            }else{
-                view.juBottom.equal(0);
-            }
-        }
-    }
+//    for (int i=0; i<4; i++) {
+//        UIView *view=[[UIView alloc]init];
+//        view.backgroundColor=[UIColor blackColor];
+//        [self addSubview:view];
+//        if (i%2==1) {///< 横
+//            view.juSize(CGSizeMake(10, 4));
+//            view.juCenterY.equal(0);
+//            if (i==1) {
+//                view.juTrail.equal(0);
+//            }else{
+//                view.juLead.equal(0);
+//            }
+//        }else{
+//            view.juSize(CGSizeMake(4, 10));
+//            view.juCenterX.equal(0);
+//            if (i==0) {
+//                view.juTop.equal(0);
+//            }else{
+//                view.juBottom.equal(0);
+//            }
+//        }
+//    }
     imgHour=[[UIImageView alloc]init];
     imgHour.backgroundColor=[UIColor blackColor];
     [self addSubview:imgHour];
@@ -103,35 +113,40 @@
 }
 -(void)shSetAnimation{
 
-    if (angle>=2*M_PI) {
-        angle=0;
+    if (secondAngle>=2*M_PI) {
+        secondAngle=0;
     }
-    if (minuteCircle>=60) {
-        minuteCircle=0;
+    if (minuteAngle>=60) {
+        minuteAngle=0;
     }
-    if (hourCircle>=12) {
-        hourCircle=0;
+    if (hourAngle>=12) {
+        hourAngle=0;
     }
-    angle+=M_PI/300;///一秒转 2M_PI/60 一毫米 2M_PI/60/10
+    CGFloat addSecondAngle=ALapM/600.0;//秒针增加
+    secondAngle+=addSecondAngle;///一秒转 2M_PI/60 一毫米 2M_PI/60/10
 
-    minuteCircle+=(M_PI/300)/(2*M_PI);///时针每毫米加的圈数，一毫秒转M_PI/300 每次转的圈数(M_PI/300)/(2*M_PI)
+    CGFloat addMinuteAngle=addSecondAngle/60;///分针增加
+    minuteAngle+=addMinuteAngle;///时针每毫米加的圈数，一毫秒转M_PI/300 每次转的圈数(M_PI/300)/(2*M_PI)
 
-    hourCircle+=((M_PI/300)/(2*M_PI))/60.0;
+    CGFloat addHourAngle=addMinuteAngle/12.0;///时针增加
+    hourAngle+=addHourAngle;
 
-    secondCenter=CGPointMake(sin(angle)*90+103, -cos(angle)*90+103);
+    secondCenter=CGPointMake(sin(secondAngle)*90+103, -cos(secondAngle)*90+103);
     imgSecondPoint.center=secondCenter;
 
-    imageSecond.transform = CGAffineTransformMakeRotation(angle);
+    imageSecond.transform = CGAffineTransformMakeRotation(secondAngle);
 
-    imgMinute.transform = CGAffineTransformMakeRotation((minuteCircle/60.0)*2*M_PI);
+    imgMinute.transform = CGAffineTransformMakeRotation(minuteAngle);
 
-    imgHour.transform = CGAffineTransformMakeRotation((hourCircle/12.0)*2*M_PI);
+    imgHour.transform = CGAffineTransformMakeRotation(hourAngle);
 }
 
 -(void)layoutSubviews{
     [super layoutSubviews];
     [self.layer setCornerRadius:self.frame.size.width/2.0];
     [self.layer setMasksToBounds:YES];
+    [self.layer setBorderWidth:1];
+    [self.layer setBorderColor:[UIColor blackColor].CGColor];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

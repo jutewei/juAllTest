@@ -34,6 +34,7 @@
 		EB9E1D80218946FF00B1885F /* 动效.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB9E1D7F218946FF00B1885F /* 动效.gif */; };
 		EBA616A12182E14200F5E1AB /* JUCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA616A02182E14200F5E1AB /* JUCollectionViewLayout.m */; };
 		EBA616A42182E15E00F5E1AB /* JuCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA616A32182E15E00F5E1AB /* JuCollectionViewFlowLayout.m */; };
+		EBA8D58C219E69DD006F848A /* colock.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EBA8D58B219E69DC006F848A /* colock.jpeg */; };
 		EBAC0D52216C443C00B610B1 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D4E216C443C00B610B1 /* TestView.m */; };
 		EBAC0D53216C443C00B610B1 /* JuDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D50216C443C00B610B1 /* JuDrawView.m */; };
 		EBAC0D54216C443C00B610B1 /* JuDrawPumpkin.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D51216C443C00B610B1 /* JuDrawPumpkin.m */; };
@@ -132,6 +133,7 @@
 		EBA616A02182E14200F5E1AB /* JUCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JUCollectionViewLayout.m; sourceTree = "<group>"; };
 		EBA616A22182E15E00F5E1AB /* JuCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		EBA616A32182E15E00F5E1AB /* JuCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		EBA8D58B219E69DC006F848A /* colock.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = colock.jpeg; sourceTree = "<group>"; };
 		EBAC0D4C216C443C00B610B1 /* JuDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuDrawView.h; sourceTree = "<group>"; };
 		EBAC0D4D216C443C00B610B1 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
 		EBAC0D4E216C443C00B610B1 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			children = (
 				EB5993F4219D17150029AFE3 /* JuClockView.h */,
 				EB5993F5219D17150029AFE3 /* JuClockView.m */,
+				EBA8D58B219E69DC006F848A /* colock.jpeg */,
 			);
 			path = anchorPoint;
 			sourceTree = "<group>";
@@ -679,6 +682,7 @@
 				EB9D866E216DEDD400B75BA4 /* pkcs8_private_key.pem in Resources */,
 				EBD0AE01215A299600605EE0 /* img6.jpg in Resources */,
 				EB9D866D216DEDD400B75BA4 /* rsaCerReq.csr in Resources */,
+				EBA8D58C219E69DD006F848A /* colock.jpeg in Resources */,
 				EBD0AE02215A299600605EE0 /* img7.jpg in Resources */,
 				EB9D866C216DEDD400B75BA4 /* rsa_public_key.pem in Resources */,
 				EB9D866B216DEDD400B75BA4 /* rsaCert.crt in Resources */,
