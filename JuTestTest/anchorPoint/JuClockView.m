@@ -27,20 +27,14 @@
     CGFloat secondHeight=112;
 
     UIImageView *imgColock=[[UIImageView alloc]init];
-    imgColock.backgroundColor=[UIColor blackColor];
-    imgColock.image=[UIImage imageNamed:@"colock.jpeg"];
+    imgColock.backgroundColor=[UIColor whiteColor];
+    imgColock.image=[UIImage imageNamed:@"clock2"];
     [self addSubview:imgColock];
-    imgColock.juSize(CGSizeMake(204, 204));
+    imgColock.juSize(CGSizeMake(240, 240));
     imgColock.juCenterX.equal(0);
     imgColock.juCenterY.equal(0);
 
-    UIView *vieCenter=[[UIView alloc]init];
-    vieCenter.backgroundColor=[UIColor blackColor];
-    [self addSubview:vieCenter];
-    vieCenter.juSize(CGSizeMake(10, 10));
-    vieCenter.juOrigin(CGPointMake(0, 0));
-    [vieCenter.layer setCornerRadius:5];
-    [vieCenter.layer setMasksToBounds:YES];
+
 
 //    for (int i=0; i<4; i++) {
 //        UIView *view=[[UIView alloc]init];
@@ -95,7 +89,13 @@
     imgSecondPoint.juCenterX.equal(0);
     imgSecondPoint.juTop.equal(10);
 
-
+    UIView *vieCenter=[[UIView alloc]init];
+    vieCenter.backgroundColor=[UIColor blackColor];
+    [self addSubview:vieCenter];
+    vieCenter.juSize(CGSizeMake(10, 10));
+    vieCenter.juOrigin(CGPointMake(0, 0));
+    [vieCenter.layer setCornerRadius:5];
+    [vieCenter.layer setMasksToBounds:YES];
     [self layoutIfNeeded];
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -143,10 +143,11 @@
 
 -(void)layoutSubviews{
     [super layoutSubviews];
-    [self.layer setCornerRadius:self.frame.size.width/2.0];
-    [self.layer setMasksToBounds:YES];
-    [self.layer setBorderWidth:1];
-    [self.layer setBorderColor:[UIColor blackColor].CGColor];
+    self.backgroundColor=[UIColor whiteColor];
+//    [self.layer setCornerRadius:self.frame.size.width/2.0];
+//    [self.layer setMasksToBounds:YES];
+//    [self.layer setBorderWidth:1];
+//    [self.layer setBorderColor:[UIColor blackColor].CGColor];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

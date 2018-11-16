@@ -35,6 +35,19 @@
 		EBA616A12182E14200F5E1AB /* JUCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA616A02182E14200F5E1AB /* JUCollectionViewLayout.m */; };
 		EBA616A42182E15E00F5E1AB /* JuCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA616A32182E15E00F5E1AB /* JuCollectionViewFlowLayout.m */; };
 		EBA8D58C219E69DD006F848A /* colock.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EBA8D58B219E69DC006F848A /* colock.jpeg */; };
+		EBA8D5B8219EAD87006F848A /* JuWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8D5A8219EAD86006F848A /* JuWaterflowLayout.m */; };
+		EBA8D5B9219EAD87006F848A /* HMShop.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8D5AA219EAD86006F848A /* HMShop.m */; };
+		EBA8D5BA219EAD87006F848A /* JuLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8D5AB219EAD86006F848A /* JuLineLayout.m */; };
+		EBA8D5BB219EAD87006F848A /* JuShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA8D5AC219EAD86006F848A /* JuShopCell.xib */; };
+		EBA8D5BC219EAD87006F848A /* JuStackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8D5AD219EAD86006F848A /* JuStackLayout.m */; };
+		EBA8D5BD219EAD87006F848A /* JuImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8D5AE219EAD86006F848A /* JuImageCell.m */; };
+		EBA8D5BE219EAD87006F848A /* JuShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8D5AF219EAD86006F848A /* JuShopCell.m */; };
+		EBA8D5BF219EAD87006F848A /* JuCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8D5B0219EAD86006F848A /* JuCircleLayout.m */; };
+		EBA8D5C0219EAD87006F848A /* JuImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA8D5B4219EAD86006F848A /* JuImageCell.xib */; };
+		EBA8D5C4219EAE1C006F848A /* JuWaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8D5C3219EAE1C006F848A /* JuWaterViewController.m */; };
+		EBA8D5C7219EAF28006F848A /* JuLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8D5C6219EAF28006F848A /* JuLineViewController.m */; };
+		EBA8D5CA219EAF8D006F848A /* JuCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8D5C9219EAF8D006F848A /* JuCircleViewController.m */; };
+		EBA8D5D2219EBAD3006F848A /* clock2.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA8D5D1219EBAD3006F848A /* clock2.png */; };
 		EBAC0D52216C443C00B610B1 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D4E216C443C00B610B1 /* TestView.m */; };
 		EBAC0D53216C443C00B610B1 /* JuDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D50216C443C00B610B1 /* JuDrawView.m */; };
 		EBAC0D54216C443C00B610B1 /* JuDrawPumpkin.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D51216C443C00B610B1 /* JuDrawPumpkin.m */; };
@@ -134,6 +147,29 @@
 		EBA616A22182E15E00F5E1AB /* JuCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		EBA616A32182E15E00F5E1AB /* JuCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		EBA8D58B219E69DC006F848A /* colock.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = colock.jpeg; sourceTree = "<group>"; };
+		EBA8D5A8219EAD86006F848A /* JuWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuWaterflowLayout.m; sourceTree = "<group>"; };
+		EBA8D5A9219EAD86006F848A /* JuCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuCircleLayout.h; sourceTree = "<group>"; };
+		EBA8D5AA219EAD86006F848A /* HMShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMShop.m; sourceTree = "<group>"; };
+		EBA8D5AB219EAD86006F848A /* JuLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuLineLayout.m; sourceTree = "<group>"; };
+		EBA8D5AC219EAD86006F848A /* JuShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JuShopCell.xib; sourceTree = "<group>"; };
+		EBA8D5AD219EAD86006F848A /* JuStackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuStackLayout.m; sourceTree = "<group>"; };
+		EBA8D5AE219EAD86006F848A /* JuImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuImageCell.m; sourceTree = "<group>"; };
+		EBA8D5AF219EAD86006F848A /* JuShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuShopCell.m; sourceTree = "<group>"; };
+		EBA8D5B0219EAD86006F848A /* JuCircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuCircleLayout.m; sourceTree = "<group>"; };
+		EBA8D5B1219EAD86006F848A /* JuWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuWaterflowLayout.h; sourceTree = "<group>"; };
+		EBA8D5B2219EAD86006F848A /* JuLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuLineLayout.h; sourceTree = "<group>"; };
+		EBA8D5B3219EAD86006F848A /* HMShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMShop.h; sourceTree = "<group>"; };
+		EBA8D5B4219EAD86006F848A /* JuImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JuImageCell.xib; sourceTree = "<group>"; };
+		EBA8D5B5219EAD86006F848A /* JuImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuImageCell.h; sourceTree = "<group>"; };
+		EBA8D5B6219EAD86006F848A /* JuStackLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuStackLayout.h; sourceTree = "<group>"; };
+		EBA8D5B7219EAD86006F848A /* JuShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuShopCell.h; sourceTree = "<group>"; };
+		EBA8D5C2219EAE1C006F848A /* JuWaterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuWaterViewController.h; sourceTree = "<group>"; };
+		EBA8D5C3219EAE1C006F848A /* JuWaterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuWaterViewController.m; sourceTree = "<group>"; };
+		EBA8D5C5219EAF28006F848A /* JuLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuLineViewController.h; sourceTree = "<group>"; };
+		EBA8D5C6219EAF28006F848A /* JuLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuLineViewController.m; sourceTree = "<group>"; };
+		EBA8D5C8219EAF8D006F848A /* JuCircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuCircleViewController.h; sourceTree = "<group>"; };
+		EBA8D5C9219EAF8D006F848A /* JuCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuCircleViewController.m; sourceTree = "<group>"; };
+		EBA8D5D1219EBAD3006F848A /* clock2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock2.png; sourceTree = "<group>"; };
 		EBAC0D4C216C443C00B610B1 /* JuDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuDrawView.h; sourceTree = "<group>"; };
 		EBAC0D4D216C443C00B610B1 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
 		EBAC0D4E216C443C00B610B1 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
@@ -259,6 +295,7 @@
 				EB5993F4219D17150029AFE3 /* JuClockView.h */,
 				EB5993F5219D17150029AFE3 /* JuClockView.m */,
 				EBA8D58B219E69DC006F848A /* colock.jpeg */,
+				EBA8D5D1219EBAD3006F848A /* clock2.png */,
 			);
 			path = anchorPoint;
 			sourceTree = "<group>";
@@ -380,6 +417,43 @@
 			path = CollectionLayout;
 			sourceTree = "<group>";
 		};
+		EBA8D5A7219EAD86006F848A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				EBA8D5C1219EADF9006F848A /* VC */,
+				EBA8D5B3219EAD86006F848A /* HMShop.h */,
+				EBA8D5AA219EAD86006F848A /* HMShop.m */,
+				EBA8D5A9219EAD86006F848A /* JuCircleLayout.h */,
+				EBA8D5B0219EAD86006F848A /* JuCircleLayout.m */,
+				EBA8D5B5219EAD86006F848A /* JuImageCell.h */,
+				EBA8D5AE219EAD86006F848A /* JuImageCell.m */,
+				EBA8D5B4219EAD86006F848A /* JuImageCell.xib */,
+				EBA8D5B2219EAD86006F848A /* JuLineLayout.h */,
+				EBA8D5AB219EAD86006F848A /* JuLineLayout.m */,
+				EBA8D5B7219EAD86006F848A /* JuShopCell.h */,
+				EBA8D5AF219EAD86006F848A /* JuShopCell.m */,
+				EBA8D5AC219EAD86006F848A /* JuShopCell.xib */,
+				EBA8D5B6219EAD86006F848A /* JuStackLayout.h */,
+				EBA8D5AD219EAD86006F848A /* JuStackLayout.m */,
+				EBA8D5B1219EAD86006F848A /* JuWaterflowLayout.h */,
+				EBA8D5A8219EAD86006F848A /* JuWaterflowLayout.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		EBA8D5C1219EADF9006F848A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EBA8D5C2219EAE1C006F848A /* JuWaterViewController.h */,
+				EBA8D5C3219EAE1C006F848A /* JuWaterViewController.m */,
+				EBA8D5C5219EAF28006F848A /* JuLineViewController.h */,
+				EBA8D5C6219EAF28006F848A /* JuLineViewController.m */,
+				EBA8D5C8219EAF8D006F848A /* JuCircleViewController.h */,
+				EBA8D5C9219EAF8D006F848A /* JuCircleViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		EBAC0D4B216C442D00B610B1 /* draw */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +523,7 @@
 		EBBC2B29219A765400BD3EEE /* JuCollectLayout */ = {
 			isa = PBXGroup;
 			children = (
+				EBA8D5A7219EAD86006F848A /* Class */,
 				EBBC2B2A219A767500BD3EEE /* JuCollectionViewController.h */,
 				EBBC2B2B219A767500BD3EEE /* JuCollectionViewController.m */,
 				EBCC8173219AB85E003A7604 /* JuWaterFolwLayout.h */,
@@ -676,6 +751,7 @@
 				EB9D866F216DEDD400B75BA4 /* public_key.der in Resources */,
 				EB9D8675216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf in Resources */,
 				EBBEC76E21709CB6003EEE50 /* WKWebViewMessageHandler.html in Resources */,
+				EBA8D5D2219EBAD3006F848A /* clock2.png in Resources */,
 				EB9D8670216DEDD400B75BA4 /* private_key.p12 in Resources */,
 				EB88D4302154C29200BA082B /* LaunchScreen.storyboard in Resources */,
 				EB88D42D2154C29200BA082B /* Assets.xcassets in Resources */,
@@ -686,6 +762,8 @@
 				EBD0AE02215A299600605EE0 /* img7.jpg in Resources */,
 				EB9D866C216DEDD400B75BA4 /* rsa_public_key.pem in Resources */,
 				EB9D866B216DEDD400B75BA4 /* rsaCert.crt in Resources */,
+				EBA8D5BB219EAD87006F848A /* JuShopCell.xib in Resources */,
+				EBA8D5C0219EAD87006F848A /* JuImageCell.xib in Resources */,
 				EB88D42B2154C29000BA082B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,16 +781,22 @@
 				EB3E96862181C7A9003CE3DB /* JuCacheAdapter.m in Sources */,
 				EBF9F246217975FB002FEC0E /* JuFruits.m in Sources */,
 				EBE70CEE21787652007DA0B3 /* JuTestObject.m in Sources */,
+				EBA8D5BF219EAD87006F848A /* JuCircleLayout.m in Sources */,
 				EBE70CF421787738007DA0B3 /* NSObject+Test.m in Sources */,
+				EBA8D5C4219EAE1C006F848A /* JuWaterViewController.m in Sources */,
 				EB88D4282154C29000BA082B /* ViewController.m in Sources */,
 				EB88D4332154C29200BA082B /* main.m in Sources */,
+				EBA8D5BE219EAD87006F848A /* JuShopCell.m in Sources */,
 				EBF9F29A2179AC70002FEC0E /* AFFactoryYoutiao.m in Sources */,
 				EBF9F2852179AB25002FEC0E /* FFOperation.m in Sources */,
 				EBD0ADFB215A291E00605EE0 /* JuNextViewCell.m in Sources */,
+				EBA8D5BC219EAD87006F848A /* JuStackLayout.m in Sources */,
 				EBBEC74821703CEE003EEE50 /* JUMediator.m in Sources */,
+				EBA8D5B9219EAD87006F848A /* HMShop.m in Sources */,
 				EBF9F2822179AB0F002FEC0E /* FFactory.m in Sources */,
 				EBF9F2942179ABE1002FEC0E /* AFFactoryMantou.m in Sources */,
 				EBF9F26A2179A9AC002FEC0E /* SFFactory.m in Sources */,
+				EBA8D5B8219EAD87006F848A /* JuWaterflowLayout.m in Sources */,
 				EB9D8673216DF27C00B75BA4 /* JuTestEncrypt.m in Sources */,
 				EBF9F2912179ABCF002FEC0E /* AFOperation.m in Sources */,
 				EBAC0D53216C443C00B610B1 /* JuDrawView.m in Sources */,
@@ -739,12 +823,15 @@
 				EBAC0D5B216C44E300B610B1 /* ObjcMsgResolve.m in Sources */,
 				EBF9F2702179AA04002FEC0E /* SFOperationMantou.m in Sources */,
 				EB88D43B2154CAC400BA082B /* JuChangMethod.m in Sources */,
+				EBA8D5CA219EAF8D006F848A /* JuCircleViewController.m in Sources */,
 				EBF9F2A32179B122002FEC0E /* FFOperationYoutiao.m in Sources */,
 				EB3E96872181C7A9003CE3DB /* JUURLCache.m in Sources */,
+				EBA8D5BA219EAD87006F848A /* JuLineLayout.m in Sources */,
 				EBF9F2A02179B111002FEC0E /* FFactoryYoutiao.m in Sources */,
 				EBA616A42182E15E00F5E1AB /* JuCollectionViewFlowLayout.m in Sources */,
 				EBAC0D52216C443C00B610B1 /* TestView.m in Sources */,
 				EBD0ADF12159C93E00605EE0 /* JuRunLoop.m in Sources */,
+				EBA8D5C7219EAF28006F848A /* JuLineViewController.m in Sources */,
 				EBD0ADF7215A03B200605EE0 /* JuNextViewController.m in Sources */,
 				EB599403219D57210029AFE3 /* UIView+JuConstraint.m in Sources */,
 				EBBEC76C217094EA003EEE50 /* WeakScriptMessageDelegate.m in Sources */,
@@ -753,6 +840,7 @@
 				EB599402219D57210029AFE3 /* JuLayout.m in Sources */,
 				EBD0AE05215A29D100605EE0 /* UIImage+HWCorner.m in Sources */,
 				EBAC0D54216C443C00B610B1 /* JuDrawPumpkin.m in Sources */,
+				EBA8D5BD219EAD87006F848A /* JuImageCell.m in Sources */,
 				EBBEC74C21707CAA003EEE50 /* JuDetailViewController.m in Sources */,
 				EBF9F28B2179AB66002FEC0E /* FFOperationMantou.m in Sources */,
 				EBF9F26D2179A9E5002FEC0E /* SFOperation.m in Sources */,

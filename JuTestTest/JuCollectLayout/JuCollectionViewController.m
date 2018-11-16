@@ -9,6 +9,10 @@
 #import "JuCollectionViewController.h"
 #import "JuCollectionViewLayout.h"
 #import "JuWaterFolwLayout.h"
+#import "JuWaterViewController.h"
+#import "JuLineViewController.h"
+#import "JuCircleViewController.h"
+
 @interface JuCollectionViewController ()
 
 @end
@@ -34,7 +38,7 @@ static NSString * const cellReuseIdentifier = @"head";
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationController.view.backgroundColor=[UIColor whiteColor];
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -86,6 +90,18 @@ static NSString * const cellReuseIdentifier = @"head";
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
 
     return CGSizeMake(([UIScreen mainScreen].bounds.size.width-22)/3.0, indexPath.row%2==1?110:150);
+}
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row%3==0) {
+        JuWaterViewController *vc=[[JuWaterViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row%3==1){
+        JuLineViewController *vc=[[JuLineViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        JuCircleViewController *vc=[[JuCircleViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking
