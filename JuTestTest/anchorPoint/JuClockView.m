@@ -113,7 +113,7 @@
 }
 -(void)shSetAnimation{
 
-    if (secondAngle>=2*M_PI) {
+    if (secondAngle>=ALapM) {
         secondAngle=0;
     }
     if (minuteAngle>=60) {
@@ -123,10 +123,10 @@
         hourAngle=0;
     }
     CGFloat addSecondAngle=ALapM/600.0;//秒针增加
-    secondAngle+=addSecondAngle;///一秒转 2M_PI/60 一毫米 2M_PI/60/10
+    secondAngle+=addSecondAngle;///一秒转
 
     CGFloat addMinuteAngle=addSecondAngle/60;///分针增加
-    minuteAngle+=addMinuteAngle;///时针每毫米加的圈数，一毫秒转M_PI/300 每次转的圈数(M_PI/300)/(2*M_PI)
+    minuteAngle+=addMinuteAngle;///分针每毫米加的圈数，
 
     CGFloat addHourAngle=addMinuteAngle/12.0;///时针增加
     hourAngle+=addHourAngle;
