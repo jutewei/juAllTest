@@ -10,8 +10,8 @@
 
 typedef enum JuCacheStoragePolicy {
     JuCacheNotPolicy=0,//默认无缓存
-    JuCacheRoutineCachePolicy = 1,//默认有缓存
-//    CachePermanentlyCacheStoragePolicy = 1,//强制
+    CacheRoutineCachePolicy = 1,//有缓存（缓存过期会预加载）
+    CacheCacheExpiredPolicy  = 2,//有缓存（缓存过期就不使用缓存）
 
 } CacheStoragePolicy;
 @protocol JuCacheAdapterProtocol;

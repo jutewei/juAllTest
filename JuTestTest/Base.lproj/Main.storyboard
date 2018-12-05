@@ -52,7 +52,7 @@
                                     <action selector="juRunDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8F-a0-M6z"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcP-qM-bAZ" customClass="JuClockView">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcP-qM-bAZ" customClass="JuClockView">
                                 <rect key="frame" x="84.5" y="230.5" width="206" height="206"/>
                                 <color key="backgroundColor" red="0.80784313730000001" green="0.90980392160000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -83,42 +83,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="277.60000000000002" y="-401.64917541229386"/>
+            <point key="canvasLocation" x="-103" y="-332"/>
         </scene>
         <!--列表-->
         <scene sceneID="L94-yD-9Nw">
             <objects>
                 <viewController id="baK-J9-8b2" customClass="JuNextViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9O7-Dd-ggZ">
+                    <label key="view" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VX7-b0-IYC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DcH-Tf-4Tf">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="baK-J9-8b2" id="kOM-ER-eDz"/>
-                                    <outlet property="delegate" destination="baK-J9-8b2" id="EDe-NG-NYn"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="DcH-Tf-4Tf" firstAttribute="leading" secondItem="LNl-dD-r3O" secondAttribute="leading" id="Czt-Os-XrF"/>
-                            <constraint firstItem="LNl-dD-r3O" firstAttribute="bottom" secondItem="DcH-Tf-4Tf" secondAttribute="bottom" id="LML-1P-XrR"/>
-                            <constraint firstItem="LNl-dD-r3O" firstAttribute="trailing" secondItem="DcH-Tf-4Tf" secondAttribute="trailing" id="cah-ug-eex"/>
-                            <constraint firstItem="DcH-Tf-4Tf" firstAttribute="top" secondItem="LNl-dD-r3O" secondAttribute="top" id="zyR-zC-Dvi"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="LNl-dD-r3O"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="列表" id="qaH-qH-TDM"/>
-                    <connections>
-                        <outlet property="sh_tableView" destination="DcH-Tf-4Tf" id="JSy-X8-ggo"/>
-                    </connections>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <navigationItem key="navigationItem" title="列表" id="qaH-qH-TDM">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" image="point.jpg" style="plain" id="iB0-t8-Nkm">
+                            <color key="tintColor" red="0.29094023149999998" green="0.42118108980000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mlc-1K-KPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1134" y="-79"/>
+            <point key="canvasLocation" x="489" y="-379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QII-fG-gz4">
@@ -127,6 +113,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Llx-zn-Gci">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tsk-3b-6um"/>
@@ -137,4 +124,7 @@
             <point key="canvasLocation" x="-570" y="-136"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="point.jpg" width="42" height="43"/>
+    </resources>
 </document>

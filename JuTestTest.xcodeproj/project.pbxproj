@@ -22,6 +22,7 @@
 		EB88D4332154C29200BA082B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D4322154C29200BA082B /* main.m */; };
 		EB88D43B2154CAC400BA082B /* JuChangMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D43A2154CAC400BA082B /* JuChangMethod.m */; };
 		EB88D43E2154DBD800BA082B /* JuFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D43D2154DBD800BA082B /* JuFirstView.m */; };
+		EB9B9ADF21AE863A0006B376 /* UINavigationItem+FixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9B9ADD21AE863A0006B376 /* UINavigationItem+FixSpace.m */; };
 		EB9D865E216DE5C400B75BA4 /* JuRSAEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9D865D216DE5C400B75BA4 /* JuRSAEncrypt.m */; };
 		EB9D866B216DEDD400B75BA4 /* rsaCert.crt in Resources */ = {isa = PBXBuildFile; fileRef = EB9D8665216DEDD400B75BA4 /* rsaCert.crt */; };
 		EB9D866C216DEDD400B75BA4 /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = EB9D8666216DEDD400B75BA4 /* rsa_public_key.pem */; };
@@ -48,6 +49,10 @@
 		EBA8D5C7219EAF28006F848A /* JuLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8D5C6219EAF28006F848A /* JuLineViewController.m */; };
 		EBA8D5CA219EAF8D006F848A /* JuCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8D5C9219EAF8D006F848A /* JuCircleViewController.m */; };
 		EBA8D5D2219EBAD3006F848A /* clock2.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA8D5D1219EBAD3006F848A /* clock2.png */; };
+		EBA8D5DE219EBEFF006F848A /* minute.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBA8D5DD219EBEFF006F848A /* minute.jpg */; };
+		EBA8D5E0219EBF0A006F848A /* hour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBA8D5DF219EBF0A006F848A /* hour.jpg */; };
+		EBA8D5E2219EBF13006F848A /* point.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBA8D5E1219EBF13006F848A /* point.jpg */; };
+		EBA8D5E4219EBFF3006F848A /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA8D5E3219EBFF3006F848A /* second.png */; };
 		EBAC0D52216C443C00B610B1 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D4E216C443C00B610B1 /* TestView.m */; };
 		EBAC0D53216C443C00B610B1 /* JuDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D50216C443C00B610B1 /* JuDrawView.m */; };
 		EBAC0D54216C443C00B610B1 /* JuDrawPumpkin.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D51216C443C00B610B1 /* JuDrawPumpkin.m */; };
@@ -77,6 +82,9 @@
 		EBD94D3B217436F800E449E9 /* JuWebJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD94D3A217436F800E449E9 /* JuWebJSBridge.m */; };
 		EBD94D3F2174592200E449E9 /* WKWebView+config.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD94D3E2174592200E449E9 /* WKWebView+config.m */; };
 		EBD94D4221745A2D00E449E9 /* NSURL+manage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD94D4121745A2D00E449E9 /* NSURL+manage.m */; };
+		EBDD361121ACDCE9000AA022 /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDD360F21ACDCE9000AA022 /* StackViewController.m */; };
+		EBDD361221ACDCE9000AA022 /* StackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBDD361021ACDCE9000AA022 /* StackViewController.xib */; };
+		EBDD361821AD0BD9000AA022 /* JuNaviBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDD361721AD0BD9000AA022 /* JuNaviBarButton.m */; };
 		EBE70CEE21787652007DA0B3 /* JuTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE70CED21787652007DA0B3 /* JuTestObject.m */; };
 		EBE70CF1217876C1007DA0B3 /* JuNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE70CF0217876C1007DA0B3 /* JuNumber.m */; };
 		EBE70CF421787738007DA0B3 /* NSObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE70CF321787738007DA0B3 /* NSObject+Test.m */; };
@@ -130,6 +138,8 @@
 		EB88D43A2154CAC400BA082B /* JuChangMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuChangMethod.m; sourceTree = "<group>"; };
 		EB88D43C2154DBD800BA082B /* JuFirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuFirstView.h; sourceTree = "<group>"; };
 		EB88D43D2154DBD800BA082B /* JuFirstView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuFirstView.m; sourceTree = "<group>"; };
+		EB9B9ADD21AE863A0006B376 /* UINavigationItem+FixSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+FixSpace.m"; sourceTree = "<group>"; };
+		EB9B9ADE21AE863A0006B376 /* UINavigationItem+FixSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+FixSpace.h"; sourceTree = "<group>"; };
 		EB9D865C216DE5C400B75BA4 /* JuRSAEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuRSAEncrypt.h; sourceTree = "<group>"; };
 		EB9D865D216DE5C400B75BA4 /* JuRSAEncrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuRSAEncrypt.m; sourceTree = "<group>"; };
 		EB9D8665216DEDD400B75BA4 /* rsaCert.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsaCert.crt; sourceTree = "<group>"; };
@@ -170,6 +180,10 @@
 		EBA8D5C8219EAF8D006F848A /* JuCircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuCircleViewController.h; sourceTree = "<group>"; };
 		EBA8D5C9219EAF8D006F848A /* JuCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuCircleViewController.m; sourceTree = "<group>"; };
 		EBA8D5D1219EBAD3006F848A /* clock2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock2.png; sourceTree = "<group>"; };
+		EBA8D5DD219EBEFF006F848A /* minute.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = minute.jpg; sourceTree = "<group>"; };
+		EBA8D5DF219EBF0A006F848A /* hour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hour.jpg; sourceTree = "<group>"; };
+		EBA8D5E1219EBF13006F848A /* point.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = point.jpg; sourceTree = "<group>"; };
+		EBA8D5E3219EBFF3006F848A /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		EBAC0D4C216C443C00B610B1 /* JuDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuDrawView.h; sourceTree = "<group>"; };
 		EBAC0D4D216C443C00B610B1 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
 		EBAC0D4E216C443C00B610B1 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
@@ -223,6 +237,11 @@
 		EBD94D3E2174592200E449E9 /* WKWebView+config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+config.m"; sourceTree = "<group>"; };
 		EBD94D4021745A2D00E449E9 /* NSURL+manage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+manage.h"; sourceTree = "<group>"; };
 		EBD94D4121745A2D00E449E9 /* NSURL+manage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+manage.m"; sourceTree = "<group>"; };
+		EBDD360E21ACDCE9000AA022 /* StackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackViewController.h; sourceTree = "<group>"; };
+		EBDD360F21ACDCE9000AA022 /* StackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackViewController.m; sourceTree = "<group>"; };
+		EBDD361021ACDCE9000AA022 /* StackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StackViewController.xib; sourceTree = "<group>"; };
+		EBDD361621AD0BD9000AA022 /* JuNaviBarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuNaviBarButton.h; sourceTree = "<group>"; };
+		EBDD361721AD0BD9000AA022 /* JuNaviBarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuNaviBarButton.m; sourceTree = "<group>"; };
 		EBE70CEC21787652007DA0B3 /* JuTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuTestObject.h; sourceTree = "<group>"; };
 		EBE70CED21787652007DA0B3 /* JuTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuTestObject.m; sourceTree = "<group>"; };
 		EBE70CEF217876C1007DA0B3 /* JuNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuNumber.h; sourceTree = "<group>"; };
@@ -296,6 +315,10 @@
 				EB5993F5219D17150029AFE3 /* JuClockView.m */,
 				EBA8D58B219E69DC006F848A /* colock.jpeg */,
 				EBA8D5D1219EBAD3006F848A /* clock2.png */,
+				EBA8D5DD219EBEFF006F848A /* minute.jpg */,
+				EBA8D5E3219EBFF3006F848A /* second.png */,
+				EBA8D5DF219EBF0A006F848A /* hour.jpg */,
+				EBA8D5E1219EBF13006F848A /* point.jpg */,
 			);
 			path = anchorPoint;
 			sourceTree = "<group>";
@@ -335,6 +358,7 @@
 		EB88D4222154C29000BA082B /* JuTestTest */ = {
 			isa = PBXGroup;
 			children = (
+				EBDD360D21ACDC8C000AA022 /* StackView */,
 				EB5993F7219D57200029AFE3 /* OCLayout */,
 				EB5993F3219D16E90029AFE3 /* anchorPoint */,
 				EBBC2B29219A765400BD3EEE /* JuCollectLayout */,
@@ -613,6 +637,20 @@
 			path = JuWebJSBridge;
 			sourceTree = "<group>";
 		};
+		EBDD360D21ACDC8C000AA022 /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				EBDD360E21ACDCE9000AA022 /* StackViewController.h */,
+				EBDD360F21ACDCE9000AA022 /* StackViewController.m */,
+				EBDD361021ACDCE9000AA022 /* StackViewController.xib */,
+				EBDD361621AD0BD9000AA022 /* JuNaviBarButton.h */,
+				EBDD361721AD0BD9000AA022 /* JuNaviBarButton.m */,
+				EB9B9ADE21AE863A0006B376 /* UINavigationItem+FixSpace.h */,
+				EB9B9ADD21AE863A0006B376 /* UINavigationItem+FixSpace.m */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
 		EBF9F243217975C7002FEC0E /* ClassCluster */ = {
 			isa = PBXGroup;
 			children = (
@@ -745,14 +783,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBA8D5E0219EBF0A006F848A /* hour.jpg in Resources */,
 				EB9E1D80218946FF00B1885F /* 动效.gif in Resources */,
 				EBD0ADFC215A291E00605EE0 /* JuNextViewCell.xib in Resources */,
 				EBD0AE00215A299600605EE0 /* img8.jpg in Resources */,
 				EB9D866F216DEDD400B75BA4 /* public_key.der in Resources */,
+				EBDD361221ACDCE9000AA022 /* StackViewController.xib in Resources */,
 				EB9D8675216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf in Resources */,
 				EBBEC76E21709CB6003EEE50 /* WKWebViewMessageHandler.html in Resources */,
 				EBA8D5D2219EBAD3006F848A /* clock2.png in Resources */,
 				EB9D8670216DEDD400B75BA4 /* private_key.p12 in Resources */,
+				EBA8D5E4219EBFF3006F848A /* second.png in Resources */,
 				EB88D4302154C29200BA082B /* LaunchScreen.storyboard in Resources */,
 				EB88D42D2154C29200BA082B /* Assets.xcassets in Resources */,
 				EB9D866E216DEDD400B75BA4 /* pkcs8_private_key.pem in Resources */,
@@ -762,6 +803,8 @@
 				EBD0AE02215A299600605EE0 /* img7.jpg in Resources */,
 				EB9D866C216DEDD400B75BA4 /* rsa_public_key.pem in Resources */,
 				EB9D866B216DEDD400B75BA4 /* rsaCert.crt in Resources */,
+				EBA8D5DE219EBEFF006F848A /* minute.jpg in Resources */,
+				EBA8D5E2219EBF13006F848A /* point.jpg in Resources */,
 				EBA8D5BB219EAD87006F848A /* JuShopCell.xib in Resources */,
 				EBA8D5C0219EAD87006F848A /* JuImageCell.xib in Resources */,
 				EB88D42B2154C29000BA082B /* Main.storyboard in Resources */,
@@ -812,6 +855,7 @@
 				EBAC0D65216C89C100B610B1 /* JuArithmetic.m in Sources */,
 				EBD94D3F2174592200E449E9 /* WKWebView+config.m in Sources */,
 				EBF9F29D2179AC93002FEC0E /* AFOperationYoutiao.m in Sources */,
+				EBDD361121ACDCE9000AA022 /* StackViewController.m in Sources */,
 				EBBC2B2F219A769900BD3EEE /* JuCollectionViewLayout.m in Sources */,
 				EBF9F2882179AB43002FEC0E /* FFactoryMantou.m in Sources */,
 				EB9D865E216DE5C400B75BA4 /* JuRSAEncrypt.m in Sources */,
@@ -834,10 +878,12 @@
 				EBA8D5C7219EAF28006F848A /* JuLineViewController.m in Sources */,
 				EBD0ADF7215A03B200605EE0 /* JuNextViewController.m in Sources */,
 				EB599403219D57210029AFE3 /* UIView+JuConstraint.m in Sources */,
+				EBDD361821AD0BD9000AA022 /* JuNaviBarButton.m in Sources */,
 				EBBEC76C217094EA003EEE50 /* WeakScriptMessageDelegate.m in Sources */,
 				EB88D43E2154DBD800BA082B /* JuFirstView.m in Sources */,
 				EBBEC75921708A38003EEE50 /* JuWebViewController.m in Sources */,
 				EB599402219D57210029AFE3 /* JuLayout.m in Sources */,
+				EB9B9ADF21AE863A0006B376 /* UINavigationItem+FixSpace.m in Sources */,
 				EBD0AE05215A29D100605EE0 /* UIImage+HWCorner.m in Sources */,
 				EBAC0D54216C443C00B610B1 /* JuDrawPumpkin.m in Sources */,
 				EBA8D5BD219EAD87006F848A /* JuImageCell.m in Sources */,
@@ -990,14 +1036,15 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3Y5SHRC9L9;
 				INFOPLIST_FILE = JuTestTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aifubao.JuTestTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.pfbpatient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "65216560-c834-4627-a95c-2df157bcde88";
-				PROVISIONING_PROFILE_SPECIFIER = TestAll;
+				PROVISIONING_PROFILE_SPECIFIER = DevPatient;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1009,11 +1056,12 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JuTestTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aifubao.JuTestTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.pfbpatient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

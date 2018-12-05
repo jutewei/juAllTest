@@ -16,6 +16,7 @@
 #import "JuSubFruits.h"
 #import "JUURLCache.h"
 #import "JuCollectionViewController.h"
+#import "StackView/StackViewController.h"
 #define ToRad(deg)         ( (M_PI * (deg-90)) / 180.0 )
 @interface ViewController ()<JuFruitsDelegate>{
     JuRunLoop *ju_runLoop;
@@ -169,9 +170,10 @@
 //    }];
 //    [self.navigationController pushViewController:vc animated:YES];
 
-
-    JuCollectionViewController *vc=[[JuCollectionViewController alloc]init];
+    StackViewController *vc=[[StackViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
+//    JuCollectionViewController *vc=[[JuCollectionViewController alloc]init];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)juEqualNum{

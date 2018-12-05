@@ -59,54 +59,54 @@
 //        }
 //    }
     imgHour=[[UIImageView alloc]init];
-    imgHour.backgroundColor=[UIColor blackColor];
+    imgHour.image=[UIImage imageNamed:@"hour.jpg"];
     [self addSubview:imgHour];
-    imgHour.juSize(CGSizeMake(6, 62));
+    imgHour.juSize(CGSizeMake(11, 62));
     imgHour.juCenterX.equal(0);
     imgHour.juTop.equal(52);
 
     imgMinute=[[UIImageView alloc]init];
-    imgMinute.backgroundColor=[UIColor purpleColor];
+    imgMinute.image=[UIImage imageNamed:@"minute.jpg"];
     [self addSubview:imgMinute];
-    imgMinute.juSize(CGSizeMake(3, 92));
+    imgMinute.juSize(CGSizeMake(10, 92));
     imgMinute.juCenterX.equal(0);
     imgMinute.juTop.equal(22);
 
     imageSecond=[[UIImageView alloc]init];
-    imageSecond.backgroundColor=[UIColor redColor];
+    imageSecond.image=[UIImage imageNamed:@"second"];
     [self addSubview:imageSecond];
-    imageSecond.juSize(CGSizeMake(1, secondHeight));
+    imageSecond.juSize(CGSizeMake(8, secondHeight));
     imageSecond.juCenterX.equal(0);
     imageSecond.juTop.equal(2);
 
 
-    imgSecondPoint=[[UIImageView alloc]init];
-    imgSecondPoint.backgroundColor=[UIColor redColor];
-    [self addSubview:imgSecondPoint];
-    [imgSecondPoint.layer setCornerRadius:4];
-    [imgSecondPoint.layer setMasksToBounds:YES];
-    imgSecondPoint.juSize(CGSizeMake(8, 8));
-    imgSecondPoint.juCenterX.equal(0);
-    imgSecondPoint.juTop.equal(10);
+//    imgSecondPoint=[[UIImageView alloc]init];
+//    imgSecondPoint.backgroundColor=[UIColor redColor];
+//    [self addSubview:imgSecondPoint];
+//    [imgSecondPoint.layer setCornerRadius:4];
+//    [imgSecondPoint.layer setMasksToBounds:YES];
+//    imgSecondPoint.juSize(CGSizeMake(8, 8));
+//    imgSecondPoint.juCenterX.equal(0);
+//    imgSecondPoint.juTop.equal(10);
 
-    UIView *vieCenter=[[UIView alloc]init];
-    vieCenter.backgroundColor=[UIColor blackColor];
+    UIImageView *vieCenter=[[UIImageView alloc]init];
+    vieCenter.image=[UIImage imageNamed:@"point.jpg"];
     [self addSubview:vieCenter];
-    vieCenter.juSize(CGSizeMake(10, 10));
+    vieCenter.juSize(CGSizeMake(20, 20));
     vieCenter.juOrigin(CGPointMake(0, 0));
-    [vieCenter.layer setCornerRadius:5];
-    [vieCenter.layer setMasksToBounds:YES];
+//    [vieCenter.layer setCornerRadius:5];
+//    [vieCenter.layer setMasksToBounds:YES];
     [self layoutIfNeeded];
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self->imageSecond.layer.anchorPoint=CGPointMake(0.5, 0.9);
-        self->imageSecond.layer.position = CGPointMake(self->imageSecond.frame.origin.x+0.5, 0.9*112+2);
+        self->imageSecond.layer.position = CGPointMake(self->imageSecond.frame.origin.x+4, 0.9*112+2);
 
         self->imgMinute.layer.anchorPoint=CGPointMake(0.5, 0.88);
-        self->imgMinute.layer.position = CGPointMake(self->imgMinute.frame.origin.x+1.5, 0.88*92+22);
+        self->imgMinute.layer.position = CGPointMake(self->imgMinute.frame.origin.x+5, 0.88*92+22);
 
         self->imgHour.layer.anchorPoint=CGPointMake(0.5, 0.82);
-        self->imgHour.layer.position = CGPointMake(self->imgHour.frame.origin.x+3, 0.82*62+52);
+        self->imgHour.layer.position = CGPointMake(self->imgHour.frame.origin.x+5.5, 0.82*62+52);
         [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(shSetAnimation) userInfo:nil repeats:YES];
     });
 

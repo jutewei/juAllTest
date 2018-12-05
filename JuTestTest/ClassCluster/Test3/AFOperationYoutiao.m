@@ -9,5 +9,8 @@
 #import "AFOperationYoutiao.h"
 
 @implementation AFOperationYoutiao
-
+@synthesize product = _product;
+- (void)productBreakfast{
+    _product = @"油条";
+}
 @end

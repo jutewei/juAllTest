@@ -9,6 +9,8 @@
 #import "SFOperation.h"
 
 @implementation SFOperation
+@synthesize product = _product;
 - (void)productBreakfast{
+    _product = @"原型";
 }
 @end

@@ -10,6 +10,6 @@
 
 @implementation FFOperation
 - (void)productBreakfast{
-
+    _product = @"原型";
 }
 @end

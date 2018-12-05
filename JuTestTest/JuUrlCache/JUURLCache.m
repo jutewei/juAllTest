@@ -112,6 +112,9 @@
 }
 //（读）返回YES不请求网络
 -(BOOL)juGetCache:(BOOL)netConnection withData:(void(^)(id result))cacheResult {
+    
+    if(self.cachePolicy==JuCacheNotPolicy)return NO;
+
     BOOL isUseCache=[self isCached]; //    判断是否有缓存 (是否过期,无网络)
     if (!isUseCache) {///< 无缓存直接返回
         return NO;
@@ -128,7 +131,10 @@
         if ([dic[JuMinRefresh]floatValue]<timecurret) {//  判断是否该重新刷新(缓存过期，缓存未过期直接使用缓存)
             isUseCache=NO;
             //    第三步判断是否需要预先加载缓存
-            if ([_parameter[[self.juAdapter juEnptyKey]] intValue]||[_parameter[[self.juAdapter juPageIndexKey]] intValue]){///< 分页数据时不是第一页 或者已经有数据
+            if (self.cachePolicy==CacheCacheExpiredPolicy) {
+                loadCacheData=NO;
+            }
+            else if ([_parameter[[self.juAdapter juEnptyKey]] intValue]||[_parameter[[self.juAdapter juPageIndexKey]] intValue]){///< 分页数据时不是第一页 或者已经有数据
                 // 页面已有数据，不加载缓存数据，
                 loadCacheData=NO;
             }
