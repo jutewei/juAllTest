@@ -8,7 +8,7 @@
 
 #import "JUURLCache.h"
 #import <CommonCrypto/CommonDigest.h>
-#import "JuCacheAdapter.h"
+#import "JuBaseCacheAdapter.h"
 
 @interface JUURLCache(){
     NSMutableString *urlPara;
@@ -35,7 +35,7 @@
 @synthesize diskCachePath,urlPath=_urlPath;
 
 +(id)initWithPath:(NSString *)path parameter:(NSDictionary *)para{
-    return [[self alloc]initWithPath:path parameter:para Adapter:[[JuCacheAdapter alloc]init]];
+    return [[self alloc]initWithPath:path parameter:para Adapter:[[JuBaseCacheAdapter alloc]init]];
 }
 +(id)initWithPath:(NSString *)path parameter:(NSDictionary *)para Adapter:(id<JuCacheAdapterProtocol>)dapter{
     return [[self alloc]initWithPath:path parameter:para Adapter:dapter];
@@ -79,7 +79,7 @@
 
 - (NSString *)cacheKeyForURL
 {
-    NSString  *strurl=[[NSString stringWithFormat:@"%@%@",_urlPath,urlPara] stringByAddingPercentEscapesUsingEncoding: CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingUTF8)];
+    NSString  *strurl=[[NSString stringWithFormat:@"%@%@",_urlPath,urlPara] stringByAddingPercentEncodingWithAllowedCharacters: [NSCharacterSet characterSetWithCharactersInString:@""].invertedSet];
     const char *str = [strurl UTF8String];
     unsigned char r[CC_MD5_DIGEST_LENGTH];
     CC_MD5(str, (unsigned int)strlen(str), r);

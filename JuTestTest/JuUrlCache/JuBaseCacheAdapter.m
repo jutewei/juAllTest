@@ -6,9 +6,9 @@
 //  Copyright © 2018年 Juvid. All rights reserved.
 //
 
-#import "JuCacheAdapter.h"
+#import "JuBaseCacheAdapter.h"
 
-@implementation JuCacheAdapter
+@implementation JuBaseCacheAdapter
 
 -(NSString *)juEnptyKey{
     return  @"emptyData";

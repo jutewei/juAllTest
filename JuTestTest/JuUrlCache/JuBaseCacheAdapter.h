@@ -30,6 +30,6 @@
 @end
 
 //基类适配器，如果有多个配置，再写适配器
-@interface JuCacheAdapter : NSObject<JuCacheAdapterProtocol>
+@interface JuBaseCacheAdapter : NSObject<JuCacheAdapterProtocol>
 
 @end

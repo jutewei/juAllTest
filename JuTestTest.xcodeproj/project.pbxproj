@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB3E96862181C7A9003CE3DB /* JuCacheAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E96822181C7A9003CE3DB /* JuCacheAdapter.m */; };
+		EB3E96862181C7A9003CE3DB /* JuBaseCacheAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E96822181C7A9003CE3DB /* JuBaseCacheAdapter.m */; };
 		EB3E96872181C7A9003CE3DB /* JUURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E96832181C7A9003CE3DB /* JUURLCache.m */; };
 		EB5993F6219D17150029AFE3 /* JuClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5993F5219D17150029AFE3 /* JuClockView.m */; };
 		EB599401219D57210029AFE3 /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5993FA219D57200029AFE3 /* UIView+JuLayout.m */; };
@@ -121,9 +121,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB3E96822181C7A9003CE3DB /* JuCacheAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuCacheAdapter.m; sourceTree = "<group>"; };
+		EB3E96822181C7A9003CE3DB /* JuBaseCacheAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBaseCacheAdapter.m; sourceTree = "<group>"; };
 		EB3E96832181C7A9003CE3DB /* JUURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUURLCache.m; sourceTree = "<group>"; };
-		EB3E96842181C7A9003CE3DB /* JuCacheAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuCacheAdapter.h; sourceTree = "<group>"; };
+		EB3E96842181C7A9003CE3DB /* JuBaseCacheAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBaseCacheAdapter.h; sourceTree = "<group>"; };
 		EB3E96852181C7A9003CE3DB /* JUURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUURLCache.h; sourceTree = "<group>"; };
 		EB5993F4219D17150029AFE3 /* JuClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuClockView.h; sourceTree = "<group>"; };
 		EB5993F5219D17150029AFE3 /* JuClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuClockView.m; sourceTree = "<group>"; };
@@ -336,8 +336,8 @@
 			children = (
 				EB3E96852181C7A9003CE3DB /* JUURLCache.h */,
 				EB3E96832181C7A9003CE3DB /* JUURLCache.m */,
-				EB3E96842181C7A9003CE3DB /* JuCacheAdapter.h */,
-				EB3E96822181C7A9003CE3DB /* JuCacheAdapter.m */,
+				EB3E96842181C7A9003CE3DB /* JuBaseCacheAdapter.h */,
+				EB3E96822181C7A9003CE3DB /* JuBaseCacheAdapter.m */,
 			);
 			path = JuUrlCache;
 			sourceTree = "<group>";
@@ -914,7 +914,7 @@
 				EBF9F2972179ABF1002FEC0E /* AFOperationMantou.m in Sources */,
 				EBB8425921B8F864009DD86E /* JuBasePickView.m in Sources */,
 				EBB8426121B8F97B009DD86E /* JuHTTPRequest.m in Sources */,
-				EB3E96862181C7A9003CE3DB /* JuCacheAdapter.m in Sources */,
+				EB3E96862181C7A9003CE3DB /* JuBaseCacheAdapter.m in Sources */,
 				EBF9F246217975FB002FEC0E /* JuFruits.m in Sources */,
 				EBE70CEE21787652007DA0B3 /* JuTestObject.m in Sources */,
 				EBA8D5BF219EAD87006F848A /* JuCircleLayout.m in Sources */,
