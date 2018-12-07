@@ -60,6 +60,18 @@
 		EBAC0D5E216C4A6600B610B1 /* JuMsgSupObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D5D216C4A6600B610B1 /* JuMsgSupObjc.m */; };
 		EBAC0D61216C584700B610B1 /* JuResloveOjc.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D60216C584700B610B1 /* JuResloveOjc.m */; };
 		EBAC0D65216C89C100B610B1 /* JuArithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D64216C89C100B610B1 /* JuArithmetic.m */; };
+		EBB8425821B8F864009DD86E /* JuDataPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8424B21B8F864009DD86E /* JuDataPickView.m */; };
+		EBB8425921B8F864009DD86E /* JuBasePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8424C21B8F864009DD86E /* JuBasePickView.m */; };
+		EBB8425A21B8F864009DD86E /* JuCityDataAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8424E21B8F864009DD86E /* JuCityDataAdapter.m */; };
+		EBB8425B21B8F864009DD86E /* JuInputDataAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8425221B8F864009DD86E /* JuInputDataAdapter.m */; };
+		EBB8425C21B8F864009DD86E /* JuOutputDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8425321B8F864009DD86E /* JuOutputDataModel.m */; };
+		EBB8425D21B8F864009DD86E /* JuMultiPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8425621B8F864009DD86E /* JuMultiPickView.m */; };
+		EBB8426121B8F97B009DD86E /* JuHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8425F21B8F97B009DD86E /* JuHTTPRequest.m */; };
+		EBB8426421B905F4009DD86E /* JuTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8426321B905F4009DD86E /* JuTest.m */; };
+		EBB8426D21B90773009DD86E /* JuLocationWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8426B21B90773009DD86E /* JuLocationWebViewController.m */; };
+		EBB8426E21B90773009DD86E /* JuLocationWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB8426C21B90773009DD86E /* JuLocationWebViewController.xib */; };
+		EBB8427021B90B19009DD86E /* CFNetworkDownload_OslwI3.tmp in Resources */ = {isa = PBXBuildFile; fileRef = EBB8426F21B90B19009DD86E /* CFNetworkDownload_OslwI3.tmp */; };
+		EBB8427421B91595009DD86E /* newTest2.tmp in Resources */ = {isa = PBXBuildFile; fileRef = EBB8427321B91595009DD86E /* newTest2.tmp */; };
 		EBBC2B2C219A767500BD3EEE /* JuCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBC2B2B219A767500BD3EEE /* JuCollectionViewController.m */; };
 		EBBC2B2F219A769900BD3EEE /* JuCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBC2B2E219A769900BD3EEE /* JuCollectionViewLayout.m */; };
 		EBBEC74821703CEE003EEE50 /* JUMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC74721703CEE003EEE50 /* JUMediator.m */; };
@@ -198,6 +210,28 @@
 		EBAC0D60216C584700B610B1 /* JuResloveOjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuResloveOjc.m; sourceTree = "<group>"; };
 		EBAC0D63216C89C100B610B1 /* JuArithmetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuArithmetic.h; sourceTree = "<group>"; };
 		EBAC0D64216C89C100B610B1 /* JuArithmetic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuArithmetic.m; sourceTree = "<group>"; };
+		EBB8424921B8F864009DD86E /* JuBasePickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBasePickView.h; sourceTree = "<group>"; };
+		EBB8424A21B8F864009DD86E /* JuMultiPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuMultiPickView.h; sourceTree = "<group>"; };
+		EBB8424B21B8F864009DD86E /* JuDataPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuDataPickView.m; sourceTree = "<group>"; };
+		EBB8424C21B8F864009DD86E /* JuBasePickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBasePickView.m; sourceTree = "<group>"; };
+		EBB8424E21B8F864009DD86E /* JuCityDataAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuCityDataAdapter.m; sourceTree = "<group>"; };
+		EBB8424F21B8F864009DD86E /* JuCityDataAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuCityDataAdapter.h; sourceTree = "<group>"; };
+		EBB8425121B8F864009DD86E /* JuOutputDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuOutputDataModel.h; sourceTree = "<group>"; };
+		EBB8425221B8F864009DD86E /* JuInputDataAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuInputDataAdapter.m; sourceTree = "<group>"; };
+		EBB8425321B8F864009DD86E /* JuOutputDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuOutputDataModel.m; sourceTree = "<group>"; };
+		EBB8425421B8F864009DD86E /* JuDataProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuDataProtocol.h; sourceTree = "<group>"; };
+		EBB8425521B8F864009DD86E /* JuInputDataAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuInputDataAdapter.h; sourceTree = "<group>"; };
+		EBB8425621B8F864009DD86E /* JuMultiPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuMultiPickView.m; sourceTree = "<group>"; };
+		EBB8425721B8F864009DD86E /* JuDataPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuDataPickView.h; sourceTree = "<group>"; };
+		EBB8425F21B8F97B009DD86E /* JuHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuHTTPRequest.m; sourceTree = "<group>"; };
+		EBB8426021B8F97B009DD86E /* JuHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuHTTPRequest.h; sourceTree = "<group>"; };
+		EBB8426221B905F4009DD86E /* JuTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuTest.h; sourceTree = "<group>"; };
+		EBB8426321B905F4009DD86E /* JuTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuTest.m; sourceTree = "<group>"; };
+		EBB8426A21B90772009DD86E /* JuLocationWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuLocationWebViewController.h; sourceTree = "<group>"; };
+		EBB8426B21B90773009DD86E /* JuLocationWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuLocationWebViewController.m; sourceTree = "<group>"; };
+		EBB8426C21B90773009DD86E /* JuLocationWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JuLocationWebViewController.xib; sourceTree = "<group>"; };
+		EBB8426F21B90B19009DD86E /* CFNetworkDownload_OslwI3.tmp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CFNetworkDownload_OslwI3.tmp; sourceTree = "<group>"; };
+		EBB8427321B91595009DD86E /* newTest2.tmp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = newTest2.tmp; sourceTree = "<group>"; };
 		EBBC2B2A219A767500BD3EEE /* JuCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuCollectionViewController.h; sourceTree = "<group>"; };
 		EBBC2B2B219A767500BD3EEE /* JuCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuCollectionViewController.m; sourceTree = "<group>"; };
 		EBBC2B2D219A769900BD3EEE /* JuCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -358,6 +392,8 @@
 		EB88D4222154C29000BA082B /* JuTestTest */ = {
 			isa = PBXGroup;
 			children = (
+				EBB8425E21B8F93D009DD86E /* JuRequest */,
+				EBB8424821B8F864009DD86E /* JuPickView */,
 				EBDD360D21ACDC8C000AA022 /* StackView */,
 				EB5993F7219D57200029AFE3 /* OCLayout */,
 				EB5993F3219D16E90029AFE3 /* anchorPoint */,
@@ -544,6 +580,53 @@
 			path = arithmetic;
 			sourceTree = "<group>";
 		};
+		EBB8424821B8F864009DD86E /* JuPickView */ = {
+			isa = PBXGroup;
+			children = (
+				EBB8425021B8F864009DD86E /* Model */,
+				EBB8424D21B8F864009DD86E /* Public */,
+				EBB8424921B8F864009DD86E /* JuBasePickView.h */,
+				EBB8424C21B8F864009DD86E /* JuBasePickView.m */,
+				EBB8425721B8F864009DD86E /* JuDataPickView.h */,
+				EBB8424B21B8F864009DD86E /* JuDataPickView.m */,
+				EBB8424A21B8F864009DD86E /* JuMultiPickView.h */,
+				EBB8425621B8F864009DD86E /* JuMultiPickView.m */,
+			);
+			path = JuPickView;
+			sourceTree = "<group>";
+		};
+		EBB8424D21B8F864009DD86E /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				EBB8424E21B8F864009DD86E /* JuCityDataAdapter.m */,
+				EBB8424F21B8F864009DD86E /* JuCityDataAdapter.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		EBB8425021B8F864009DD86E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBB8425121B8F864009DD86E /* JuOutputDataModel.h */,
+				EBB8425221B8F864009DD86E /* JuInputDataAdapter.m */,
+				EBB8425321B8F864009DD86E /* JuOutputDataModel.m */,
+				EBB8425421B8F864009DD86E /* JuDataProtocol.h */,
+				EBB8425521B8F864009DD86E /* JuInputDataAdapter.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBB8425E21B8F93D009DD86E /* JuRequest */ = {
+			isa = PBXGroup;
+			children = (
+				EBB8426021B8F97B009DD86E /* JuHTTPRequest.h */,
+				EBB8425F21B8F97B009DD86E /* JuHTTPRequest.m */,
+				EBB8426221B905F4009DD86E /* JuTest.h */,
+				EBB8426321B905F4009DD86E /* JuTest.m */,
+			);
+			path = JuRequest;
+			sourceTree = "<group>";
+		};
 		EBBC2B29219A765400BD3EEE /* JuCollectLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,8 +690,13 @@
 			children = (
 				EBD94D3C217458DC00E449E9 /* JuWebJSBridge */,
 				EBBEC76D21709CB6003EEE50 /* WKWebViewMessageHandler.html */,
+				EBB8427321B91595009DD86E /* newTest2.tmp */,
+				EBB8426F21B90B19009DD86E /* CFNetworkDownload_OslwI3.tmp */,
 				EBBEC75721708A38003EEE50 /* JuWebViewController.h */,
 				EBBEC75821708A38003EEE50 /* JuWebViewController.m */,
+				EBB8426A21B90772009DD86E /* JuLocationWebViewController.h */,
+				EBB8426B21B90773009DD86E /* JuLocationWebViewController.m */,
+				EBB8426C21B90773009DD86E /* JuLocationWebViewController.xib */,
 			);
 			path = WebJS;
 			sourceTree = "<group>";
@@ -788,7 +876,9 @@
 				EBD0ADFC215A291E00605EE0 /* JuNextViewCell.xib in Resources */,
 				EBD0AE00215A299600605EE0 /* img8.jpg in Resources */,
 				EB9D866F216DEDD400B75BA4 /* public_key.der in Resources */,
+				EBB8426E21B90773009DD86E /* JuLocationWebViewController.xib in Resources */,
 				EBDD361221ACDCE9000AA022 /* StackViewController.xib in Resources */,
+				EBB8427021B90B19009DD86E /* CFNetworkDownload_OslwI3.tmp in Resources */,
 				EB9D8675216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf in Resources */,
 				EBBEC76E21709CB6003EEE50 /* WKWebViewMessageHandler.html in Resources */,
 				EBA8D5D2219EBAD3006F848A /* clock2.png in Resources */,
@@ -801,6 +891,7 @@
 				EB9D866D216DEDD400B75BA4 /* rsaCerReq.csr in Resources */,
 				EBA8D58C219E69DD006F848A /* colock.jpeg in Resources */,
 				EBD0AE02215A299600605EE0 /* img7.jpg in Resources */,
+				EBB8427421B91595009DD86E /* newTest2.tmp in Resources */,
 				EB9D866C216DEDD400B75BA4 /* rsa_public_key.pem in Resources */,
 				EB9D866B216DEDD400B75BA4 /* rsaCert.crt in Resources */,
 				EBA8D5DE219EBEFF006F848A /* minute.jpg in Resources */,
@@ -821,6 +912,8 @@
 				EBF9F24921797F14002FEC0E /* JuSubFruits.m in Sources */,
 				EBBEC74F21707CE4003EEE50 /* JuTarget_Detail.m in Sources */,
 				EBF9F2972179ABF1002FEC0E /* AFOperationMantou.m in Sources */,
+				EBB8425921B8F864009DD86E /* JuBasePickView.m in Sources */,
+				EBB8426121B8F97B009DD86E /* JuHTTPRequest.m in Sources */,
 				EB3E96862181C7A9003CE3DB /* JuCacheAdapter.m in Sources */,
 				EBF9F246217975FB002FEC0E /* JuFruits.m in Sources */,
 				EBE70CEE21787652007DA0B3 /* JuTestObject.m in Sources */,
@@ -846,6 +939,7 @@
 				EBAC0D61216C584700B610B1 /* JuResloveOjc.m in Sources */,
 				EBD94D3B217436F800E449E9 /* JuWebJSBridge.m in Sources */,
 				EB88D4252154C29000BA082B /* AppDelegate.m in Sources */,
+				EBB8425C21B8F864009DD86E /* JuOutputDataModel.m in Sources */,
 				EB5993F6219D17150029AFE3 /* JuClockView.m in Sources */,
 				EBBEC75221707D0E003EEE50 /* JUMediator+DetailAction.m in Sources */,
 				EB599404219D57210029AFE3 /* UIView+JuLayGroup.m in Sources */,
@@ -856,10 +950,12 @@
 				EBD94D3F2174592200E449E9 /* WKWebView+config.m in Sources */,
 				EBF9F29D2179AC93002FEC0E /* AFOperationYoutiao.m in Sources */,
 				EBDD361121ACDCE9000AA022 /* StackViewController.m in Sources */,
+				EBB8425D21B8F864009DD86E /* JuMultiPickView.m in Sources */,
 				EBBC2B2F219A769900BD3EEE /* JuCollectionViewLayout.m in Sources */,
 				EBF9F2882179AB43002FEC0E /* FFactoryMantou.m in Sources */,
 				EB9D865E216DE5C400B75BA4 /* JuRSAEncrypt.m in Sources */,
 				EBE70CF1217876C1007DA0B3 /* JuNumber.m in Sources */,
+				EBB8426D21B90773009DD86E /* JuLocationWebViewController.m in Sources */,
 				EBD94D4221745A2D00E449E9 /* NSURL+manage.m in Sources */,
 				EBD0ADF42159C98300605EE0 /* JuThread.m in Sources */,
 				EBBC2B2C219A767500BD3EEE /* JuCollectionViewController.m in Sources */,
@@ -871,12 +967,15 @@
 				EBF9F2A32179B122002FEC0E /* FFOperationYoutiao.m in Sources */,
 				EB3E96872181C7A9003CE3DB /* JUURLCache.m in Sources */,
 				EBA8D5BA219EAD87006F848A /* JuLineLayout.m in Sources */,
+				EBB8425A21B8F864009DD86E /* JuCityDataAdapter.m in Sources */,
 				EBF9F2A02179B111002FEC0E /* FFactoryYoutiao.m in Sources */,
 				EBA616A42182E15E00F5E1AB /* JuCollectionViewFlowLayout.m in Sources */,
+				EBB8426421B905F4009DD86E /* JuTest.m in Sources */,
 				EBAC0D52216C443C00B610B1 /* TestView.m in Sources */,
 				EBD0ADF12159C93E00605EE0 /* JuRunLoop.m in Sources */,
 				EBA8D5C7219EAF28006F848A /* JuLineViewController.m in Sources */,
 				EBD0ADF7215A03B200605EE0 /* JuNextViewController.m in Sources */,
+				EBB8425821B8F864009DD86E /* JuDataPickView.m in Sources */,
 				EB599403219D57210029AFE3 /* UIView+JuConstraint.m in Sources */,
 				EBDD361821AD0BD9000AA022 /* JuNaviBarButton.m in Sources */,
 				EBBEC76C217094EA003EEE50 /* WeakScriptMessageDelegate.m in Sources */,
@@ -890,6 +989,7 @@
 				EBBEC74C21707CAA003EEE50 /* JuDetailViewController.m in Sources */,
 				EBF9F28B2179AB66002FEC0E /* FFOperationMantou.m in Sources */,
 				EBF9F26D2179A9E5002FEC0E /* SFOperation.m in Sources */,
+				EBB8425B21B8F864009DD86E /* JuInputDataAdapter.m in Sources */,
 				EBCC8175219AB85E003A7604 /* JuWaterFolwLayout.m in Sources */,
 				EBA616A12182E14200F5E1AB /* JUCollectionViewLayout.m in Sources */,
 			);
@@ -1036,12 +1136,12 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3Y5SHRC9L9;
 				INFOPLIST_FILE = JuTestTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.pfbpatient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.juTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "65216560-c834-4627-a95c-2df157bcde88";
 				PROVISIONING_PROFILE_SPECIFIER = DevPatient;
@@ -1056,12 +1156,12 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JuTestTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.pfbpatient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.juTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

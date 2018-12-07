@@ -17,6 +17,8 @@
 #import "JUURLCache.h"
 #import "JuCollectionViewController.h"
 #import "StackView/StackViewController.h"
+#import "JuLocationWebViewController.h"
+
 #define ToRad(deg)         ( (M_PI * (deg-90)) / 180.0 )
 @interface ViewController ()<JuFruitsDelegate>{
     JuRunLoop *ju_runLoop;
@@ -31,7 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.view.backgroundColor=[UIColor whiteColor];
-
+   
 
     [JuArithmetic juBubbling];
 
@@ -169,9 +171,12 @@
 //        NSLog(@"");
 //    }];
 //    [self.navigationController pushViewController:vc animated:YES];
-
-    StackViewController *vc=[[StackViewController alloc]init];
+    JuLocationWebViewController *vc=[[JuLocationWebViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
+
+//    
+//    StackViewController *vc=[[StackViewController alloc]init];
+//    [self.navigationController pushViewController:vc animated:YES];
 //    JuCollectionViewController *vc=[[JuCollectionViewController alloc]init];
 //    [self.navigationController pushViewController:vc animated:YES];
 }
