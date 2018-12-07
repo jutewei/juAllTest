@@ -1,9 +1,9 @@
 //
-//  URLCache.h
-//  BGNetBase iOS Example
+//  JUURLCache.h
+//  JUURLCache
 //
-//  Created by Juvid on 14/11/11.
-//  Copyright (c) 2014年 Juvid(zhutianwei). All rights reserved.
+//  Created by Juvid on 18/10/25.
+//  Copyright (c) 2018年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

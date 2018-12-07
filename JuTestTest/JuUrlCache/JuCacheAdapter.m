@@ -1,6 +1,6 @@
 //
 //  JuCacheAdapter.m
-//  JuTestTest
+//  JUURLCache
 //
 //  Created by Juvid on 2018/10/25.
 //  Copyright © 2018年 Juvid. All rights reserved.
