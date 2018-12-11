@@ -40,7 +40,9 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqE-na-Hyb">
                                 <rect key="frame" x="164.5" y="143" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="baK-J9-8b2" kind="push" id="7NX-Oq-I5Y"/>
                                 </connections>
@@ -78,12 +80,13 @@
                     <navigationItem key="navigationItem" title="第一页" id="fIn-eQ-GCW"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="ju_btnTest" destination="rqE-na-Hyb" id="f0o-Cd-oD5"/>
                         <outlet property="ju_view" destination="dzN-ka-k4Q" id="9yb-ps-c6p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-103" y="-332"/>
+            <point key="canvasLocation" x="-348" y="-316"/>
         </scene>
         <!--列表-->
         <scene sceneID="L94-yD-9Nw">
@@ -121,7 +124,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyA-lI-vVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-570" y="-136"/>
+            <point key="canvasLocation" x="-1082" y="-188"/>
         </scene>
     </scenes>
     <resources>

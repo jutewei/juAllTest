@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB29F23021BFA4930024443C /* NSString+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = EB29F22F21BFA4930024443C /* NSString+Format.m */; };
 		EB3E96862181C7A9003CE3DB /* JuBaseCacheAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E96822181C7A9003CE3DB /* JuBaseCacheAdapter.m */; };
 		EB3E96872181C7A9003CE3DB /* JUURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E96832181C7A9003CE3DB /* JUURLCache.m */; };
 		EB5993F6219D17150029AFE3 /* JuClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5993F5219D17150029AFE3 /* JuClockView.m */; };
@@ -121,6 +122,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB29F22E21BFA4930024443C /* NSString+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Format.h"; sourceTree = "<group>"; };
+		EB29F22F21BFA4930024443C /* NSString+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Format.m"; sourceTree = "<group>"; };
 		EB3E96822181C7A9003CE3DB /* JuBaseCacheAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBaseCacheAdapter.m; sourceTree = "<group>"; };
 		EB3E96832181C7A9003CE3DB /* JUURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUURLCache.m; sourceTree = "<group>"; };
 		EB3E96842181C7A9003CE3DB /* JuBaseCacheAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBaseCacheAdapter.h; sourceTree = "<group>"; };
@@ -331,6 +334,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB29F22D21BFA47A0024443C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EB29F22E21BFA4930024443C /* NSString+Format.h */,
+				EB29F22F21BFA4930024443C /* NSString+Format.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		EB3E96812181C7A9003CE3DB /* JuUrlCache */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +404,7 @@
 		EB88D4222154C29000BA082B /* JuTestTest */ = {
 			isa = PBXGroup;
 			children = (
+				EB29F22D21BFA47A0024443C /* Category */,
 				EBB8425E21B8F93D009DD86E /* JuRequest */,
 				EBB8424821B8F864009DD86E /* JuPickView */,
 				EBDD360D21ACDC8C000AA022 /* StackView */,
@@ -957,6 +970,7 @@
 				EBE70CF1217876C1007DA0B3 /* JuNumber.m in Sources */,
 				EBB8426D21B90773009DD86E /* JuLocationWebViewController.m in Sources */,
 				EBD94D4221745A2D00E449E9 /* NSURL+manage.m in Sources */,
+				EB29F23021BFA4930024443C /* NSString+Format.m in Sources */,
 				EBD0ADF42159C98300605EE0 /* JuThread.m in Sources */,
 				EBBC2B2C219A767500BD3EEE /* JuCollectionViewController.m in Sources */,
 				EBAC0D5E216C4A6600B610B1 /* JuMsgSupObjc.m in Sources */,

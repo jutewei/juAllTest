@@ -18,11 +18,12 @@
 #import "JuCollectionViewController.h"
 #import "StackView/StackViewController.h"
 #import "JuLocationWebViewController.h"
-
+#import "NSString+Format.h"
 #define ToRad(deg)         ( (M_PI * (deg-90)) / 180.0 )
 @interface ViewController ()<JuFruitsDelegate>{
     JuRunLoop *ju_runLoop;
     NSInteger colorIndex;
+    __weak IBOutlet UIButton *ju_btnTest;
 }
 @property (weak, nonatomic) IBOutlet UIView *ju_view;
 
@@ -32,6 +33,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    ju_btnTest.selected=YES;
     self.navigationController.view.backgroundColor=[UIColor whiteColor];
    
 
@@ -53,6 +55,14 @@
         NSLog(@"%@",result);
     }];
     [cache juSaveCacheData:@{@"name":@"zhu",@"age":@"18",@"sex":@"男"}];
+    NSString *url=@"https://p.i.cdn.pifubao.com/12%E6%9C%88%E7%AD%94%E7%96%91%E8%A7%A3%E6%83%91%E6%8B%BF%E5%A5%BD%E7%A4%BC-%E8%90%BD%E5%9C%B0%E9%A1%B5?$#中国";
+
+
+    NSLog(@"%@",[url  stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]);
+    NSString *tring=[url juSetEncodingNew];
+
+    NSLog(@"%@",tring);
+    NSLog(@"%@",[tring stringByRemovingPercentEncoding]);
 //这是几个意思呢，这是做好事一定要要先留名嘛
 //    [JuTestEncrypt juTest];
 
