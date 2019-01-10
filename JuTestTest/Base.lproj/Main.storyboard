@@ -62,17 +62,35 @@
                                     <constraint firstAttribute="height" constant="206" id="R9J-8P-ml0"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eU-yg-KOW">
+                                <rect key="frame" x="24" y="221" width="327" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUm-y1-bPs" customClass="JuDrawArcGradient">
+                                <rect key="frame" x="0.0" y="223" width="375" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="pRI-un-D8e"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gUm-y1-bPs" secondAttribute="bottom" id="4F5-Ah-sym"/>
                             <constraint firstItem="dzN-ka-k4Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Xb-xi-fiE"/>
+                            <constraint firstItem="4eU-yg-KOW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="5hU-s5-pT9"/>
                             <constraint firstItem="vcP-qM-bAZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6dO-oz-cCK"/>
                             <constraint firstItem="rqE-na-Hyb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="Hfy-GG-Rct"/>
+                            <constraint firstItem="4eU-yg-KOW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZRs-bO-A7b"/>
                             <constraint firstItem="vcP-qM-bAZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aRm-es-oXj"/>
                             <constraint firstItem="dzN-ka-k4Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dD1-ru-3sS"/>
                             <constraint firstItem="rqE-na-Hyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mr5-gX-Giw"/>
+                            <constraint firstItem="gUm-y1-bPs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pNG-hc-pKq"/>
                             <constraint firstItem="G3p-e1-Wvi" firstAttribute="top" secondItem="rqE-na-Hyb" secondAttribute="bottom" constant="14" id="vNZ-CC-hym"/>
                             <constraint firstItem="G3p-e1-Wvi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w79-Mz-euP"/>
+                            <constraint firstItem="4eU-yg-KOW" firstAttribute="top" secondItem="G3p-e1-Wvi" secondAttribute="bottom" constant="4" id="xBg-6M-Jo9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gUm-y1-bPs" secondAttribute="trailing" id="yGc-rP-0P8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -81,12 +99,13 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ju_btnTest" destination="rqE-na-Hyb" id="f0o-Cd-oD5"/>
+                        <outlet property="ju_labTest" destination="4eU-yg-KOW" id="NwM-Yi-nkE"/>
                         <outlet property="ju_view" destination="dzN-ka-k4Q" id="9yb-ps-c6p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-348" y="-316"/>
+            <point key="canvasLocation" x="-530" y="-365"/>
         </scene>
         <!--列表-->
         <scene sceneID="L94-yD-9Nw">
@@ -124,7 +143,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyA-lI-vVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1082" y="-188"/>
+            <point key="canvasLocation" x="-1294" y="-329"/>
         </scene>
     </scenes>
     <resources>

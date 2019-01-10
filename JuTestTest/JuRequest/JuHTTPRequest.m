@@ -78,6 +78,8 @@
          success:(void(^)(NSString *locationUrl))processResult
        failblock:(void(^)(NSError *error))failresult{
 
+     NSString *doc = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"newTest2.html"];
+    processResult(doc);
     NSURLSessionDownloadTask *task=[[NSURLSession sharedSession]downloadTaskWithURL:[NSURL URLWithString:url] completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSLog(@"%@",location);
         NSString *doc = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"newTest2.html"];

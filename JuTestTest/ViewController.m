@@ -18,12 +18,14 @@
 #import "JuCollectionViewController.h"
 #import "StackView/StackViewController.h"
 #import "JuLocationWebViewController.h"
+#import "JuWebViewController.h"
 #import "NSString+Format.h"
 #define ToRad(deg)         ( (M_PI * (deg-90)) / 180.0 )
 @interface ViewController ()<JuFruitsDelegate>{
     JuRunLoop *ju_runLoop;
     NSInteger colorIndex;
     __weak IBOutlet UIButton *ju_btnTest;
+    __weak IBOutlet UILabel *ju_labTest;
 }
 @property (weak, nonatomic) IBOutlet UIView *ju_view;
 
@@ -35,7 +37,10 @@
     [super viewDidLoad];
     ju_btnTest.selected=YES;
     self.navigationController.view.backgroundColor=[UIColor whiteColor];
-   
+    [[NSNotificationCenter defaultCenter]addObserver:self
+                                            selector:@selector(testNoti1)
+                                                name:@"test"
+                                              object:nil];
 
     [JuArithmetic juBubbling];
 
@@ -55,15 +60,20 @@
         NSLog(@"%@",result);
     }];
     [cache juSaveCacheData:@{@"name":@"zhu",@"age":@"18",@"sex":@"男"}];
-    NSString *url=@"https://p.i.cdn.pifubao.com/12%E6%9C%88%E7%AD%94%E7%96%91%E8%A7%A3%E6%83%91%E6%8B%BF%E5%A5%BD%E7%A4%BC-%E8%90%BD%E5%9C%B0%E9%A1%B5?$#中国";
-
-
-    NSLog(@"%@",[url  stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]);
-    NSString *tring=[url juSetEncodingNew];
-
-    NSLog(@"%@",tring);
-    NSLog(@"%@",[tring stringByRemovingPercentEncoding]);
-//这是几个意思呢，这是做好事一定要要先留名嘛
+    NSString *url=@"https://p.i.cdn.pifubao.com/12%E6%9C%88%E7%AD%94%E7%96%91%E8%A7%A3%E6%83%91%E6%8B%BF%E5%A5%BD%E7%A4%BC-%E8%90%BD%E5%9C%B0%E9%A1%B5";
+    NSURL *pathUrl=[NSURL URLWithString:url];
+    
+//
+//    NSLog(@"%@",[url  stringByAppendingPathExtension:@"zhutiwen"]);
+//    NSString *tring=[url juSetEncodingNew];
+//
+//    NSLog(@"%@",tring);
+//    NSLog(@"%@",[tring stringByRemovingPercentEncoding]);
+//
+//    NSString *path = [[NSBundle mainBundle]pathForResource:@"test" ofType:@"html"];
+//    ju_labTest.attributedText= [[NSAttributedString alloc] initWithData:[NSData dataWithContentsOfFile:path] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+//    ju_labTest.backgroundColor=[UIColor redColor];
+//    这是几个意思呢，这是做好事一定要要先留名嘛
 //    [JuTestEncrypt juTest];
 
 //    ju_runLoop=[[JuRunLoop alloc]init];
@@ -84,6 +94,9 @@
 //    [self performSelector:<#(nonnull SEL)#> onThread:<#(nonnull NSThread *)#> withObject:<#(nullable id)#> waitUntilDone:<#(BOOL)#>]
     [self shDraw];
     // Do any additional setup after loading the view, typically from a nib.
+}
+-(void)testNoti1{
+    NSLog(@"testNoti1");
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
@@ -181,7 +194,7 @@
 //        NSLog(@"");
 //    }];
 //    [self.navigationController pushViewController:vc animated:YES];
-    JuLocationWebViewController *vc=[[JuLocationWebViewController alloc]init];
+    JuWebViewController *vc=[[JuWebViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 
 //    
