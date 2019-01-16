@@ -83,6 +83,8 @@
 		EBAC0D5E216C4A6600B610B1 /* JuMsgSupObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D5D216C4A6600B610B1 /* JuMsgSupObjc.m */; };
 		EBAC0D61216C584700B610B1 /* JuResloveOjc.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D60216C584700B610B1 /* JuResloveOjc.m */; };
 		EBAC0D65216C89C100B610B1 /* JuArithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D64216C89C100B610B1 /* JuArithmetic.m */; };
+		EBB81B1721EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB81B1521EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@2x.png */; };
+		EBB81B1821EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB81B1621EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@3x.png */; };
 		EBB8425821B8F864009DD86E /* JuDataPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8424B21B8F864009DD86E /* JuDataPickView.m */; };
 		EBB8425921B8F864009DD86E /* JuBasePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8424C21B8F864009DD86E /* JuBasePickView.m */; };
 		EBB8425A21B8F864009DD86E /* JuCityDataAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8424E21B8F864009DD86E /* JuCityDataAdapter.m */; };
@@ -276,6 +278,8 @@
 		EBAC0D60216C584700B610B1 /* JuResloveOjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuResloveOjc.m; sourceTree = "<group>"; };
 		EBAC0D63216C89C100B610B1 /* JuArithmetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuArithmetic.h; sourceTree = "<group>"; };
 		EBAC0D64216C89C100B610B1 /* JuArithmetic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuArithmetic.m; sourceTree = "<group>"; };
+		EBB81B1521EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skin_analyzeFaceAnimationCircle@2x.png"; sourceTree = "<group>"; };
+		EBB81B1621EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skin_analyzeFaceAnimationCircle@3x.png"; sourceTree = "<group>"; };
 		EBB8424921B8F864009DD86E /* JuBasePickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBasePickView.h; sourceTree = "<group>"; };
 		EBB8424A21B8F864009DD86E /* JuMultiPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuMultiPickView.h; sourceTree = "<group>"; };
 		EBB8424B21B8F864009DD86E /* JuDataPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuDataPickView.m; sourceTree = "<group>"; };
@@ -424,6 +428,8 @@
 			children = (
 				EB5993F4219D17150029AFE3 /* JuClockView.h */,
 				EB5993F5219D17150029AFE3 /* JuClockView.m */,
+				EBB81B1521EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@2x.png */,
+				EBB81B1621EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@3x.png */,
 				EBA8D58B219E69DC006F848A /* colock.jpeg */,
 				EBA8D5D1219EBAD3006F848A /* clock2.png */,
 				EBA8D5DD219EBEFF006F848A /* minute.jpg */,
@@ -466,14 +472,14 @@
 		EB59F99521E6E34A00562C75 /* JuRunTime */ = {
 			isa = PBXGroup;
 			children = (
-				EB59F99621E6E34A00562C75 /* JuPerson.h */,
-				EB59F99721E6E34A00562C75 /* JuObject+Cate.h */,
-				EB59F99821E6E34A00562C75 /* NoneClass.h */,
-				EB59F99921E6E34A00562C75 /* JuObject.m */,
 				EB59F99A21E6E34A00562C75 /* JuLoad */,
-				EB59F9A121E6E34A00562C75 /* JuPerson.m */,
-				EB59F9A221E6E34A00562C75 /* JuObject+Cate.m */,
 				EB59F9A321E6E34A00562C75 /* JuObject.h */,
+				EB59F99921E6E34A00562C75 /* JuObject.m */,
+				EB59F99721E6E34A00562C75 /* JuObject+Cate.h */,
+				EB59F9A221E6E34A00562C75 /* JuObject+Cate.m */,
+				EB59F99621E6E34A00562C75 /* JuPerson.h */,
+				EB59F9A121E6E34A00562C75 /* JuPerson.m */,
+				EB59F99821E6E34A00562C75 /* NoneClass.h */,
 				EB59F9A421E6E34A00562C75 /* NoneClass.m */,
 			);
 			path = JuRunTime;
@@ -1049,9 +1055,11 @@
 				EBB8427021B90B19009DD86E /* CFNetworkDownload_OslwI3.tmp in Resources */,
 				EB9D8675216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf in Resources */,
 				EBBEC76E21709CB6003EEE50 /* WKWebViewMessageHandler.html in Resources */,
+				EBB81B1721EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@2x.png in Resources */,
 				EB2174DA21D7063800C851A1 /* youzan2.html in Resources */,
 				EBA8D5D2219EBAD3006F848A /* clock2.png in Resources */,
 				EB9D8670216DEDD400B75BA4 /* private_key.p12 in Resources */,
+				EBB81B1821EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@3x.png in Resources */,
 				EBA8D5E4219EBFF3006F848A /* second.png in Resources */,
 				EB88D4302154C29200BA082B /* LaunchScreen.storyboard in Resources */,
 				EB88D42D2154C29200BA082B /* Assets.xcassets in Resources */,

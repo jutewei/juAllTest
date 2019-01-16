@@ -25,6 +25,7 @@
     JuRunLoop *ju_runLoop;
     NSInteger colorIndex;
     __weak IBOutlet UIButton *ju_btnTest;
+    __weak IBOutlet UIImageView *ju_imgAni;
     __weak IBOutlet UILabel *ju_labTest;
 }
 @property (weak, nonatomic) IBOutlet UIView *ju_view;
@@ -35,34 +36,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    ju_btnTest.selected=YES;
-    self.navigationController.view.backgroundColor=[UIColor whiteColor];
-    [[NSNotificationCenter defaultCenter]addObserver:self
-                                            selector:@selector(testNoti1)
-                                                name:@"test"
-                                              object:nil];
 
-    [JuArithmetic juBubbling];
-
-    JuFruits * tool = [JuFruits buyTool:1];
-    tool.delegate=self;
-    [tool run];//成员关系从属于CarFactory类，所以调用CarFactory类中的run方法
-    NSLog(@"花了:%d钱",[tool shouldPayMoney]);
-
-    JuFruits * tool2 = [[JuSubFruits alloc]init];
-    tool2.delegate=self;
-    [tool2 run];
-    NSLog(@"花了:%d钱",[tool2 shouldPayMoney]);
-
-    JUURLCache *cache=[JUURLCache initWithPath:@"test" parameter:@{@"name":@"zhu",@"age":@"18"}];
-    NSLog(@"%@",cache.juGetCached);
-    [cache juGetCache:NO withData:^(id result) {
-        NSLog(@"%@",result);
-    }];
-    [cache juSaveCacheData:@{@"name":@"zhu",@"age":@"18",@"sex":@"男"}];
-    NSString *url=@"https://p.i.cdn.pifubao.com/12%E6%9C%88%E7%AD%94%E7%96%91%E8%A7%A3%E6%83%91%E6%8B%BF%E5%A5%BD%E7%A4%BC-%E8%90%BD%E5%9C%B0%E9%A1%B5";
-    NSURL *pathUrl=[NSURL URLWithString:url];
-    
+    [_ju_view.layer setCornerRadius:90];
+    [self shTransformTotation];
+//    ju_btnTest.selected=YES;
+//    self.navigationController.view.backgroundColor=[UIColor whiteColor];
+//    [[NSNotificationCenter defaultCenter]addObserver:self
+//                                            selector:@selector(testNoti1)
+//                                                name:@"test"
+//                                              object:nil];
+//
+//    [JuArithmetic juBubbling];
+//
+//    JuFruits * tool = [JuFruits buyTool:1];
+//    tool.delegate=self;
+//    [tool run];//成员关系从属于CarFactory类，所以调用CarFactory类中的run方法
+//    NSLog(@"花了:%d钱",[tool shouldPayMoney]);
+//
+//    JuFruits * tool2 = [[JuSubFruits alloc]init];
+//    tool2.delegate=self;
+//    [tool2 run];
+//    NSLog(@"花了:%d钱",[tool2 shouldPayMoney]);
+//
+//    JUURLCache *cache=[JUURLCache initWithPath:@"test" parameter:@{@"name":@"zhu",@"age":@"18"}];
+//    NSLog(@"%@",cache.juGetCached);
+//    [cache juGetCache:NO withData:^(id result) {
+//        NSLog(@"%@",result);
+//    }];
+//    [cache juSaveCacheData:@{@"name":@"zhu",@"age":@"18",@"sex":@"男"}];
+//    NSString *url=@"https://p.i.cdn.pifubao.com/12%E6%9C%88%E7%AD%94%E7%96%91%E8%A7%A3%E6%83%91%E6%8B%BF%E5%A5%BD%E7%A4%BC-%E8%90%BD%E5%9C%B0%E9%A1%B5";
+//    NSURL *pathUrl=[NSURL URLWithString:url];
+//
+//    NSString *string=@"www.zhidao.baidu.com";//com/baidu/zhidao/www
+//    NSMutableString *afterStr=[NSMutableString string];
+//    for (int i=string.length-1; i>=0; i--) {
+//        [afterStr appendString:[string substringWithRange:NSMakeRange(i, 1)]];
+//    }
+//    string=afterStr;
+//    afterStr=[NSMutableString string];
+//    for (int i=0; i<string.length; i++) {
+//        [afterStr appendString:[string substringWithRange:NSMakeRange(i, 1)]];
+//    }
+//
+//    NSLog(@"字符串 %@",afterStr);
 //
 //    NSLog(@"%@",[url  stringByAppendingPathExtension:@"zhutiwen"]);
 //    NSString *tring=[url juSetEncodingNew];
@@ -73,16 +89,15 @@
 //    NSString *path = [[NSBundle mainBundle]pathForResource:@"test" ofType:@"html"];
 //    ju_labTest.attributedText= [[NSAttributedString alloc] initWithData:[NSData dataWithContentsOfFile:path] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
 //    ju_labTest.backgroundColor=[UIColor redColor];
-//    这是几个意思呢，这是做好事一定要要先留名嘛
 //    [JuTestEncrypt juTest];
 
-//    ju_runLoop=[[JuRunLoop alloc]init];
-//    [ju_runLoop juStatrThread];
+    ju_runLoop=[[JuRunLoop alloc]init];
+    [ju_runLoop juStatrThread];
 //
 //
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-////        ju_runLoop=nil;
-//    });
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        ju_runLoop=nil;
+    });
 //
 //    NSString *string=[NSString new];
 //    JuChangMethod *chang=[[JuChangMethod alloc]init];
@@ -92,9 +107,23 @@
 //    [self juEqualNum];
 
 //    [self performSelector:<#(nonnull SEL)#> onThread:<#(nonnull NSThread *)#> withObject:<#(nullable id)#> waitUntilDone:<#(BOOL)#>]
-    [self shDraw];
+//    [self shDraw];
     // Do any additional setup after loading the view, typically from a nib.
 }
+-(void)shTransformTotation{
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    //默认是顺时针效果，若将fromValue和toValue的值互换，则为逆时针效果
+    animation.fromValue = [NSNumber numberWithFloat:0.f];
+    animation.toValue = [NSNumber numberWithFloat: M_PI *2];
+    animation.duration = 1;
+    animation.autoreverses = NO;
+    animation.fillMode = kCAFillModeForwards;
+    animation.repeatCount = MAXFLOAT; //如果这里想设置成一直自旋转，可以设置为MAXFLOAT，否则设置具体的数值则代表执行多少次
+    [ju_imgAni.layer addAnimation:animation forKey:@"rotationAnimation"];
+//    [ju_imgAni.layer removeAnimationForKey:@"rotation"];
+}
+// 对指针p和q之间的所有字符逆序
+
 -(void)testNoti1{
     NSLog(@"testNoti1");
 }
