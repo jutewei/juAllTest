@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString * const AppLanguage = @"AppLanguageKey";
+static NSString * const AppLanguage = @"appLanguage";
 #define JULocalized(key, comment)  [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:AppLanguage]] ofType:@"lproj"]] localizedStringForKey:(key) value:@"" table:nil]
 
 #define JULocalizedString(key)  JULocalized(key, nil)
