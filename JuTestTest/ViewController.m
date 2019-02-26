@@ -20,6 +20,8 @@
 #import "JuLocationWebViewController.h"
 #import "JuWebViewController.h"
 #import "NSString+Format.h"
+#import "NSObject+Invocation.h"
+#import "JuVariable.h"
 #define ToRad(deg)         ( (M_PI * (deg-90)) / 180.0 )
 @interface ViewController ()<JuFruitsDelegate>{
     JuRunLoop *ju_runLoop;
@@ -37,8 +39,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    NSArray *languages = [[NSUserDefaults standardUserDefaults] valueForKey:@"AppleLanguages"];
+    NSString *currentLanguage = languages.firstObject;
+    NSLog(@"模拟器当前语言：%@",currentLanguage);
+
+    NSLog(@"%@",NSLocalizedString(@"click", nil));
+    JuVariable *variable=[[JuVariable alloc]init];
+    [variable juStart];
+
     [_ju_view.layer setCornerRadius:90];
+    _ju_view.layer.shadowColor = [UIColor redColor].CGColor;
+    _ju_view.layer.shadowOffset = CGSizeMake(0, 0);
+    _ju_view.layer.shadowOpacity = 1;
+    _ju_view.layer.shadowRadius = 5;
+
     [self shTransformTotation];
+    [self juInvocationSelector:@selector(juTest1:test2:) withObjects:@[@"test1",@"test2"]];
+    ;
 //    ju_btnTest.selected=YES;
 //    self.navigationController.view.backgroundColor=[UIColor whiteColor];
 //    [[NSNotificationCenter defaultCenter]addObserver:self
@@ -96,7 +113,7 @@
 //
 //
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        ju_runLoop=nil;
+        self->ju_runLoop=nil;
     });
 //
 //    NSString *string=[NSString new];
@@ -110,17 +127,44 @@
 //    [self shDraw];
     // Do any additional setup after loading the view, typically from a nib.
 }
+-(CGSize)juTest1:(NSString *)string test2:(NSString *)string2{
+    NSLog(@"参数 :%@",string);
+    return CGSizeMake(100, 100);
+}
 -(void)shTransformTotation{
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     //默认是顺时针效果，若将fromValue和toValue的值互换，则为逆时针效果
     animation.fromValue = [NSNumber numberWithFloat:0.f];
     animation.toValue = [NSNumber numberWithFloat: M_PI *2];
     animation.duration = 1;
-    animation.autoreverses = NO;
-    animation.fillMode = kCAFillModeForwards;
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeRemoved;
     animation.repeatCount = MAXFLOAT; //如果这里想设置成一直自旋转，可以设置为MAXFLOAT，否则设置具体的数值则代表执行多少次
     [ju_imgAni.layer addAnimation:animation forKey:@"rotationAnimation"];
+//    ju_imgAni.layer.timeOffset=1;
+    [self shWriteText];
 //    [ju_imgAni.layer removeAnimationForKey:@"rotation"];
+}
+-(void)shWriteText{
+//    CABasicAnimation *writeText =[CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+//    writeText.fromValue = @0;
+//    writeText.toValue = @1;
+//    CABasicAnimation *move =[CABasicAnimation animationWithKeyPath:@"position.y"];
+//    move.byValue = @(-22);
+//    move.toValue = @0;
+//    CAAnimationGroup *group = [CAAnimationGroup animation];
+//    group.duration = 1.0;
+//    group.animations = @[writeText, move];
+//    [ju_imgAni.layer addAnimation:group forKey:@"group"];
+
+//    CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+//    pathAnimation.duration = 1.5;
+//    pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//    pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
+//    pathAnimation.toValue = [NSNumber numberWithFloat:1.0f];
+//    pathAnimation.autoreverses = NO;
+//    [ju_imgAni.layer addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
+//    ju_imgAni.layer.strokeEnd = 2.0;
 }
 // 对指针p和q之间的所有字符逆序
 
@@ -129,6 +173,7 @@
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+     [ju_imgAni.layer beginTime];
 //    ju_pointView.transform = CGAffineTransformMakeRotation(M_PI/4);
 //    ju_pointView.layer.anchorPoint=CGPointMake(0.5, 1);
 //

@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JuTestTest/forward/ObjcMsgResolve.m"
-            timestampString = "561028421.517445"
+            timestampString = "569493165.476935"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JuTestTest/JUMediator/JUMediator/JUMediator.m"
-            timestampString = "562243877.54691"
+            timestampString = "569492012.890994"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -164,7 +164,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JuTestTest/JuRequest/JuHTTPRequest.m"
-            timestampString = "566300862.8353029"
+            timestampString = "569493165.477668"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "115"
@@ -323,13 +323,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JuTestTest/ViewController.m"
-            timestampString = "569301064.251711"
+            filePath = "JuTestTest/forward/JuInvocation.m"
+            timestampString = "569489648.327764"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "-testNoti1"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "+juInvocationTarget:setSelector:withObjects:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JuTestTest/ViewController.m"
+            timestampString = "572843871.199314"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -67,7 +67,7 @@
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:postURL]];
     request.timeoutInterval=30;
     request.HTTPMethod=@"GET";
-    NSURLSessionDataTask *task= [[NSURLSession sharedSession]downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    NSURLSessionDownloadTask *task= [[NSURLSession sharedSession]downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSLog(@"%@",location);
     }];
 

@@ -12,6 +12,8 @@
 		EB2D750121C3409E00A28F8D /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = EB2D750021C3409D00A28F8D /* test.html */; };
 		EB3E96862181C7A9003CE3DB /* JuBaseCacheAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E96822181C7A9003CE3DB /* JuBaseCacheAdapter.m */; };
 		EB3E96872181C7A9003CE3DB /* JUURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E96832181C7A9003CE3DB /* JUURLCache.m */; };
+		EB3FA8632224D49D004A239B /* img6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB3FA8622224D49D004A239B /* img6.jpg */; };
+		EB3FA8662224D95C004A239B /* LanguageManage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3FA8652224D95C004A239B /* LanguageManage.m */; };
 		EB5993F6219D17150029AFE3 /* JuClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5993F5219D17150029AFE3 /* JuClockView.m */; };
 		EB599401219D57210029AFE3 /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5993FA219D57200029AFE3 /* UIView+JuLayout.m */; };
 		EB599402219D57210029AFE3 /* JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5993FB219D57200029AFE3 /* JuLayout.m */; };
@@ -34,6 +36,7 @@
 		EB59F9BC21E6E36200562C75 /* JuEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = EB59F9BA21E6E36200562C75 /* JuEncryption.m */; };
 		EB59F9C421E6E37400562C75 /* UIImage+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = EB59F9C021E6E37400562C75 /* UIImage+Gif.m */; };
 		EB59F9C521E6E37400562C75 /* UIView+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = EB59F9C121E6E37400562C75 /* UIView+Gif.m */; };
+		EB6186DC21F1B9D80030550A /* NSObject+Invocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6186DB21F1B9D80030550A /* NSObject+Invocation.m */; };
 		EB88D4252154C29000BA082B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D4242154C29000BA082B /* AppDelegate.m */; };
 		EB88D4282154C29000BA082B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D4272154C29000BA082B /* ViewController.m */; };
 		EB88D42B2154C29000BA082B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB88D4292154C29000BA082B /* Main.storyboard */; };
@@ -42,6 +45,7 @@
 		EB88D4332154C29200BA082B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D4322154C29200BA082B /* main.m */; };
 		EB88D43B2154CAC400BA082B /* JuChangMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D43A2154CAC400BA082B /* JuChangMethod.m */; };
 		EB88D43E2154DBD800BA082B /* JuFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D43D2154DBD800BA082B /* JuFirstView.m */; };
+		EB95E45921F962B400B054B0 /* JuAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB95E45821F962B300B054B0 /* JuAnimationVC.m */; };
 		EB9B9ADF21AE863A0006B376 /* UINavigationItem+FixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9B9ADD21AE863A0006B376 /* UINavigationItem+FixSpace.m */; };
 		EB9D865E216DE5C400B75BA4 /* JuRSAEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9D865D216DE5C400B75BA4 /* JuRSAEncrypt.m */; };
 		EB9D866B216DEDD400B75BA4 /* rsaCert.crt in Resources */ = {isa = PBXBuildFile; fileRef = EB9D8665216DEDD400B75BA4 /* rsaCert.crt */; };
@@ -52,7 +56,6 @@
 		EB9D8670216DEDD400B75BA4 /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = EB9D866A216DEDD400B75BA4 /* private_key.p12 */; };
 		EB9D8673216DF27C00B75BA4 /* JuTestEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9D8672216DF27C00B75BA4 /* JuTestEncrypt.m */; };
 		EB9D8675216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf in Resources */ = {isa = PBXBuildFile; fileRef = EB9D8674216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf */; };
-		EB9E1D80218946FF00B1885F /* 动效.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB9E1D7F218946FF00B1885F /* 动效.gif */; };
 		EBA616A12182E14200F5E1AB /* JUCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA616A02182E14200F5E1AB /* JUCollectionViewLayout.m */; };
 		EBA616A42182E15E00F5E1AB /* JuCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA616A32182E15E00F5E1AB /* JuCollectionViewFlowLayout.m */; };
 		EBA8D58C219E69DD006F848A /* colock.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EBA8D58B219E69DC006F848A /* colock.jpeg */; };
@@ -106,13 +109,15 @@
 		EBBEC75921708A38003EEE50 /* JuWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC75821708A38003EEE50 /* JuWebViewController.m */; };
 		EBBEC76C217094EA003EEE50 /* WeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC76B217094EA003EEE50 /* WeakScriptMessageDelegate.m */; };
 		EBBEC76E21709CB6003EEE50 /* WKWebViewMessageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = EBBEC76D21709CB6003EEE50 /* WKWebViewMessageHandler.html */; };
+		EBC34789221549C70094295D /* JuVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC34788221549C70094295D /* JuVariable.m */; };
+		EBC86D612223EABC0041A9C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBC86D632223EABC0041A9C9 /* InfoPlist.strings */; };
+		EBC86D672223EB630041A9C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBC86D692223EB630041A9C9 /* Localizable.strings */; };
 		EBCC8175219AB85E003A7604 /* JuWaterFolwLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCC8174219AB85E003A7604 /* JuWaterFolwLayout.m */; };
 		EBD0ADF12159C93E00605EE0 /* JuRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0ADF02159C93E00605EE0 /* JuRunLoop.m */; };
 		EBD0ADF7215A03B200605EE0 /* JuNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0ADF6215A03B200605EE0 /* JuNextViewController.m */; };
 		EBD0ADFB215A291E00605EE0 /* JuNextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0ADF9215A291E00605EE0 /* JuNextViewCell.m */; };
 		EBD0ADFC215A291E00605EE0 /* JuNextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD0ADFA215A291E00605EE0 /* JuNextViewCell.xib */; };
 		EBD0AE00215A299600605EE0 /* img8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBD0ADFD215A299600605EE0 /* img8.jpg */; };
-		EBD0AE01215A299600605EE0 /* img6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBD0ADFE215A299600605EE0 /* img6.jpg */; };
 		EBD0AE02215A299600605EE0 /* img7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBD0ADFF215A299600605EE0 /* img7.jpg */; };
 		EBD0AE05215A29D100605EE0 /* UIImage+HWCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0AE04215A29D100605EE0 /* UIImage+HWCorner.m */; };
 		EBD94D3B217436F800E449E9 /* JuWebJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD94D3A217436F800E449E9 /* JuWebJSBridge.m */; };
@@ -154,6 +159,13 @@
 		EB3E96832181C7A9003CE3DB /* JUURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUURLCache.m; sourceTree = "<group>"; };
 		EB3E96842181C7A9003CE3DB /* JuBaseCacheAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBaseCacheAdapter.h; sourceTree = "<group>"; };
 		EB3E96852181C7A9003CE3DB /* JUURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUURLCache.h; sourceTree = "<group>"; };
+		EB3FA8452224CE22004A239B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		EB3FA8462224CE22004A239B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EB3FA8472224CE22004A239B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EB3FA8482224CE22004A239B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB3FA8622224D49D004A239B /* img6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img6.jpg; sourceTree = "<group>"; };
+		EB3FA8642224D95C004A239B /* LanguageManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageManage.h; sourceTree = "<group>"; };
+		EB3FA8652224D95C004A239B /* LanguageManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageManage.m; sourceTree = "<group>"; };
 		EB5993F4219D17150029AFE3 /* JuClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuClockView.h; sourceTree = "<group>"; };
 		EB5993F5219D17150029AFE3 /* JuClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuClockView.m; sourceTree = "<group>"; };
 		EB5993F8219D57200029AFE3 /* UIView+JuLayGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayGroup.h"; sourceTree = "<group>"; };
@@ -199,6 +211,8 @@
 		EB59F9C021E6E37400562C75 /* UIImage+Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Gif.m"; sourceTree = "<group>"; };
 		EB59F9C121E6E37400562C75 /* UIView+Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gif.m"; sourceTree = "<group>"; };
 		EB59F9C221E6E37400562C75 /* UIImage+Gif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Gif.h"; sourceTree = "<group>"; };
+		EB6186DA21F1B9D80030550A /* NSObject+Invocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Invocation.h"; sourceTree = "<group>"; };
+		EB6186DB21F1B9D80030550A /* NSObject+Invocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Invocation.m"; sourceTree = "<group>"; };
 		EB88D4202154C29000BA082B /* JuTestTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuTestTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB88D4232154C29000BA082B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB88D4242154C29000BA082B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -213,6 +227,8 @@
 		EB88D43A2154CAC400BA082B /* JuChangMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuChangMethod.m; sourceTree = "<group>"; };
 		EB88D43C2154DBD800BA082B /* JuFirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuFirstView.h; sourceTree = "<group>"; };
 		EB88D43D2154DBD800BA082B /* JuFirstView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuFirstView.m; sourceTree = "<group>"; };
+		EB95E45721F962B300B054B0 /* JuAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuAnimationVC.h; sourceTree = "<group>"; };
+		EB95E45821F962B300B054B0 /* JuAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuAnimationVC.m; sourceTree = "<group>"; };
 		EB9B9ADD21AE863A0006B376 /* UINavigationItem+FixSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+FixSpace.m"; sourceTree = "<group>"; };
 		EB9B9ADE21AE863A0006B376 /* UINavigationItem+FixSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+FixSpace.h"; sourceTree = "<group>"; };
 		EB9D865C216DE5C400B75BA4 /* JuRSAEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuRSAEncrypt.h; sourceTree = "<group>"; };
@@ -226,7 +242,6 @@
 		EB9D8671216DF27C00B75BA4 /* JuTestEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuTestEncrypt.h; sourceTree = "<group>"; };
 		EB9D8672216DF27C00B75BA4 /* JuTestEncrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuTestEncrypt.m; sourceTree = "<group>"; };
 		EB9D8674216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ios使用rsa加解密 .pdf"; sourceTree = "<group>"; };
-		EB9E1D7F218946FF00B1885F /* 动效.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "动效.gif"; sourceTree = "<group>"; };
 		EBA6169F2182E14200F5E1AB /* JUCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JUCollectionViewLayout.h; sourceTree = "<group>"; };
 		EBA616A02182E14200F5E1AB /* JUCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JUCollectionViewLayout.m; sourceTree = "<group>"; };
 		EBA616A22182E15E00F5E1AB /* JuCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuCollectionViewFlowLayout.h; sourceTree = "<group>"; };
@@ -319,6 +334,18 @@
 		EBBEC76A217094EA003EEE50 /* WeakScriptMessageDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakScriptMessageDelegate.h; sourceTree = "<group>"; };
 		EBBEC76B217094EA003EEE50 /* WeakScriptMessageDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakScriptMessageDelegate.m; sourceTree = "<group>"; };
 		EBBEC76D21709CB6003EEE50 /* WKWebViewMessageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewMessageHandler.html; sourceTree = "<group>"; };
+		EBC34787221549C70094295D /* JuVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuVariable.h; sourceTree = "<group>"; };
+		EBC34788221549C70094295D /* JuVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuVariable.m; sourceTree = "<group>"; };
+		EBC86D5D2223EA230041A9C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		EBC86D5E2223EA230041A9C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		EBC86D622223EABC0041A9C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		EBC86D642223EABF0041A9C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EBC86D682223EB630041A9C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EBC86D6A2223EB640041A9C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		EBC86D6F2223F1240041A9C9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		EBC86D702223F1240041A9C9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EBC86D712223F1250041A9C9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EBC86D722223F1250041A9C9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBCC8173219AB85E003A7604 /* JuWaterFolwLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuWaterFolwLayout.h; sourceTree = "<group>"; };
 		EBCC8174219AB85E003A7604 /* JuWaterFolwLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuWaterFolwLayout.m; sourceTree = "<group>"; };
 		EBD0ADEF2159C93E00605EE0 /* JuRunLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuRunLoop.h; sourceTree = "<group>"; };
@@ -329,7 +356,6 @@
 		EBD0ADF9215A291E00605EE0 /* JuNextViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuNextViewCell.m; sourceTree = "<group>"; };
 		EBD0ADFA215A291E00605EE0 /* JuNextViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JuNextViewCell.xib; sourceTree = "<group>"; };
 		EBD0ADFD215A299600605EE0 /* img8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img8.jpg; sourceTree = "<group>"; };
-		EBD0ADFE215A299600605EE0 /* img6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img6.jpg; sourceTree = "<group>"; };
 		EBD0ADFF215A299600605EE0 /* img7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img7.jpg; sourceTree = "<group>"; };
 		EBD0AE03215A29D100605EE0 /* UIImage+HWCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HWCorner.h"; sourceTree = "<group>"; };
 		EBD0AE04215A29D100605EE0 /* UIImage+HWCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HWCorner.m"; sourceTree = "<group>"; };
@@ -421,6 +447,17 @@
 				EBE228C921C0D18600163244 /* JUWebCache.m */,
 			);
 			path = JuUrlCache;
+			sourceTree = "<group>";
+		};
+		EB3FA8492224CE70004A239B /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				EBC86D692223EB630041A9C9 /* Localizable.strings */,
+				EBC86D632223EABC0041A9C9 /* InfoPlist.strings */,
+				EB3FA8642224D95C004A239B /* LanguageManage.h */,
+				EB3FA8652224D95C004A239B /* LanguageManage.m */,
+			);
+			path = Language;
 			sourceTree = "<group>";
 		};
 		EB5993F3219D16E90029AFE3 /* anchorPoint */ = {
@@ -574,7 +611,9 @@
 				EBAC0D57216C44AC00B610B1 /* RunLoop */,
 				EBAC0D56216C449100B610B1 /* Runtime */,
 				EBAC0D55216C447900B610B1 /* respond */,
+				EBC34786221549920094295D /* Variable */,
 				EBAC0D4B216C442D00B610B1 /* draw */,
+				EB3FA8492224CE70004A239B /* Language */,
 				EB88D4232154C29000BA082B /* AppDelegate.h */,
 				EB88D4242154C29000BA082B /* AppDelegate.m */,
 				EB88D4262154C29000BA082B /* ViewController.h */,
@@ -584,10 +623,11 @@
 				EBD0ADF8215A291E00605EE0 /* JuNextViewCell.h */,
 				EBD0ADF9215A291E00605EE0 /* JuNextViewCell.m */,
 				EBD0ADFA215A291E00605EE0 /* JuNextViewCell.xib */,
-				EBD0ADFE215A299600605EE0 /* img6.jpg */,
+				EB95E45721F962B300B054B0 /* JuAnimationVC.h */,
+				EB95E45821F962B300B054B0 /* JuAnimationVC.m */,
 				EBD0ADFF215A299600605EE0 /* img7.jpg */,
 				EBD0ADFD215A299600605EE0 /* img8.jpg */,
-				EB9E1D7F218946FF00B1885F /* 动效.gif */,
+				EB3FA8622224D49D004A239B /* img6.jpg */,
 				EB88D4292154C29000BA082B /* Main.storyboard */,
 				EB88D42C2154C29200BA082B /* Assets.xcassets */,
 				EB88D42E2154C29200BA082B /* LaunchScreen.storyboard */,
@@ -736,6 +776,8 @@
 				EBAC0D5D216C4A6600B610B1 /* JuMsgSupObjc.m */,
 				EBAC0D5F216C584700B610B1 /* JuResloveOjc.h */,
 				EBAC0D60216C584700B610B1 /* JuResloveOjc.m */,
+				EB6186DA21F1B9D80030550A /* NSObject+Invocation.h */,
+				EB6186DB21F1B9D80030550A /* NSObject+Invocation.m */,
 			);
 			path = forward;
 			sourceTree = "<group>";
@@ -880,6 +922,15 @@
 				EBBEC74721703CEE003EEE50 /* JUMediator.m */,
 			);
 			path = JUMediator;
+			sourceTree = "<group>";
+		};
+		EBC34786221549920094295D /* Variable */ = {
+			isa = PBXGroup;
+			children = (
+				EBC34787221549C70094295D /* JuVariable.h */,
+				EBC34788221549C70094295D /* JuVariable.m */,
+			);
+			path = Variable;
 			sourceTree = "<group>";
 		};
 		EBD94D3C217458DC00E449E9 /* JuWebJSBridge */ = {
@@ -1027,6 +1078,9 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
+				fr,
 			);
 			mainGroup = EB88D4172154C29000BA082B;
 			productRefGroup = EB88D4212154C29000BA082B /* Products */;
@@ -1044,7 +1098,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBA8D5E0219EBF0A006F848A /* hour.jpg in Resources */,
-				EB9E1D80218946FF00B1885F /* 动效.gif in Resources */,
 				EBD0ADFC215A291E00605EE0 /* JuNextViewCell.xib in Resources */,
 				EBD0AE00215A299600605EE0 /* img8.jpg in Resources */,
 				EB9D866F216DEDD400B75BA4 /* public_key.der in Resources */,
@@ -1061,10 +1114,10 @@
 				EB9D8670216DEDD400B75BA4 /* private_key.p12 in Resources */,
 				EBB81B1821EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@3x.png in Resources */,
 				EBA8D5E4219EBFF3006F848A /* second.png in Resources */,
+				EBC86D672223EB630041A9C9 /* Localizable.strings in Resources */,
 				EB88D4302154C29200BA082B /* LaunchScreen.storyboard in Resources */,
 				EB88D42D2154C29200BA082B /* Assets.xcassets in Resources */,
 				EB9D866E216DEDD400B75BA4 /* pkcs8_private_key.pem in Resources */,
-				EBD0AE01215A299600605EE0 /* img6.jpg in Resources */,
 				EB9D866D216DEDD400B75BA4 /* rsaCerReq.csr in Resources */,
 				EBA8D58C219E69DD006F848A /* colock.jpeg in Resources */,
 				EBD0AE02215A299600605EE0 /* img7.jpg in Resources */,
@@ -1075,6 +1128,8 @@
 				EBA8D5E2219EBF13006F848A /* point.jpg in Resources */,
 				EBA8D5BB219EAD87006F848A /* JuShopCell.xib in Resources */,
 				EBA8D5C0219EAD87006F848A /* JuImageCell.xib in Resources */,
+				EBC86D612223EABC0041A9C9 /* InfoPlist.strings in Resources */,
+				EB3FA8632224D49D004A239B /* img6.jpg in Resources */,
 				EB88D42B2154C29000BA082B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1086,6 +1141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3FA8662224D95C004A239B /* LanguageManage.m in Sources */,
 				EBF9F24921797F14002FEC0E /* JuSubFruits.m in Sources */,
 				EBBEC74F21707CE4003EEE50 /* JuTarget_Detail.m in Sources */,
 				EBAA496D21C8FA360045F47E /* JuCircleProgressView.m in Sources */,
@@ -1133,6 +1189,7 @@
 				EBBEC75221707D0E003EEE50 /* JUMediator+DetailAction.m in Sources */,
 				EB599404219D57210029AFE3 /* UIView+JuLayGroup.m in Sources */,
 				EB59F9AA21E6E34A00562C75 /* JuObject+Cate.m in Sources */,
+				EB95E45921F962B400B054B0 /* JuAnimationVC.m in Sources */,
 				EBF9F2732179AA5B002FEC0E /* SFOperationYoutiao.m in Sources */,
 				EB599401219D57210029AFE3 /* UIView+JuLayout.m in Sources */,
 				EBF9F28E2179ABB8002FEC0E /* AFFactory.m in Sources */,
@@ -1179,6 +1236,8 @@
 				EB599402219D57210029AFE3 /* JuLayout.m in Sources */,
 				EB9B9ADF21AE863A0006B376 /* UINavigationItem+FixSpace.m in Sources */,
 				EBD0AE05215A29D100605EE0 /* UIImage+HWCorner.m in Sources */,
+				EBC34789221549C70094295D /* JuVariable.m in Sources */,
+				EB6186DC21F1B9D80030550A /* NSObject+Invocation.m in Sources */,
 				EBE228CA21C0D18600163244 /* JUWebCache.m in Sources */,
 				EBAC0D54216C443C00B610B1 /* JuDrawPumpkin.m in Sources */,
 				EBAA497021C907560045F47E /* JuDrawArcGradient.m in Sources */,
@@ -1199,6 +1258,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				EB88D42A2154C29000BA082B /* Base */,
+				EBC86D5D2223EA230041A9C9 /* zh-Hans */,
+				EBC86D6F2223F1240041A9C9 /* ja */,
+				EB3FA8452224CE22004A239B /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1207,8 +1269,33 @@
 			isa = PBXVariantGroup;
 			children = (
 				EB88D42F2154C29200BA082B /* Base */,
+				EBC86D5E2223EA230041A9C9 /* zh-Hans */,
+				EBC86D702223F1240041A9C9 /* ja */,
+				EB3FA8462224CE22004A239B /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EBC86D632223EABC0041A9C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBC86D622223EABC0041A9C9 /* zh-Hans */,
+				EBC86D642223EABF0041A9C9 /* en */,
+				EBC86D722223F1250041A9C9 /* ja */,
+				EB3FA8482224CE22004A239B /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EBC86D692223EB630041A9C9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBC86D682223EB630041A9C9 /* en */,
+				EBC86D6A2223EB640041A9C9 /* zh-Hans */,
+				EBC86D712223F1250041A9C9 /* ja */,
+				EB3FA8472224CE22004A239B /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1218,6 +1305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1277,6 +1365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1341,7 +1430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.juTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "65216560-c834-4627-a95c-2df157bcde88";
-				PROVISIONING_PROFILE_SPECIFIER = DevPatient;
+				PROVISIONING_PROFILE_SPECIFIER = TestAll;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;

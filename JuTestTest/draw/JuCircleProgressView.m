@@ -107,7 +107,7 @@
     [bezier addLineToPoint:CGPointMake(0, 0)];
     [bezier addLineToPoint:CGPointMake(414, 0)];
     [bezier addLineToPoint:CGPointMake(414, 300)];
-
+    //二次贝塞尔曲线
     [bezier addQuadCurveToPoint:CGPointMake(0, 300)
                    controlPoint:CGPointMake(212,330)];
 

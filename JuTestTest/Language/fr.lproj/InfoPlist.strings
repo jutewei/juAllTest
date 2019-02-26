@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  JuTestTest
+
+  Created by Juvid on 2019/2/25.
+  Copyright © 2019 Juvid. All rights reserved.
+*/
+CFBundleDisplayName = "法文版";
