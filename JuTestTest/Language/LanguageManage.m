@@ -49,6 +49,7 @@
     }
     //languageCode = @"zh-Hans";//简体中文
     [self setLanguage:languageCode];
+    [LanguageManage setLanguage:@"en"];
 }
 
 @end
