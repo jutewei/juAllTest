@@ -68,9 +68,9 @@
 -(void)juSetCookie{
     [JuCookieManage shareInstance].cookieKey=@"zhu";
     [JuCookieManage shareInstance].cookieValue=@"jutewei1234567899";
-    [[JuCookieManage shareInstance]setWkCookie:self.mt_WebView completionHandler:nil];
-    [[JuCookieManage shareInstance]juGetCookie:self.mt_WebView];
-    [JuCookieManage juDeleteCookieWithDomain:self.mt_WebView.URL.host];
+    [[JuCookieManage shareInstance]setWkCookie:self.mt_WebView.URL completionHandler:nil];
+    [[JuCookieManage shareInstance]juGetCookies:nil];
+//    [JuCookieManage juDeleteCookiesWithDomain:self.mt_WebView.URL.host];
 }
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
     NSLog(@"弹框信息：%@",message);

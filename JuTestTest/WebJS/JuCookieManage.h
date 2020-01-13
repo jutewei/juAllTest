@@ -20,22 +20,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - WKWebview
 
+//在初始化 WKWebView 的时候，通过 WKUserScript 设置，使用Javascript 注入 Cookie。
++(void)setCookieWithUserCC:(WKUserContentController *)userContentController;
+
+/// 请求t提加cookie
+/// @param request 网络请求
++(void)setCookieWithRequest:(NSMutableURLRequest *)request;
+
 /// 设置cookie
-/// @param wkWebview wkwebview
+/// @param cookieHost 网页地址
 /// @param comple 回调
-- (void)setWkCookie:(WKWebView *)wkWebview completionHandler:(nullable void (^)(void))comple;
+- (void)setWkCookie:(NSURL *)cookieHost completionHandler:(nullable void (^)(void))comple;
 
 /// 获取所有cookie
-/// @param wkWebview wkwebview
-- (void)juGetCookie:(WKWebView *)wkWebview;
+/// @param completionHandler 回调
+-(void)juGetCookies:(void (^)(NSArray<NSHTTPCookie *> *))completionHandler;
 
 /// 删除指定域名cookie
 /// @param domain 域名
-+(void)juDeleteCookieWithDomain:(NSString *)domain;
++(void)juDeleteCookiesWithDomain:(NSString *)domain;
 
 /// 删除指定名字域名
 /// @param name cookie名字
-+(void)juDeleteCookieWithName:(NSString *)name;
++(void)juDeleteCookiesWithName:(NSString *)name;
 @end
 
 NS_ASSUME_NONNULL_END
