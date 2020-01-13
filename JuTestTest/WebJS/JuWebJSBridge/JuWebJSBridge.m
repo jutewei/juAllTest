@@ -61,7 +61,10 @@
     }
     [_webView evaluateJavaScript:[NSString stringWithFormat:@"%@(%@)",name,paraString] completionHandler:handler];
 }
+-(void)juEvaluateJavaScript:(NSString *)jsString  completionHandler:(JuCompletionHandler)handler{
 
+    [_webView evaluateJavaScript:jsString completionHandler:handler];
+}
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
 {
     if (self.ju_callBacks[message.name]) {

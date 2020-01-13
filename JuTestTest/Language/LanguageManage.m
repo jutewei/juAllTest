@@ -36,9 +36,12 @@
 + (void)setLanguage:(NSString *)language{
     [[NSUserDefaults standardUserDefaults] setObject:language forKey:AppLanguage];
     [[NSUserDefaults standardUserDefaults] synchronize];
+
 }
 
 + (void)systemLanguage{
+//    [NSBundle.mainBundle localizedStringForKey:(@"") value:@"" table:nil];
+//    [[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"EaseUIResource" withExtension:@"bundle"]] localizedStringForKey:(@"") value:@"" table:nil];
     NSString *languageCode = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"][0];
     if([languageCode hasPrefix:@"zh-Hant"]){
         languageCode = @"zh-Hants";//繁体中文
@@ -49,7 +52,7 @@
     }
     //languageCode = @"zh-Hans";//简体中文
     [self setLanguage:languageCode];
-    [LanguageManage setLanguage:@"en"];
+//    [LanguageManage setLanguage:@"en"];
 }
 
 @end

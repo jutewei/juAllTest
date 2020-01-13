@@ -19,6 +19,7 @@ typedef void(^JuCompletionHandler)(id name,NSError *error);
 /**js调用oc的方法***/
 -(void)juAddScriptMessageName:(NSString *)name callBackHandler:(JuCallBackHandler)handler;
 /***oc调用js方法***/
+-(void)juEvaluateJavaScript:(NSString *)jsString  completionHandler:(JuCompletionHandler)handler;
 -(void)juEvaluateJavaScript:(NSString *)name parameter:(NSArray *)parameter completionHandler:(JuCompletionHandler)handler;
 /*设置字体*/
 -(void)juSetFont:(CGFloat)scale;

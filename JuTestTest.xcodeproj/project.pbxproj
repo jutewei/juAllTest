@@ -14,6 +14,12 @@
 		EB3E96872181C7A9003CE3DB /* JUURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E96832181C7A9003CE3DB /* JUURLCache.m */; };
 		EB3FA8632224D49D004A239B /* img6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB3FA8622224D49D004A239B /* img6.jpg */; };
 		EB3FA8662224D95C004A239B /* LanguageManage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3FA8652224D95C004A239B /* LanguageManage.m */; };
+		EB57201022A24F0F00A33BAC /* JuCollectionWaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB57200F22A24F0F00A33BAC /* JuCollectionWaterFallLayout.m */; };
+		EB57201422A2573300A33BAC /* JuWaterFallCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB57201322A2573300A33BAC /* JuWaterFallCollectView.m */; };
+		EB57201822A2575D00A33BAC /* JuWaterFallCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB57201622A2575D00A33BAC /* JuWaterFallCollectCell.m */; };
+		EB57201922A2575D00A33BAC /* JuWaterFallCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB57201722A2575D00A33BAC /* JuWaterFallCollectCell.xib */; };
+		EB57201C22A2599600A33BAC /* JuCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB57201B22A2599600A33BAC /* JuCollectViewController.m */; };
+		EB57203022A26AF500A33BAC /* JuTestWaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB57202F22A26AF500A33BAC /* JuTestWaterFallLayout.m */; };
 		EB5993F6219D17150029AFE3 /* JuClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5993F5219D17150029AFE3 /* JuClockView.m */; };
 		EB599401219D57210029AFE3 /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5993FA219D57200029AFE3 /* UIView+JuLayout.m */; };
 		EB599402219D57210029AFE3 /* JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5993FB219D57200029AFE3 /* JuLayout.m */; };
@@ -36,6 +42,107 @@
 		EB59F9BC21E6E36200562C75 /* JuEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = EB59F9BA21E6E36200562C75 /* JuEncryption.m */; };
 		EB59F9C421E6E37400562C75 /* UIImage+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = EB59F9C021E6E37400562C75 /* UIImage+Gif.m */; };
 		EB59F9C521E6E37400562C75 /* UIView+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = EB59F9C121E6E37400562C75 /* UIView+Gif.m */; };
+		EB5C014323C8193A00CCEDB3 /* MTSKURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C013823C8193A00CCEDB3 /* MTSKURLProtocol.m */; };
+		EB5C014423C8193A00CCEDB3 /* NSURLProtocol+WKWebVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C013A23C8193A00CCEDB3 /* NSURLProtocol+WKWebVIew.m */; };
+		EB5C014523C8193A00CCEDB3 /* MTWebViewReusePool.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C013D23C8193A00CCEDB3 /* MTWebViewReusePool.m */; };
+		EB5C014623C8193A00CCEDB3 /* MTURLSchemeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C013F23C8193A00CCEDB3 /* MTURLSchemeHandler.m */; };
+		EB5C014723C8193A00CCEDB3 /* MTSKWebDataManage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C014223C8193A00CCEDB3 /* MTSKWebDataManage.m */; };
+		EB5C014D23C86BB100CCEDB3 /* JuCookieManage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C014C23C86BB100CCEDB3 /* JuCookieManage.m */; };
+		EB5C015023C86E3A00CCEDB3 /* JuCookieWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C014F23C86E3A00CCEDB3 /* JuCookieWebVC.m */; };
+		EB5C01B723C8866000CCEDB3 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = EB5C015423C8865F00CCEDB3 /* index.html */; };
+		EB5C01B823C8866000CCEDB3 /* manifest.css in Resources */ = {isa = PBXBuildFile; fileRef = EB5C015723C8865F00CCEDB3 /* manifest.css */; };
+		EB5C01B923C8866000CCEDB3 /* app.css in Resources */ = {isa = PBXBuildFile; fileRef = EB5C015823C8865F00CCEDB3 /* app.css */; };
+		EB5C01BA23C8866000CCEDB3 /* 2.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C015A23C8865F00CCEDB3 /* 2.js */; };
+		EB5C01BB23C8866000CCEDB3 /* 6.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C015B23C8865F00CCEDB3 /* 6.js */; };
+		EB5C01BC23C8866000CCEDB3 /* 7.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C015C23C8865F00CCEDB3 /* 7.js */; };
+		EB5C01BD23C8866000CCEDB3 /* 3.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C015D23C8865F00CCEDB3 /* 3.js */; };
+		EB5C01BE23C8866000CCEDB3 /* 25.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C015E23C8865F00CCEDB3 /* 25.js */; };
+		EB5C01BF23C8866000CCEDB3 /* 74.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C015F23C8865F00CCEDB3 /* 74.js */; };
+		EB5C01C023C8866000CCEDB3 /* 40.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016023C8866000CCEDB3 /* 40.js */; };
+		EB5C01C123C8866000CCEDB3 /* 11.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016123C8866000CCEDB3 /* 11.js */; };
+		EB5C01C223C8866000CCEDB3 /* 50.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016223C8866000CCEDB3 /* 50.js */; };
+		EB5C01C323C8866000CCEDB3 /* 8.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016323C8866000CCEDB3 /* 8.js */; };
+		EB5C01C423C8866000CCEDB3 /* 64.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016423C8866000CCEDB3 /* 64.js */; };
+		EB5C01C523C8866000CCEDB3 /* 35.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016523C8866000CCEDB3 /* 35.js */; };
+		EB5C01C623C8866000CCEDB3 /* 15.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016623C8866000CCEDB3 /* 15.js */; };
+		EB5C01C723C8866000CCEDB3 /* 44.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016723C8866000CCEDB3 /* 44.js */; };
+		EB5C01C823C8866000CCEDB3 /* 70.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016823C8866000CCEDB3 /* 70.js */; };
+		EB5C01C923C8866000CCEDB3 /* 21.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016923C8866000CCEDB3 /* 21.js */; };
+		EB5C01CA23C8866000CCEDB3 /* 83.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016A23C8866000CCEDB3 /* 83.js */; };
+		EB5C01CB23C8866000CCEDB3 /* 31.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016B23C8866000CCEDB3 /* 31.js */; };
+		EB5C01CC23C8866000CCEDB3 /* 60.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016C23C8866000CCEDB3 /* 60.js */; };
+		EB5C01CD23C8866000CCEDB3 /* 54.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016D23C8866000CCEDB3 /* 54.js */; };
+		EB5C01CE23C8866000CCEDB3 /* 14.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016E23C8866000CCEDB3 /* 14.js */; };
+		EB5C01CF23C8866000CCEDB3 /* 45.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C016F23C8866000CCEDB3 /* 45.js */; };
+		EB5C01D023C8866000CCEDB3 /* 71.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017023C8866000CCEDB3 /* 71.js */; };
+		EB5C01D123C8866000CCEDB3 /* 20.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017123C8866000CCEDB3 /* 20.js */; };
+		EB5C01D223C8866000CCEDB3 /* 82.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017223C8866000CCEDB3 /* 82.js */; };
+		EB5C01D323C8866000CCEDB3 /* manifest.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017323C8866000CCEDB3 /* manifest.js */; };
+		EB5C01D423C8866000CCEDB3 /* 30.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017423C8866000CCEDB3 /* 30.js */; };
+		EB5C01D523C8866000CCEDB3 /* 61.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017523C8866000CCEDB3 /* 61.js */; };
+		EB5C01D623C8866000CCEDB3 /* 55.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017623C8866000CCEDB3 /* 55.js */; };
+		EB5C01D723C8866000CCEDB3 /* 24.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017723C8866000CCEDB3 /* 24.js */; };
+		EB5C01D823C8866000CCEDB3 /* 75.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017823C8866000CCEDB3 /* 75.js */; };
+		EB5C01D923C8866000CCEDB3 /* 41.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017923C8866000CCEDB3 /* 41.js */; };
+		EB5C01DA23C8866000CCEDB3 /* 10.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017A23C8866000CCEDB3 /* 10.js */; };
+		EB5C01DB23C8866000CCEDB3 /* 51.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017B23C8866000CCEDB3 /* 51.js */; };
+		EB5C01DC23C8866000CCEDB3 /* 9.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017C23C8866000CCEDB3 /* 9.js */; };
+		EB5C01DD23C8866000CCEDB3 /* vendor.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017D23C8866000CCEDB3 /* vendor.js */; };
+		EB5C01DE23C8866000CCEDB3 /* 65.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017E23C8866000CCEDB3 /* 65.js */; };
+		EB5C01DF23C8866000CCEDB3 /* 34.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C017F23C8866000CCEDB3 /* 34.js */; };
+		EB5C01E023C8866000CCEDB3 /* 46.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018023C8866000CCEDB3 /* 46.js */; };
+		EB5C01E123C8866000CCEDB3 /* 17.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018123C8866000CCEDB3 /* 17.js */; };
+		EB5C01E223C8866000CCEDB3 /* 81.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018223C8866000CCEDB3 /* 81.js */; };
+		EB5C01E323C8866000CCEDB3 /* 23.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018323C8866000CCEDB3 /* 23.js */; };
+		EB5C01E423C8866000CCEDB3 /* 72.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018423C8866000CCEDB3 /* 72.js */; };
+		EB5C01E523C8866000CCEDB3 /* 62.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018523C8866000CCEDB3 /* 62.js */; };
+		EB5C01E623C8866000CCEDB3 /* 33.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018623C8866000CCEDB3 /* 33.js */; };
+		EB5C01E723C8866000CCEDB3 /* 56.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018723C8866000CCEDB3 /* 56.js */; };
+		EB5C01E823C8866000CCEDB3 /* 76.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018823C8866000CCEDB3 /* 76.js */; };
+		EB5C01E923C8866000CCEDB3 /* 13.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018923C8866000CCEDB3 /* 13.js */; };
+		EB5C01EA23C8866000CCEDB3 /* 42.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018A23C8866000CCEDB3 /* 42.js */; };
+		EB5C01EB23C8866000CCEDB3 /* 52.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018B23C8866000CCEDB3 /* 52.js */; };
+		EB5C01EC23C8866000CCEDB3 /* 37.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018C23C8866000CCEDB3 /* 37.js */; };
+		EB5C01ED23C8866000CCEDB3 /* 66.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018D23C8866000CCEDB3 /* 66.js */; };
+		EB5C01EE23C8866000CCEDB3 /* 84.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018E23C8866000CCEDB3 /* 84.js */; };
+		EB5C01EF23C8866000CCEDB3 /* 77.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C018F23C8866000CCEDB3 /* 77.js */; };
+		EB5C01F023C8866000CCEDB3 /* 12.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019023C8866000CCEDB3 /* 12.js */; };
+		EB5C01F123C8866000CCEDB3 /* 43.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019123C8866000CCEDB3 /* 43.js */; };
+		EB5C01F223C8866000CCEDB3 /* 53.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019223C8866000CCEDB3 /* 53.js */; };
+		EB5C01F323C8866000CCEDB3 /* 36.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019323C8866000CCEDB3 /* 36.js */; };
+		EB5C01F423C8866000CCEDB3 /* 67.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019423C8866000CCEDB3 /* 67.js */; };
+		EB5C01F523C8866000CCEDB3 /* 47.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019523C8866000CCEDB3 /* 47.js */; };
+		EB5C01F623C8866000CCEDB3 /* 16.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019623C8866000CCEDB3 /* 16.js */; };
+		EB5C01F723C8866000CCEDB3 /* 80.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019723C8866000CCEDB3 /* 80.js */; };
+		EB5C01F823C8866000CCEDB3 /* 22.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019823C8866000CCEDB3 /* 22.js */; };
+		EB5C01F923C8866000CCEDB3 /* 73.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019923C8866000CCEDB3 /* 73.js */; };
+		EB5C01FA23C8866000CCEDB3 /* 63.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019A23C8866000CCEDB3 /* 63.js */; };
+		EB5C01FB23C8866000CCEDB3 /* 32.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019B23C8866000CCEDB3 /* 32.js */; };
+		EB5C01FC23C8866000CCEDB3 /* 57.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019C23C8866000CCEDB3 /* 57.js */; };
+		EB5C01FD23C8866000CCEDB3 /* 29.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019D23C8866000CCEDB3 /* 29.js */; };
+		EB5C01FE23C8866000CCEDB3 /* 78.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019E23C8866000CCEDB3 /* 78.js */; };
+		EB5C01FF23C8866000CCEDB3 /* 4.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C019F23C8866000CCEDB3 /* 4.js */; };
+		EB5C020023C8866000CCEDB3 /* 68.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01A023C8866000CCEDB3 /* 68.js */; };
+		EB5C020123C8866000CCEDB3 /* 39.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01A123C8866000CCEDB3 /* 39.js */; };
+		EB5C020223C8866000CCEDB3 /* 19.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01A223C8866000CCEDB3 /* 19.js */; };
+		EB5C020323C8866000CCEDB3 /* 48.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01A323C8866000CCEDB3 /* 48.js */; };
+		EB5C020423C8866000CCEDB3 /* 58.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01A423C8866000CCEDB3 /* 58.js */; };
+		EB5C020523C8866000CCEDB3 /* 18.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01A523C8866000CCEDB3 /* 18.js */; };
+		EB5C020623C8866000CCEDB3 /* 49.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01A623C8866000CCEDB3 /* 49.js */; };
+		EB5C020723C8866000CCEDB3 /* 59.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01A723C8866000CCEDB3 /* 59.js */; };
+		EB5C020823C8866000CCEDB3 /* 1.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01A823C8866000CCEDB3 /* 1.js */; };
+		EB5C020923C8866000CCEDB3 /* app.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01A923C8866000CCEDB3 /* app.js */; };
+		EB5C020A23C8866000CCEDB3 /* 28.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01AA23C8866000CCEDB3 /* 28.js */; };
+		EB5C020B23C8866000CCEDB3 /* 79.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01AB23C8866000CCEDB3 /* 79.js */; };
+		EB5C020C23C8866000CCEDB3 /* 5.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01AC23C8866000CCEDB3 /* 5.js */; };
+		EB5C020D23C8866000CCEDB3 /* 69.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01AD23C8866000CCEDB3 /* 69.js */; };
+		EB5C020E23C8866000CCEDB3 /* 38.js in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01AE23C8866000CCEDB3 /* 38.js */; };
+		EB5C020F23C8866000CCEDB3 /* china-idcard-front.60d5f79.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01B023C8866000CCEDB3 /* china-idcard-front.60d5f79.png */; };
+		EB5C021023C8866000CCEDB3 /* passport.81b0a8a.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01B123C8866000CCEDB3 /* passport.81b0a8a.png */; };
+		EB5C021123C8866000CCEDB3 /* china-idcard-back.be026ed.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01B223C8866000CCEDB3 /* china-idcard-back.be026ed.png */; };
+		EB5C021223C8866000CCEDB3 /* sprites@3x.0d8e323.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01B323C8866000CCEDB3 /* sprites@3x.0d8e323.png */; };
+		EB5C021323C8866000CCEDB3 /* figure.frame@3x.6cbd5d0.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01B423C8866000CCEDB3 /* figure.frame@3x.6cbd5d0.png */; };
+		EB5C021423C8866000CCEDB3 /* iconfont.56c5e85.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB5C01B623C8866000CCEDB3 /* iconfont.56c5e85.ttf */; };
 		EB6186DC21F1B9D80030550A /* NSObject+Invocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6186DB21F1B9D80030550A /* NSObject+Invocation.m */; };
 		EB88D4252154C29000BA082B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D4242154C29000BA082B /* AppDelegate.m */; };
 		EB88D4282154C29000BA082B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D4272154C29000BA082B /* ViewController.m */; };
@@ -86,6 +193,7 @@
 		EBAC0D5E216C4A6600B610B1 /* JuMsgSupObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D5D216C4A6600B610B1 /* JuMsgSupObjc.m */; };
 		EBAC0D61216C584700B610B1 /* JuResloveOjc.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D60216C584700B610B1 /* JuResloveOjc.m */; };
 		EBAC0D65216C89C100B610B1 /* JuArithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0D64216C89C100B610B1 /* JuArithmetic.m */; };
+		EBB2403C23BDF00B000AF851 /* TestURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB2403B23BDF00B000AF851 /* TestURLCache.m */; };
 		EBB81B1721EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB81B1521EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@2x.png */; };
 		EBB81B1821EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB81B1621EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@3x.png */; };
 		EBB8425821B8F864009DD86E /* JuDataPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8424B21B8F864009DD86E /* JuDataPickView.m */; };
@@ -110,6 +218,7 @@
 		EBBEC76C217094EA003EEE50 /* WeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEC76B217094EA003EEE50 /* WeakScriptMessageDelegate.m */; };
 		EBBEC76E21709CB6003EEE50 /* WKWebViewMessageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = EBBEC76D21709CB6003EEE50 /* WKWebViewMessageHandler.html */; };
 		EBC34789221549C70094295D /* JuVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC34788221549C70094295D /* JuVariable.m */; };
+		EBC351F422D428A100CE8263 /* WKWebView+JuCookie.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC351F222D428A100CE8263 /* WKWebView+JuCookie.m */; };
 		EBC86D612223EABC0041A9C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBC86D632223EABC0041A9C9 /* InfoPlist.strings */; };
 		EBC86D672223EB630041A9C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBC86D692223EB630041A9C9 /* Localizable.strings */; };
 		EBCC8175219AB85E003A7604 /* JuWaterFolwLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCC8174219AB85E003A7604 /* JuWaterFolwLayout.m */; };
@@ -166,6 +275,17 @@
 		EB3FA8622224D49D004A239B /* img6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img6.jpg; sourceTree = "<group>"; };
 		EB3FA8642224D95C004A239B /* LanguageManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageManage.h; sourceTree = "<group>"; };
 		EB3FA8652224D95C004A239B /* LanguageManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageManage.m; sourceTree = "<group>"; };
+		EB57200E22A24F0F00A33BAC /* JuCollectionWaterFallLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuCollectionWaterFallLayout.h; sourceTree = "<group>"; };
+		EB57200F22A24F0F00A33BAC /* JuCollectionWaterFallLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuCollectionWaterFallLayout.m; sourceTree = "<group>"; };
+		EB57201222A2573300A33BAC /* JuWaterFallCollectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuWaterFallCollectView.h; sourceTree = "<group>"; };
+		EB57201322A2573300A33BAC /* JuWaterFallCollectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuWaterFallCollectView.m; sourceTree = "<group>"; };
+		EB57201522A2575D00A33BAC /* JuWaterFallCollectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuWaterFallCollectCell.h; sourceTree = "<group>"; };
+		EB57201622A2575D00A33BAC /* JuWaterFallCollectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuWaterFallCollectCell.m; sourceTree = "<group>"; };
+		EB57201722A2575D00A33BAC /* JuWaterFallCollectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JuWaterFallCollectCell.xib; sourceTree = "<group>"; };
+		EB57201A22A2599600A33BAC /* JuCollectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuCollectViewController.h; sourceTree = "<group>"; };
+		EB57201B22A2599600A33BAC /* JuCollectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuCollectViewController.m; sourceTree = "<group>"; };
+		EB57202E22A26AF500A33BAC /* JuTestWaterFallLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuTestWaterFallLayout.h; sourceTree = "<group>"; };
+		EB57202F22A26AF500A33BAC /* JuTestWaterFallLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuTestWaterFallLayout.m; sourceTree = "<group>"; };
 		EB5993F4219D17150029AFE3 /* JuClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuClockView.h; sourceTree = "<group>"; };
 		EB5993F5219D17150029AFE3 /* JuClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuClockView.m; sourceTree = "<group>"; };
 		EB5993F8219D57200029AFE3 /* UIView+JuLayGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayGroup.h"; sourceTree = "<group>"; };
@@ -211,6 +331,114 @@
 		EB59F9C021E6E37400562C75 /* UIImage+Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Gif.m"; sourceTree = "<group>"; };
 		EB59F9C121E6E37400562C75 /* UIView+Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gif.m"; sourceTree = "<group>"; };
 		EB59F9C221E6E37400562C75 /* UIImage+Gif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Gif.h"; sourceTree = "<group>"; };
+		EB5C013823C8193A00CCEDB3 /* MTSKURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSKURLProtocol.m; sourceTree = "<group>"; };
+		EB5C013A23C8193A00CCEDB3 /* NSURLProtocol+WKWebVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+WKWebVIew.m"; sourceTree = "<group>"; };
+		EB5C013B23C8193A00CCEDB3 /* MTWebViewReusePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTWebViewReusePool.h; sourceTree = "<group>"; };
+		EB5C013C23C8193A00CCEDB3 /* NSURLProtocol+WKWebVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+WKWebVIew.h"; sourceTree = "<group>"; };
+		EB5C013D23C8193A00CCEDB3 /* MTWebViewReusePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTWebViewReusePool.m; sourceTree = "<group>"; };
+		EB5C013E23C8193A00CCEDB3 /* MTSKWebDataManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSKWebDataManage.h; sourceTree = "<group>"; };
+		EB5C013F23C8193A00CCEDB3 /* MTURLSchemeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTURLSchemeHandler.m; sourceTree = "<group>"; };
+		EB5C014023C8193A00CCEDB3 /* MTSKURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSKURLProtocol.h; sourceTree = "<group>"; };
+		EB5C014123C8193A00CCEDB3 /* MTURLSchemeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTURLSchemeHandler.h; sourceTree = "<group>"; };
+		EB5C014223C8193A00CCEDB3 /* MTSKWebDataManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSKWebDataManage.m; sourceTree = "<group>"; };
+		EB5C014B23C86BB100CCEDB3 /* JuCookieManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuCookieManage.h; sourceTree = "<group>"; };
+		EB5C014C23C86BB100CCEDB3 /* JuCookieManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuCookieManage.m; sourceTree = "<group>"; };
+		EB5C014E23C86E3A00CCEDB3 /* JuCookieWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuCookieWebVC.h; sourceTree = "<group>"; };
+		EB5C014F23C86E3A00CCEDB3 /* JuCookieWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuCookieWebVC.m; sourceTree = "<group>"; };
+		EB5C015423C8865F00CCEDB3 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		EB5C015723C8865F00CCEDB3 /* manifest.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = manifest.css; sourceTree = "<group>"; };
+		EB5C015823C8865F00CCEDB3 /* app.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = app.css; sourceTree = "<group>"; };
+		EB5C015A23C8865F00CCEDB3 /* 2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 2.js; sourceTree = "<group>"; };
+		EB5C015B23C8865F00CCEDB3 /* 6.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 6.js; sourceTree = "<group>"; };
+		EB5C015C23C8865F00CCEDB3 /* 7.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 7.js; sourceTree = "<group>"; };
+		EB5C015D23C8865F00CCEDB3 /* 3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 3.js; sourceTree = "<group>"; };
+		EB5C015E23C8865F00CCEDB3 /* 25.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 25.js; sourceTree = "<group>"; };
+		EB5C015F23C8865F00CCEDB3 /* 74.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 74.js; sourceTree = "<group>"; };
+		EB5C016023C8866000CCEDB3 /* 40.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 40.js; sourceTree = "<group>"; };
+		EB5C016123C8866000CCEDB3 /* 11.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 11.js; sourceTree = "<group>"; };
+		EB5C016223C8866000CCEDB3 /* 50.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 50.js; sourceTree = "<group>"; };
+		EB5C016323C8866000CCEDB3 /* 8.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 8.js; sourceTree = "<group>"; };
+		EB5C016423C8866000CCEDB3 /* 64.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 64.js; sourceTree = "<group>"; };
+		EB5C016523C8866000CCEDB3 /* 35.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 35.js; sourceTree = "<group>"; };
+		EB5C016623C8866000CCEDB3 /* 15.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 15.js; sourceTree = "<group>"; };
+		EB5C016723C8866000CCEDB3 /* 44.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 44.js; sourceTree = "<group>"; };
+		EB5C016823C8866000CCEDB3 /* 70.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 70.js; sourceTree = "<group>"; };
+		EB5C016923C8866000CCEDB3 /* 21.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 21.js; sourceTree = "<group>"; };
+		EB5C016A23C8866000CCEDB3 /* 83.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 83.js; sourceTree = "<group>"; };
+		EB5C016B23C8866000CCEDB3 /* 31.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 31.js; sourceTree = "<group>"; };
+		EB5C016C23C8866000CCEDB3 /* 60.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 60.js; sourceTree = "<group>"; };
+		EB5C016D23C8866000CCEDB3 /* 54.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 54.js; sourceTree = "<group>"; };
+		EB5C016E23C8866000CCEDB3 /* 14.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 14.js; sourceTree = "<group>"; };
+		EB5C016F23C8866000CCEDB3 /* 45.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 45.js; sourceTree = "<group>"; };
+		EB5C017023C8866000CCEDB3 /* 71.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 71.js; sourceTree = "<group>"; };
+		EB5C017123C8866000CCEDB3 /* 20.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 20.js; sourceTree = "<group>"; };
+		EB5C017223C8866000CCEDB3 /* 82.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 82.js; sourceTree = "<group>"; };
+		EB5C017323C8866000CCEDB3 /* manifest.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = manifest.js; sourceTree = "<group>"; };
+		EB5C017423C8866000CCEDB3 /* 30.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 30.js; sourceTree = "<group>"; };
+		EB5C017523C8866000CCEDB3 /* 61.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 61.js; sourceTree = "<group>"; };
+		EB5C017623C8866000CCEDB3 /* 55.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 55.js; sourceTree = "<group>"; };
+		EB5C017723C8866000CCEDB3 /* 24.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 24.js; sourceTree = "<group>"; };
+		EB5C017823C8866000CCEDB3 /* 75.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 75.js; sourceTree = "<group>"; };
+		EB5C017923C8866000CCEDB3 /* 41.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 41.js; sourceTree = "<group>"; };
+		EB5C017A23C8866000CCEDB3 /* 10.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 10.js; sourceTree = "<group>"; };
+		EB5C017B23C8866000CCEDB3 /* 51.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 51.js; sourceTree = "<group>"; };
+		EB5C017C23C8866000CCEDB3 /* 9.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 9.js; sourceTree = "<group>"; };
+		EB5C017D23C8866000CCEDB3 /* vendor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vendor.js; sourceTree = "<group>"; };
+		EB5C017E23C8866000CCEDB3 /* 65.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 65.js; sourceTree = "<group>"; };
+		EB5C017F23C8866000CCEDB3 /* 34.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 34.js; sourceTree = "<group>"; };
+		EB5C018023C8866000CCEDB3 /* 46.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 46.js; sourceTree = "<group>"; };
+		EB5C018123C8866000CCEDB3 /* 17.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 17.js; sourceTree = "<group>"; };
+		EB5C018223C8866000CCEDB3 /* 81.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 81.js; sourceTree = "<group>"; };
+		EB5C018323C8866000CCEDB3 /* 23.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 23.js; sourceTree = "<group>"; };
+		EB5C018423C8866000CCEDB3 /* 72.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 72.js; sourceTree = "<group>"; };
+		EB5C018523C8866000CCEDB3 /* 62.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 62.js; sourceTree = "<group>"; };
+		EB5C018623C8866000CCEDB3 /* 33.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 33.js; sourceTree = "<group>"; };
+		EB5C018723C8866000CCEDB3 /* 56.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 56.js; sourceTree = "<group>"; };
+		EB5C018823C8866000CCEDB3 /* 76.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 76.js; sourceTree = "<group>"; };
+		EB5C018923C8866000CCEDB3 /* 13.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 13.js; sourceTree = "<group>"; };
+		EB5C018A23C8866000CCEDB3 /* 42.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 42.js; sourceTree = "<group>"; };
+		EB5C018B23C8866000CCEDB3 /* 52.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 52.js; sourceTree = "<group>"; };
+		EB5C018C23C8866000CCEDB3 /* 37.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 37.js; sourceTree = "<group>"; };
+		EB5C018D23C8866000CCEDB3 /* 66.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 66.js; sourceTree = "<group>"; };
+		EB5C018E23C8866000CCEDB3 /* 84.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 84.js; sourceTree = "<group>"; };
+		EB5C018F23C8866000CCEDB3 /* 77.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 77.js; sourceTree = "<group>"; };
+		EB5C019023C8866000CCEDB3 /* 12.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 12.js; sourceTree = "<group>"; };
+		EB5C019123C8866000CCEDB3 /* 43.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 43.js; sourceTree = "<group>"; };
+		EB5C019223C8866000CCEDB3 /* 53.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 53.js; sourceTree = "<group>"; };
+		EB5C019323C8866000CCEDB3 /* 36.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 36.js; sourceTree = "<group>"; };
+		EB5C019423C8866000CCEDB3 /* 67.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 67.js; sourceTree = "<group>"; };
+		EB5C019523C8866000CCEDB3 /* 47.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 47.js; sourceTree = "<group>"; };
+		EB5C019623C8866000CCEDB3 /* 16.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 16.js; sourceTree = "<group>"; };
+		EB5C019723C8866000CCEDB3 /* 80.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 80.js; sourceTree = "<group>"; };
+		EB5C019823C8866000CCEDB3 /* 22.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 22.js; sourceTree = "<group>"; };
+		EB5C019923C8866000CCEDB3 /* 73.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 73.js; sourceTree = "<group>"; };
+		EB5C019A23C8866000CCEDB3 /* 63.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 63.js; sourceTree = "<group>"; };
+		EB5C019B23C8866000CCEDB3 /* 32.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 32.js; sourceTree = "<group>"; };
+		EB5C019C23C8866000CCEDB3 /* 57.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 57.js; sourceTree = "<group>"; };
+		EB5C019D23C8866000CCEDB3 /* 29.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 29.js; sourceTree = "<group>"; };
+		EB5C019E23C8866000CCEDB3 /* 78.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 78.js; sourceTree = "<group>"; };
+		EB5C019F23C8866000CCEDB3 /* 4.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 4.js; sourceTree = "<group>"; };
+		EB5C01A023C8866000CCEDB3 /* 68.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 68.js; sourceTree = "<group>"; };
+		EB5C01A123C8866000CCEDB3 /* 39.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 39.js; sourceTree = "<group>"; };
+		EB5C01A223C8866000CCEDB3 /* 19.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 19.js; sourceTree = "<group>"; };
+		EB5C01A323C8866000CCEDB3 /* 48.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 48.js; sourceTree = "<group>"; };
+		EB5C01A423C8866000CCEDB3 /* 58.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 58.js; sourceTree = "<group>"; };
+		EB5C01A523C8866000CCEDB3 /* 18.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 18.js; sourceTree = "<group>"; };
+		EB5C01A623C8866000CCEDB3 /* 49.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 49.js; sourceTree = "<group>"; };
+		EB5C01A723C8866000CCEDB3 /* 59.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 59.js; sourceTree = "<group>"; };
+		EB5C01A823C8866000CCEDB3 /* 1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 1.js; sourceTree = "<group>"; };
+		EB5C01A923C8866000CCEDB3 /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.js; sourceTree = "<group>"; };
+		EB5C01AA23C8866000CCEDB3 /* 28.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 28.js; sourceTree = "<group>"; };
+		EB5C01AB23C8866000CCEDB3 /* 79.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 79.js; sourceTree = "<group>"; };
+		EB5C01AC23C8866000CCEDB3 /* 5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 5.js; sourceTree = "<group>"; };
+		EB5C01AD23C8866000CCEDB3 /* 69.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 69.js; sourceTree = "<group>"; };
+		EB5C01AE23C8866000CCEDB3 /* 38.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 38.js; sourceTree = "<group>"; };
+		EB5C01B023C8866000CCEDB3 /* china-idcard-front.60d5f79.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "china-idcard-front.60d5f79.png"; sourceTree = "<group>"; };
+		EB5C01B123C8866000CCEDB3 /* passport.81b0a8a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passport.81b0a8a.png; sourceTree = "<group>"; };
+		EB5C01B223C8866000CCEDB3 /* china-idcard-back.be026ed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "china-idcard-back.be026ed.png"; sourceTree = "<group>"; };
+		EB5C01B323C8866000CCEDB3 /* sprites@3x.0d8e323.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sprites@3x.0d8e323.png"; sourceTree = "<group>"; };
+		EB5C01B423C8866000CCEDB3 /* figure.frame@3x.6cbd5d0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "figure.frame@3x.6cbd5d0.png"; sourceTree = "<group>"; };
+		EB5C01B623C8866000CCEDB3 /* iconfont.56c5e85.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.56c5e85.ttf; sourceTree = "<group>"; };
 		EB6186DA21F1B9D80030550A /* NSObject+Invocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Invocation.h"; sourceTree = "<group>"; };
 		EB6186DB21F1B9D80030550A /* NSObject+Invocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Invocation.m"; sourceTree = "<group>"; };
 		EB88D4202154C29000BA082B /* JuTestTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuTestTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,6 +521,8 @@
 		EBAC0D60216C584700B610B1 /* JuResloveOjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuResloveOjc.m; sourceTree = "<group>"; };
 		EBAC0D63216C89C100B610B1 /* JuArithmetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuArithmetic.h; sourceTree = "<group>"; };
 		EBAC0D64216C89C100B610B1 /* JuArithmetic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuArithmetic.m; sourceTree = "<group>"; };
+		EBB2403A23BDF00B000AF851 /* TestURLCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestURLCache.h; sourceTree = "<group>"; };
+		EBB2403B23BDF00B000AF851 /* TestURLCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestURLCache.m; sourceTree = "<group>"; };
 		EBB81B1521EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skin_analyzeFaceAnimationCircle@2x.png"; sourceTree = "<group>"; };
 		EBB81B1621EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skin_analyzeFaceAnimationCircle@3x.png"; sourceTree = "<group>"; };
 		EBB8424921B8F864009DD86E /* JuBasePickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBasePickView.h; sourceTree = "<group>"; };
@@ -336,6 +566,8 @@
 		EBBEC76D21709CB6003EEE50 /* WKWebViewMessageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewMessageHandler.html; sourceTree = "<group>"; };
 		EBC34787221549C70094295D /* JuVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuVariable.h; sourceTree = "<group>"; };
 		EBC34788221549C70094295D /* JuVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuVariable.m; sourceTree = "<group>"; };
+		EBC351F222D428A100CE8263 /* WKWebView+JuCookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+JuCookie.m"; sourceTree = "<group>"; };
+		EBC351F322D428A100CE8263 /* WKWebView+JuCookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+JuCookie.h"; sourceTree = "<group>"; };
 		EBC86D5D2223EA230041A9C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		EBC86D5E2223EA230041A9C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		EBC86D622223EABC0041A9C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -445,6 +677,8 @@
 				EB3E96822181C7A9003CE3DB /* JuBaseCacheAdapter.m */,
 				EBE228C821C0D18600163244 /* JUWebCache.h */,
 				EBE228C921C0D18600163244 /* JUWebCache.m */,
+				EBB2403A23BDF00B000AF851 /* TestURLCache.h */,
+				EBB2403B23BDF00B000AF851 /* TestURLCache.m */,
 			);
 			path = JuUrlCache;
 			sourceTree = "<group>";
@@ -458,6 +692,22 @@
 				EB3FA8652224D95C004A239B /* LanguageManage.m */,
 			);
 			path = Language;
+			sourceTree = "<group>";
+		};
+		EB57201122A2571C00A33BAC /* WaterFall */ = {
+			isa = PBXGroup;
+			children = (
+				EB57201222A2573300A33BAC /* JuWaterFallCollectView.h */,
+				EB57201322A2573300A33BAC /* JuWaterFallCollectView.m */,
+				EB57201522A2575D00A33BAC /* JuWaterFallCollectCell.h */,
+				EB57201622A2575D00A33BAC /* JuWaterFallCollectCell.m */,
+				EB57201722A2575D00A33BAC /* JuWaterFallCollectCell.xib */,
+				EB57200E22A24F0F00A33BAC /* JuCollectionWaterFallLayout.h */,
+				EB57200F22A24F0F00A33BAC /* JuCollectionWaterFallLayout.m */,
+				EB57202E22A26AF500A33BAC /* JuTestWaterFallLayout.h */,
+				EB57202F22A26AF500A33BAC /* JuTestWaterFallLayout.m */,
+			);
+			path = WaterFall;
 			sourceTree = "<group>";
 		};
 		EB5993F3219D16E90029AFE3 /* anchorPoint */ = {
@@ -571,6 +821,173 @@
 			path = JuAnimation;
 			sourceTree = "<group>";
 		};
+		EB5C013723C8193A00CCEDB3 /* NSURLProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				EB5C015323C8865F00CCEDB3 /* MTAccountWebUI */,
+				EB5C013923C8193A00CCEDB3 /* Ex */,
+				EB5C014023C8193A00CCEDB3 /* MTSKURLProtocol.h */,
+				EB5C013823C8193A00CCEDB3 /* MTSKURLProtocol.m */,
+				EB5C013E23C8193A00CCEDB3 /* MTSKWebDataManage.h */,
+				EB5C014223C8193A00CCEDB3 /* MTSKWebDataManage.m */,
+				EB5C014123C8193A00CCEDB3 /* MTURLSchemeHandler.h */,
+				EB5C013F23C8193A00CCEDB3 /* MTURLSchemeHandler.m */,
+			);
+			path = NSURLProtocol;
+			sourceTree = "<group>";
+		};
+		EB5C013923C8193A00CCEDB3 /* Ex */ = {
+			isa = PBXGroup;
+			children = (
+				EB5C013A23C8193A00CCEDB3 /* NSURLProtocol+WKWebVIew.m */,
+				EB5C013B23C8193A00CCEDB3 /* MTWebViewReusePool.h */,
+				EB5C013C23C8193A00CCEDB3 /* NSURLProtocol+WKWebVIew.h */,
+				EB5C013D23C8193A00CCEDB3 /* MTWebViewReusePool.m */,
+			);
+			path = Ex;
+			sourceTree = "<group>";
+		};
+		EB5C015323C8865F00CCEDB3 /* MTAccountWebUI */ = {
+			isa = PBXGroup;
+			children = (
+				EB5C015423C8865F00CCEDB3 /* index.html */,
+				EB5C015523C8865F00CCEDB3 /* app */,
+			);
+			path = MTAccountWebUI;
+			sourceTree = "<group>";
+		};
+		EB5C015523C8865F00CCEDB3 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				EB5C015623C8865F00CCEDB3 /* css */,
+				EB5C015923C8865F00CCEDB3 /* js */,
+				EB5C01AF23C8866000CCEDB3 /* img */,
+				EB5C01B523C8866000CCEDB3 /* fonts */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		EB5C015623C8865F00CCEDB3 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				EB5C015723C8865F00CCEDB3 /* manifest.css */,
+				EB5C015823C8865F00CCEDB3 /* app.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		EB5C015923C8865F00CCEDB3 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				EB5C015A23C8865F00CCEDB3 /* 2.js */,
+				EB5C015B23C8865F00CCEDB3 /* 6.js */,
+				EB5C015C23C8865F00CCEDB3 /* 7.js */,
+				EB5C015D23C8865F00CCEDB3 /* 3.js */,
+				EB5C015E23C8865F00CCEDB3 /* 25.js */,
+				EB5C015F23C8865F00CCEDB3 /* 74.js */,
+				EB5C016023C8866000CCEDB3 /* 40.js */,
+				EB5C016123C8866000CCEDB3 /* 11.js */,
+				EB5C016223C8866000CCEDB3 /* 50.js */,
+				EB5C016323C8866000CCEDB3 /* 8.js */,
+				EB5C016423C8866000CCEDB3 /* 64.js */,
+				EB5C016523C8866000CCEDB3 /* 35.js */,
+				EB5C016623C8866000CCEDB3 /* 15.js */,
+				EB5C016723C8866000CCEDB3 /* 44.js */,
+				EB5C016823C8866000CCEDB3 /* 70.js */,
+				EB5C016923C8866000CCEDB3 /* 21.js */,
+				EB5C016A23C8866000CCEDB3 /* 83.js */,
+				EB5C016B23C8866000CCEDB3 /* 31.js */,
+				EB5C016C23C8866000CCEDB3 /* 60.js */,
+				EB5C016D23C8866000CCEDB3 /* 54.js */,
+				EB5C016E23C8866000CCEDB3 /* 14.js */,
+				EB5C016F23C8866000CCEDB3 /* 45.js */,
+				EB5C017023C8866000CCEDB3 /* 71.js */,
+				EB5C017123C8866000CCEDB3 /* 20.js */,
+				EB5C017223C8866000CCEDB3 /* 82.js */,
+				EB5C017323C8866000CCEDB3 /* manifest.js */,
+				EB5C017423C8866000CCEDB3 /* 30.js */,
+				EB5C017523C8866000CCEDB3 /* 61.js */,
+				EB5C017623C8866000CCEDB3 /* 55.js */,
+				EB5C017723C8866000CCEDB3 /* 24.js */,
+				EB5C017823C8866000CCEDB3 /* 75.js */,
+				EB5C017923C8866000CCEDB3 /* 41.js */,
+				EB5C017A23C8866000CCEDB3 /* 10.js */,
+				EB5C017B23C8866000CCEDB3 /* 51.js */,
+				EB5C017C23C8866000CCEDB3 /* 9.js */,
+				EB5C017D23C8866000CCEDB3 /* vendor.js */,
+				EB5C017E23C8866000CCEDB3 /* 65.js */,
+				EB5C017F23C8866000CCEDB3 /* 34.js */,
+				EB5C018023C8866000CCEDB3 /* 46.js */,
+				EB5C018123C8866000CCEDB3 /* 17.js */,
+				EB5C018223C8866000CCEDB3 /* 81.js */,
+				EB5C018323C8866000CCEDB3 /* 23.js */,
+				EB5C018423C8866000CCEDB3 /* 72.js */,
+				EB5C018523C8866000CCEDB3 /* 62.js */,
+				EB5C018623C8866000CCEDB3 /* 33.js */,
+				EB5C018723C8866000CCEDB3 /* 56.js */,
+				EB5C018823C8866000CCEDB3 /* 76.js */,
+				EB5C018923C8866000CCEDB3 /* 13.js */,
+				EB5C018A23C8866000CCEDB3 /* 42.js */,
+				EB5C018B23C8866000CCEDB3 /* 52.js */,
+				EB5C018C23C8866000CCEDB3 /* 37.js */,
+				EB5C018D23C8866000CCEDB3 /* 66.js */,
+				EB5C018E23C8866000CCEDB3 /* 84.js */,
+				EB5C018F23C8866000CCEDB3 /* 77.js */,
+				EB5C019023C8866000CCEDB3 /* 12.js */,
+				EB5C019123C8866000CCEDB3 /* 43.js */,
+				EB5C019223C8866000CCEDB3 /* 53.js */,
+				EB5C019323C8866000CCEDB3 /* 36.js */,
+				EB5C019423C8866000CCEDB3 /* 67.js */,
+				EB5C019523C8866000CCEDB3 /* 47.js */,
+				EB5C019623C8866000CCEDB3 /* 16.js */,
+				EB5C019723C8866000CCEDB3 /* 80.js */,
+				EB5C019823C8866000CCEDB3 /* 22.js */,
+				EB5C019923C8866000CCEDB3 /* 73.js */,
+				EB5C019A23C8866000CCEDB3 /* 63.js */,
+				EB5C019B23C8866000CCEDB3 /* 32.js */,
+				EB5C019C23C8866000CCEDB3 /* 57.js */,
+				EB5C019D23C8866000CCEDB3 /* 29.js */,
+				EB5C019E23C8866000CCEDB3 /* 78.js */,
+				EB5C019F23C8866000CCEDB3 /* 4.js */,
+				EB5C01A023C8866000CCEDB3 /* 68.js */,
+				EB5C01A123C8866000CCEDB3 /* 39.js */,
+				EB5C01A223C8866000CCEDB3 /* 19.js */,
+				EB5C01A323C8866000CCEDB3 /* 48.js */,
+				EB5C01A423C8866000CCEDB3 /* 58.js */,
+				EB5C01A523C8866000CCEDB3 /* 18.js */,
+				EB5C01A623C8866000CCEDB3 /* 49.js */,
+				EB5C01A723C8866000CCEDB3 /* 59.js */,
+				EB5C01A823C8866000CCEDB3 /* 1.js */,
+				EB5C01A923C8866000CCEDB3 /* app.js */,
+				EB5C01AA23C8866000CCEDB3 /* 28.js */,
+				EB5C01AB23C8866000CCEDB3 /* 79.js */,
+				EB5C01AC23C8866000CCEDB3 /* 5.js */,
+				EB5C01AD23C8866000CCEDB3 /* 69.js */,
+				EB5C01AE23C8866000CCEDB3 /* 38.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		EB5C01AF23C8866000CCEDB3 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				EB5C01B023C8866000CCEDB3 /* china-idcard-front.60d5f79.png */,
+				EB5C01B123C8866000CCEDB3 /* passport.81b0a8a.png */,
+				EB5C01B223C8866000CCEDB3 /* china-idcard-back.be026ed.png */,
+				EB5C01B323C8866000CCEDB3 /* sprites@3x.0d8e323.png */,
+				EB5C01B423C8866000CCEDB3 /* figure.frame@3x.6cbd5d0.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		EB5C01B523C8866000CCEDB3 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EB5C01B623C8866000CCEDB3 /* iconfont.56c5e85.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		EB88D4172154C29000BA082B = {
 			isa = PBXGroup;
 			children = (
@@ -620,6 +1037,8 @@
 				EB88D4272154C29000BA082B /* ViewController.m */,
 				EBD0ADF5215A03B200605EE0 /* JuNextViewController.h */,
 				EBD0ADF6215A03B200605EE0 /* JuNextViewController.m */,
+				EB57201A22A2599600A33BAC /* JuCollectViewController.h */,
+				EB57201B22A2599600A33BAC /* JuCollectViewController.m */,
 				EBD0ADF8215A291E00605EE0 /* JuNextViewCell.h */,
 				EBD0ADF9215A291E00605EE0 /* JuNextViewCell.m */,
 				EBD0ADFA215A291E00605EE0 /* JuNextViewCell.xib */,
@@ -674,6 +1093,7 @@
 		EBA6169E2182E0F700F5E1AB /* CollectionLayout */ = {
 			isa = PBXGroup;
 			children = (
+				EB57201122A2571C00A33BAC /* WaterFall */,
 				EBA6169F2182E14200F5E1AB /* JUCollectionViewLayout.h */,
 				EBA616A02182E14200F5E1AB /* JUCollectionViewLayout.m */,
 				EBA616A22182E15E00F5E1AB /* JuCollectionViewFlowLayout.h */,
@@ -899,6 +1319,7 @@
 		EBBEC75521708714003EEE50 /* WebJS */ = {
 			isa = PBXGroup;
 			children = (
+				EB5C013723C8193A00CCEDB3 /* NSURLProtocol */,
 				EBD94D3C217458DC00E449E9 /* JuWebJSBridge */,
 				EBBEC76D21709CB6003EEE50 /* WKWebViewMessageHandler.html */,
 				EBB8427321B91595009DD86E /* newTest2.html */,
@@ -906,6 +1327,12 @@
 				EB2174D921D7063700C851A1 /* youzan2.html */,
 				EBB8426F21B90B19009DD86E /* CFNetworkDownload_OslwI3.tmp */,
 				EB2D750021C3409D00A28F8D /* test.html */,
+				EBC351F322D428A100CE8263 /* WKWebView+JuCookie.h */,
+				EBC351F222D428A100CE8263 /* WKWebView+JuCookie.m */,
+				EB5C014B23C86BB100CCEDB3 /* JuCookieManage.h */,
+				EB5C014C23C86BB100CCEDB3 /* JuCookieManage.m */,
+				EB5C014E23C86E3A00CCEDB3 /* JuCookieWebVC.h */,
+				EB5C014F23C86E3A00CCEDB3 /* JuCookieWebVC.m */,
 				EBBEC75721708A38003EEE50 /* JuWebViewController.h */,
 				EBBEC75821708A38003EEE50 /* JuWebViewController.m */,
 				EBB8426A21B90772009DD86E /* JuLocationWebViewController.h */,
@@ -1081,6 +1508,16 @@
 				"zh-Hans",
 				ja,
 				fr,
+				de,
+				"zh-Hant-HK",
+				es,
+				it,
+				ko,
+				"zh-Hant",
+				vi,
+				id,
+				th,
+				pt,
 			);
 			mainGroup = EB88D4172154C29000BA082B;
 			productRefGroup = EB88D4212154C29000BA082B /* Products */;
@@ -1097,40 +1534,135 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5C01CA23C8866000CCEDB3 /* 83.js in Resources */,
 				EBA8D5E0219EBF0A006F848A /* hour.jpg in Resources */,
+				EB5C01E223C8866000CCEDB3 /* 81.js in Resources */,
+				EB5C01FF23C8866000CCEDB3 /* 4.js in Resources */,
 				EBD0ADFC215A291E00605EE0 /* JuNextViewCell.xib in Resources */,
 				EBD0AE00215A299600605EE0 /* img8.jpg in Resources */,
 				EB9D866F216DEDD400B75BA4 /* public_key.der in Resources */,
+				EB5C01F923C8866000CCEDB3 /* 73.js in Resources */,
+				EB5C01EF23C8866000CCEDB3 /* 77.js in Resources */,
+				EB5C01ED23C8866000CCEDB3 /* 66.js in Resources */,
+				EB5C021323C8866000CCEDB3 /* figure.frame@3x.6cbd5d0.png in Resources */,
+				EB5C01D923C8866000CCEDB3 /* 41.js in Resources */,
 				EB2D750121C3409E00A28F8D /* test.html in Resources */,
+				EB5C020323C8866000CCEDB3 /* 48.js in Resources */,
 				EBA9617E21D1DCAF000B74C6 /* youzan.html in Resources */,
+				EB5C01EC23C8866000CCEDB3 /* 37.js in Resources */,
+				EB5C01CD23C8866000CCEDB3 /* 54.js in Resources */,
+				EB5C020C23C8866000CCEDB3 /* 5.js in Resources */,
+				EB5C01E923C8866000CCEDB3 /* 13.js in Resources */,
+				EB5C01D423C8866000CCEDB3 /* 30.js in Resources */,
 				EBB8426E21B90773009DD86E /* JuLocationWebViewController.xib in Resources */,
+				EB5C01D723C8866000CCEDB3 /* 24.js in Resources */,
+				EB5C01C323C8866000CCEDB3 /* 8.js in Resources */,
 				EBDD361221ACDCE9000AA022 /* StackViewController.xib in Resources */,
 				EBB8427021B90B19009DD86E /* CFNetworkDownload_OslwI3.tmp in Resources */,
 				EB9D8675216DF2AB00B75BA4 /* ios使用rsa加解密 .pdf in Resources */,
 				EBBEC76E21709CB6003EEE50 /* WKWebViewMessageHandler.html in Resources */,
+				EB5C01D623C8866000CCEDB3 /* 55.js in Resources */,
+				EB5C01BF23C8866000CCEDB3 /* 74.js in Resources */,
 				EBB81B1721EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@2x.png in Resources */,
+				EB5C01C223C8866000CCEDB3 /* 50.js in Resources */,
+				EB5C020E23C8866000CCEDB3 /* 38.js in Resources */,
+				EB5C01FC23C8866000CCEDB3 /* 57.js in Resources */,
 				EB2174DA21D7063800C851A1 /* youzan2.html in Resources */,
+				EB5C020F23C8866000CCEDB3 /* china-idcard-front.60d5f79.png in Resources */,
+				EB5C01E023C8866000CCEDB3 /* 46.js in Resources */,
 				EBA8D5D2219EBAD3006F848A /* clock2.png in Resources */,
+				EB5C01BD23C8866000CCEDB3 /* 3.js in Resources */,
+				EB5C01E523C8866000CCEDB3 /* 62.js in Resources */,
+				EB5C01F523C8866000CCEDB3 /* 47.js in Resources */,
+				EB5C020923C8866000CCEDB3 /* app.js in Resources */,
+				EB5C01C623C8866000CCEDB3 /* 15.js in Resources */,
+				EB5C01CF23C8866000CCEDB3 /* 45.js in Resources */,
 				EB9D8670216DEDD400B75BA4 /* private_key.p12 in Resources */,
+				EB5C020523C8866000CCEDB3 /* 18.js in Resources */,
+				EB5C01DE23C8866000CCEDB3 /* 65.js in Resources */,
+				EB5C020423C8866000CCEDB3 /* 58.js in Resources */,
+				EB5C01DA23C8866000CCEDB3 /* 10.js in Resources */,
 				EBB81B1821EDB6CE005D4FD5 /* skin_analyzeFaceAnimationCircle@3x.png in Resources */,
+				EB5C01D023C8866000CCEDB3 /* 71.js in Resources */,
+				EB5C020823C8866000CCEDB3 /* 1.js in Resources */,
+				EB5C01DD23C8866000CCEDB3 /* vendor.js in Resources */,
+				EB5C01DB23C8866000CCEDB3 /* 51.js in Resources */,
+				EB5C020123C8866000CCEDB3 /* 39.js in Resources */,
 				EBA8D5E4219EBFF3006F848A /* second.png in Resources */,
 				EBC86D672223EB630041A9C9 /* Localizable.strings in Resources */,
+				EB5C01FE23C8866000CCEDB3 /* 78.js in Resources */,
+				EB5C01E323C8866000CCEDB3 /* 23.js in Resources */,
+				EB5C01E723C8866000CCEDB3 /* 56.js in Resources */,
 				EB88D4302154C29200BA082B /* LaunchScreen.storyboard in Resources */,
+				EB5C021423C8866000CCEDB3 /* iconfont.56c5e85.ttf in Resources */,
+				EB5C01C023C8866000CCEDB3 /* 40.js in Resources */,
+				EB5C01FD23C8866000CCEDB3 /* 29.js in Resources */,
+				EB5C01C423C8866000CCEDB3 /* 64.js in Resources */,
+				EB5C01F723C8866000CCEDB3 /* 80.js in Resources */,
+				EB5C021023C8866000CCEDB3 /* passport.81b0a8a.png in Resources */,
+				EB5C01DC23C8866000CCEDB3 /* 9.js in Resources */,
+				EB5C01CC23C8866000CCEDB3 /* 60.js in Resources */,
+				EB5C01F823C8866000CCEDB3 /* 22.js in Resources */,
+				EB5C01BE23C8866000CCEDB3 /* 25.js in Resources */,
+				EB5C01D523C8866000CCEDB3 /* 61.js in Resources */,
+				EB5C01F023C8866000CCEDB3 /* 12.js in Resources */,
 				EB88D42D2154C29200BA082B /* Assets.xcassets in Resources */,
+				EB5C01D223C8866000CCEDB3 /* 82.js in Resources */,
 				EB9D866E216DEDD400B75BA4 /* pkcs8_private_key.pem in Resources */,
+				EB5C01C523C8866000CCEDB3 /* 35.js in Resources */,
+				EB5C020023C8866000CCEDB3 /* 68.js in Resources */,
+				EB5C01BB23C8866000CCEDB3 /* 6.js in Resources */,
+				EB5C01FA23C8866000CCEDB3 /* 63.js in Resources */,
+				EB5C01F323C8866000CCEDB3 /* 36.js in Resources */,
+				EB5C020223C8866000CCEDB3 /* 19.js in Resources */,
+				EB5C01B723C8866000CCEDB3 /* index.html in Resources */,
+				EB5C01BC23C8866000CCEDB3 /* 7.js in Resources */,
+				EB5C01EB23C8866000CCEDB3 /* 52.js in Resources */,
 				EB9D866D216DEDD400B75BA4 /* rsaCerReq.csr in Resources */,
 				EBA8D58C219E69DD006F848A /* colock.jpeg in Resources */,
 				EBD0AE02215A299600605EE0 /* img7.jpg in Resources */,
 				EBB8427421B91595009DD86E /* newTest2.html in Resources */,
+				EB5C01F623C8866000CCEDB3 /* 16.js in Resources */,
 				EB9D866C216DEDD400B75BA4 /* rsa_public_key.pem in Resources */,
+				EB5C01B923C8866000CCEDB3 /* app.css in Resources */,
+				EB5C01D323C8866000CCEDB3 /* manifest.js in Resources */,
+				EB5C01F123C8866000CCEDB3 /* 43.js in Resources */,
+				EB5C01C923C8866000CCEDB3 /* 21.js in Resources */,
+				EB5C01C123C8866000CCEDB3 /* 11.js in Resources */,
+				EB5C021223C8866000CCEDB3 /* sprites@3x.0d8e323.png in Resources */,
+				EB5C01CE23C8866000CCEDB3 /* 14.js in Resources */,
+				EB5C01E123C8866000CCEDB3 /* 17.js in Resources */,
+				EB5C01C823C8866000CCEDB3 /* 70.js in Resources */,
+				EB5C020723C8866000CCEDB3 /* 59.js in Resources */,
+				EB5C01C723C8866000CCEDB3 /* 44.js in Resources */,
+				EB5C01CB23C8866000CCEDB3 /* 31.js in Resources */,
+				EB5C020623C8866000CCEDB3 /* 49.js in Resources */,
+				EB5C020B23C8866000CCEDB3 /* 79.js in Resources */,
+				EB5C01EE23C8866000CCEDB3 /* 84.js in Resources */,
+				EB5C020A23C8866000CCEDB3 /* 28.js in Resources */,
+				EB5C01BA23C8866000CCEDB3 /* 2.js in Resources */,
+				EB57201922A2575D00A33BAC /* JuWaterFallCollectCell.xib in Resources */,
+				EB5C01FB23C8866000CCEDB3 /* 32.js in Resources */,
+				EB5C020D23C8866000CCEDB3 /* 69.js in Resources */,
 				EB9D866B216DEDD400B75BA4 /* rsaCert.crt in Resources */,
 				EBA8D5DE219EBEFF006F848A /* minute.jpg in Resources */,
+				EB5C01D823C8866000CCEDB3 /* 75.js in Resources */,
+				EB5C01F423C8866000CCEDB3 /* 67.js in Resources */,
+				EB5C01DF23C8866000CCEDB3 /* 34.js in Resources */,
+				EB5C01EA23C8866000CCEDB3 /* 42.js in Resources */,
+				EB5C01E423C8866000CCEDB3 /* 72.js in Resources */,
 				EBA8D5E2219EBF13006F848A /* point.jpg in Resources */,
+				EB5C01B823C8866000CCEDB3 /* manifest.css in Resources */,
+				EB5C01F223C8866000CCEDB3 /* 53.js in Resources */,
 				EBA8D5BB219EAD87006F848A /* JuShopCell.xib in Resources */,
+				EB5C01E623C8866000CCEDB3 /* 33.js in Resources */,
 				EBA8D5C0219EAD87006F848A /* JuImageCell.xib in Resources */,
+				EB5C01D123C8866000CCEDB3 /* 20.js in Resources */,
 				EBC86D612223EABC0041A9C9 /* InfoPlist.strings in Resources */,
 				EB3FA8632224D49D004A239B /* img6.jpg in Resources */,
+				EB5C021123C8866000CCEDB3 /* china-idcard-back.be026ed.png in Resources */,
 				EB88D42B2154C29000BA082B /* Main.storyboard in Resources */,
+				EB5C01E823C8866000CCEDB3 /* 76.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1144,14 +1676,19 @@
 				EB3FA8662224D95C004A239B /* LanguageManage.m in Sources */,
 				EBF9F24921797F14002FEC0E /* JuSubFruits.m in Sources */,
 				EBBEC74F21707CE4003EEE50 /* JuTarget_Detail.m in Sources */,
+				EB5C015023C86E3A00CCEDB3 /* JuCookieWebVC.m in Sources */,
+				EB57201C22A2599600A33BAC /* JuCollectViewController.m in Sources */,
 				EBAA496D21C8FA360045F47E /* JuCircleProgressView.m in Sources */,
+				EB5C014D23C86BB100CCEDB3 /* JuCookieManage.m in Sources */,
 				EBF9F2972179ABF1002FEC0E /* AFOperationMantou.m in Sources */,
+				EB5C014523C8193A00CCEDB3 /* MTWebViewReusePool.m in Sources */,
 				EBB8425921B8F864009DD86E /* JuBasePickView.m in Sources */,
 				EBB8426121B8F97B009DD86E /* JuHTTPRequest.m in Sources */,
 				EB3E96862181C7A9003CE3DB /* JuBaseCacheAdapter.m in Sources */,
 				EB59F9A521E6E34A00562C75 /* JuObject.m in Sources */,
 				EBF9F246217975FB002FEC0E /* JuFruits.m in Sources */,
 				EBE70CEE21787652007DA0B3 /* JuTestObject.m in Sources */,
+				EB5C014423C8193A00CCEDB3 /* NSURLProtocol+WKWebVIew.m in Sources */,
 				EBA8D5BF219EAD87006F848A /* JuCircleLayout.m in Sources */,
 				EBE70CF421787738007DA0B3 /* NSObject+Test.m in Sources */,
 				EBA8D5C4219EAE1C006F848A /* JuWaterViewController.m in Sources */,
@@ -1168,6 +1705,7 @@
 				EBF9F2852179AB25002FEC0E /* FFOperation.m in Sources */,
 				EBD0ADFB215A291E00605EE0 /* JuNextViewCell.m in Sources */,
 				EBA8D5BC219EAD87006F848A /* JuStackLayout.m in Sources */,
+				EBC351F422D428A100CE8263 /* WKWebView+JuCookie.m in Sources */,
 				EB59F9B421E6E35200562C75 /* JuTimerLoop.m in Sources */,
 				EB59F9A821E6E34A00562C75 /* JuSubSubLoad.m in Sources */,
 				EB59F9BC21E6E36200562C75 /* JuEncryption.m in Sources */,
@@ -1184,6 +1722,7 @@
 				EBAC0D61216C584700B610B1 /* JuResloveOjc.m in Sources */,
 				EBD94D3B217436F800E449E9 /* JuWebJSBridge.m in Sources */,
 				EB88D4252154C29000BA082B /* AppDelegate.m in Sources */,
+				EB5C014323C8193A00CCEDB3 /* MTSKURLProtocol.m in Sources */,
 				EBB8425C21B8F864009DD86E /* JuOutputDataModel.m in Sources */,
 				EB5993F6219D17150029AFE3 /* JuClockView.m in Sources */,
 				EBBEC75221707D0E003EEE50 /* JUMediator+DetailAction.m in Sources */,
@@ -1199,16 +1738,19 @@
 				EBDD361121ACDCE9000AA022 /* StackViewController.m in Sources */,
 				EBB8425D21B8F864009DD86E /* JuMultiPickView.m in Sources */,
 				EB59F9B521E6E35200562C75 /* JuRunLoop1.m in Sources */,
+				EB5C014723C8193A00CCEDB3 /* MTSKWebDataManage.m in Sources */,
 				EBBC2B2F219A769900BD3EEE /* JuCollectionViewLayout.m in Sources */,
 				EBF9F2882179AB43002FEC0E /* FFactoryMantou.m in Sources */,
 				EB9D865E216DE5C400B75BA4 /* JuRSAEncrypt.m in Sources */,
 				EBE70CF1217876C1007DA0B3 /* JuNumber.m in Sources */,
 				EBB8426D21B90773009DD86E /* JuLocationWebViewController.m in Sources */,
 				EBD94D4221745A2D00E449E9 /* NSURL+manage.m in Sources */,
+				EB57203022A26AF500A33BAC /* JuTestWaterFallLayout.m in Sources */,
 				EB29F23021BFA4930024443C /* NSString+Format.m in Sources */,
 				EBBC2B2C219A767500BD3EEE /* JuCollectionViewController.m in Sources */,
 				EBAC0D5E216C4A6600B610B1 /* JuMsgSupObjc.m in Sources */,
 				EBAC0D5B216C44E300B610B1 /* ObjcMsgResolve.m in Sources */,
+				EB5C014623C8193A00CCEDB3 /* MTURLSchemeHandler.m in Sources */,
 				EB59F9C421E6E37400562C75 /* UIImage+Gif.m in Sources */,
 				EBF9F2702179AA04002FEC0E /* SFOperationMantou.m in Sources */,
 				EB88D43B2154CAC400BA082B /* JuChangMethod.m in Sources */,
@@ -1216,6 +1758,7 @@
 				EBF9F2A32179B122002FEC0E /* FFOperationYoutiao.m in Sources */,
 				EB3E96872181C7A9003CE3DB /* JUURLCache.m in Sources */,
 				EBA8D5BA219EAD87006F848A /* JuLineLayout.m in Sources */,
+				EBB2403C23BDF00B000AF851 /* TestURLCache.m in Sources */,
 				EBB8425A21B8F864009DD86E /* JuCityDataAdapter.m in Sources */,
 				EBF9F2A02179B111002FEC0E /* FFactoryYoutiao.m in Sources */,
 				EBA616A42182E15E00F5E1AB /* JuCollectionViewFlowLayout.m in Sources */,
@@ -1227,6 +1770,7 @@
 				EB59F99221E6E31F00562C75 /* JuThread.m in Sources */,
 				EBB8425821B8F864009DD86E /* JuDataPickView.m in Sources */,
 				EB599403219D57210029AFE3 /* UIView+JuConstraint.m in Sources */,
+				EB57201822A2575D00A33BAC /* JuWaterFallCollectCell.m in Sources */,
 				EB59F9A721E6E34A00562C75 /* JuSubLoad.m in Sources */,
 				EBDD361821AD0BD9000AA022 /* JuNaviBarButton.m in Sources */,
 				EBBEC76C217094EA003EEE50 /* WeakScriptMessageDelegate.m in Sources */,
@@ -1240,10 +1784,12 @@
 				EB6186DC21F1B9D80030550A /* NSObject+Invocation.m in Sources */,
 				EBE228CA21C0D18600163244 /* JUWebCache.m in Sources */,
 				EBAC0D54216C443C00B610B1 /* JuDrawPumpkin.m in Sources */,
+				EB57201422A2573300A33BAC /* JuWaterFallCollectView.m in Sources */,
 				EBAA497021C907560045F47E /* JuDrawArcGradient.m in Sources */,
 				EBA8D5BD219EAD87006F848A /* JuImageCell.m in Sources */,
 				EBBEC74C21707CAA003EEE50 /* JuDetailViewController.m in Sources */,
 				EBF9F28B2179AB66002FEC0E /* FFOperationMantou.m in Sources */,
+				EB57201022A24F0F00A33BAC /* JuCollectionWaterFallLayout.m in Sources */,
 				EBF9F26D2179A9E5002FEC0E /* SFOperation.m in Sources */,
 				EBB8425B21B8F864009DD86E /* JuInputDataAdapter.m in Sources */,
 				EBCC8175219AB85E003A7604 /* JuWaterFolwLayout.m in Sources */,
@@ -1421,11 +1967,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3Y5SHRC9L9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTSSOShareKit/MTSSOShareKit/SDKs/TencentOpenAPI",
+					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTAccount/Source/CarrierLogin",
+				);
 				INFOPLIST_FILE = JuTestTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTSSOShareKit/MTSSOShareKit/SDKs/libWeiboSDK",
+					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTSSOShareKit/MTSSOShareKit/SDKs/WeChatSDK",
+					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTAccount/Source/CarrierLogin/Jiguang",
+					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTSig/MTSig",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.juTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1441,11 +1999,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTSSOShareKit/MTSSOShareKit/SDKs/TencentOpenAPI",
+					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTAccount/Source/CarrierLogin",
+				);
 				INFOPLIST_FILE = JuTestTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTSSOShareKit/MTSSOShareKit/SDKs/libWeiboSDK",
+					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTSSOShareKit/MTSSOShareKit/SDKs/WeChatSDK",
+					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTAccount/Source/CarrierLogin/Jiguang",
+					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTSig/MTSig",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.juTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

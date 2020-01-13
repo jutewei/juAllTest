@@ -9,6 +9,9 @@
 #import "JuWebViewController.h"
 #import "WeakScriptMessageDelegate.h"
 #import "JuWebJSBridge.h"
+#import "WKWebView+JuCookie.h"
+#import "MTURLSchemeHandler.h"
+
 @interface JuWebViewController ()<WKScriptMessageHandler>{
     JuWebJSBridge *bridge;
     CGFloat scale;
@@ -23,11 +26,11 @@
     [self webConfiguration];
     [self LoadRequest];
     scale=1;
-    [[NSNotificationCenter defaultCenter]addObserver:self
-                                            selector:@selector(testNoti2)
-                                                name:@"test"
-                                              object:nil];
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"test" object:nil];
+    [[NSNotificationCenter defaultCenter]   addObserver:self
+                                               selector:@selector(testNoti2)
+                                                   name:@"test"
+                                                 object:nil];
+    [[NSNotificationCenter defaultCenter]   postNotificationName:@"test" object:nil];
 //    void (^Test)(int a)=^(int a){
 //
 //    };
@@ -64,7 +67,7 @@
 //    NSString *javaScriptSource = @"alert(\"WKUserScript注入js\");";
 //    [bridge juAddUserSeript:javaScriptSource];
     __weak typeof(self)  weakSelf = self;
-    [bridge juAddScriptMessageName:@"Share" callBackHandler:^(id name, NSDictionary *paramter) {
+    [bridge juAddScriptMessageName:@"callNative" callBackHandler:^(id name, NSDictionary *paramter) {
         [weakSelf juCallBack];
     }];
 
@@ -76,10 +79,14 @@
     [self.sh_WebView evaluateJavaScript:@"navigator.userAgent" completionHandler:^(id _Nullable result, NSError * _Nullable error) {
         NSLog(@"%@",result);
     }];
+
+//    [_sh_WebView setUserContentController:@"222222222222"];
+//    [_sh_WebView setJavaScriptCookie:@"111111111111"];
+
 }
 -(void)juCallBack{
     [bridge juEvaluateJavaScript:@"test" parameter:@[@"提示",@"加载完毕"] completionHandler:^(id name, NSError *error) {
-
+        ;
     }];
 }
 -(void)juTouchFont{
@@ -109,6 +116,10 @@
         }];
 
     }
+
+    [bridge juEvaluateJavaScript:@"isCanShare" completionHandler:^(id name, NSError *error) {
+        ;
+    }];
     NSLog(@"next");
 }
 /**
@@ -142,7 +153,16 @@
 //    http://localhost/test/openApp.php
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost/test/tokenTest.html"]];
     [request setTimeoutInterval:30];
+//    [_sh_WebView setRequest:request withCookies:@"33333333333333"];
     [self.sh_WebView loadRequest:request];
+    [_sh_WebView setCookieValue:@"44444444"  expires:@"3600"];
+//    [_sh_WebView setJsCookie];
+    [_sh_WebView juGetCookie];
+//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"WKWebViewMessageHandler" ofType:@"html"];
+//    NSString *htmlString = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+//    NSURL *url = [[NSURL alloc] initWithString:filePath];
+//    [self.sh_WebView loadHTMLString:htmlString baseURL:url];
+
 
 }
 - (void)didReceiveMemoryWarning {

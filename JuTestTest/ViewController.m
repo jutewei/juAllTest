@@ -22,6 +22,7 @@
 #import "NSString+Format.h"
 #import "NSObject+Invocation.h"
 #import "JuVariable.h"
+#import "JuCookieWebVC.h"
 #define ToRad(deg)         ( (M_PI * (deg-90)) / 180.0 )
 @interface ViewController ()<JuFruitsDelegate>{
     JuRunLoop *ju_runLoop;
@@ -75,14 +76,14 @@
 //    [tool2 run];
 //    NSLog(@"花了:%d钱",[tool2 shouldPayMoney]);
 //
-//    JUURLCache *cache=[JUURLCache initWithPath:@"test" parameter:@{@"name":@"zhu",@"age":@"18"}];
-//    NSLog(@"%@",cache.juGetCached);
-//    [cache juGetCache:NO withData:^(id result) {
-//        NSLog(@"%@",result);
-//    }];
-//    [cache juSaveCacheData:@{@"name":@"zhu",@"age":@"18",@"sex":@"男"}];
-//    NSString *url=@"https://p.i.cdn.pifubao.com/12%E6%9C%88%E7%AD%94%E7%96%91%E8%A7%A3%E6%83%91%E6%8B%BF%E5%A5%BD%E7%A4%BC-%E8%90%BD%E5%9C%B0%E9%A1%B5";
-//    NSURL *pathUrl=[NSURL URLWithString:url];
+    JUURLCache *cache=[JUURLCache initWithPath:@"test" parameter:@{@"name":@"zhu",@"age":@"18"}];
+    NSLog(@"%@",cache.juGetCached);
+    [cache juGetCache:NO withData:^(id result) {
+        NSLog(@"%@",result);
+    }];
+    [cache juSaveCacheData:@{@"name":@"zhu",@"age":@"18",@"sex":@"男"}];
+    NSString *url=@"https://p.i.cdn.pifubao.com/12%E6%9C%88%E7%AD%94%E7%96%91%E8%A7%A3%E6%83%91%E6%8B%BF%E5%A5%BD%E7%A4%BC-%E8%90%BD%E5%9C%B0%E9%A1%B5";
+    NSURL *pathUrl=[NSURL URLWithString:@"mtskinpatient://app.mtskin.com/webview?{\"url\":\"https://pre-web.health.meitu.com/?from=singlemessage&isappinstalled=0#/doctor/details?doctorId=1003\"}"];
 //
 //    NSString *string=@"www.zhidao.baidu.com";//com/baidu/zhidao/www
 //    NSMutableString *afterStr=[NSMutableString string];
@@ -97,8 +98,9 @@
 //
 //    NSLog(@"字符串 %@",afterStr);
 //
-//    NSLog(@"%@",[url  stringByAppendingPathExtension:@"zhutiwen"]);
-//    NSString *tring=[url juSetEncodingNew];
+    NSLog(@"%@",[url  stringByAppendingPathExtension:@"zhutiwen"]);
+    NSString *tring=[url juSetCharacterEncoding];
+    NSLog(@"%@",tring);
 //
 //    NSLog(@"%@",tring);
 //    NSLog(@"%@",[tring stringByRemovingPercentEncoding]);
@@ -268,7 +270,7 @@
 //        NSLog(@"");
 //    }];
 //    [self.navigationController pushViewController:vc animated:YES];
-    JuWebViewController *vc=[[JuWebViewController alloc]init];
+    JuCookieWebVC *vc=[[JuCookieWebVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 
 //    
