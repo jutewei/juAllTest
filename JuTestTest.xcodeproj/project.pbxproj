@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB1834AE23D06EF100392690 /* UIColor+Dark.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1834AD23D06EF100392690 /* UIColor+Dark.m */; };
 		EB2174DA21D7063800C851A1 /* youzan2.html in Resources */ = {isa = PBXBuildFile; fileRef = EB2174D921D7063700C851A1 /* youzan2.html */; };
 		EB29F23021BFA4930024443C /* NSString+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = EB29F22F21BFA4930024443C /* NSString+Format.m */; };
 		EB2D750121C3409E00A28F8D /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = EB2D750021C3409D00A28F8D /* test.html */; };
@@ -239,6 +240,7 @@
 		EBE70CEE21787652007DA0B3 /* JuTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE70CED21787652007DA0B3 /* JuTestObject.m */; };
 		EBE70CF1217876C1007DA0B3 /* JuNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE70CF0217876C1007DA0B3 /* JuNumber.m */; };
 		EBE70CF421787738007DA0B3 /* NSObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE70CF321787738007DA0B3 /* NSObject+Test.m */; };
+		EBE79A4923CEB8350003C761 /* JuVerifyCodeInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE79A4823CEB8350003C761 /* JuVerifyCodeInputView.m */; };
 		EBF9F246217975FB002FEC0E /* JuFruits.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF9F245217975FB002FEC0E /* JuFruits.m */; };
 		EBF9F24921797F14002FEC0E /* JuSubFruits.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF9F24821797F14002FEC0E /* JuSubFruits.m */; };
 		EBF9F26A2179A9AC002FEC0E /* SFFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF9F2692179A9AC002FEC0E /* SFFactory.m */; };
@@ -260,6 +262,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB1834AC23D06EF000392690 /* UIColor+Dark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Dark.h"; sourceTree = "<group>"; };
+		EB1834AD23D06EF100392690 /* UIColor+Dark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Dark.m"; sourceTree = "<group>"; };
 		EB2174D921D7063700C851A1 /* youzan2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = youzan2.html; sourceTree = "<group>"; };
 		EB29F22E21BFA4930024443C /* NSString+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Format.h"; sourceTree = "<group>"; };
 		EB29F22F21BFA4930024443C /* NSString+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Format.m"; sourceTree = "<group>"; };
@@ -610,6 +614,8 @@
 		EBE70CF0217876C1007DA0B3 /* JuNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuNumber.m; sourceTree = "<group>"; };
 		EBE70CF221787738007DA0B3 /* NSObject+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Test.h"; sourceTree = "<group>"; };
 		EBE70CF321787738007DA0B3 /* NSObject+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Test.m"; sourceTree = "<group>"; };
+		EBE79A4723CEB8350003C761 /* JuVerifyCodeInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuVerifyCodeInputView.h; sourceTree = "<group>"; };
+		EBE79A4823CEB8350003C761 /* JuVerifyCodeInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuVerifyCodeInputView.m; sourceTree = "<group>"; };
 		EBF9F244217975FB002FEC0E /* JuFruits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuFruits.h; sourceTree = "<group>"; };
 		EBF9F245217975FB002FEC0E /* JuFruits.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuFruits.m; sourceTree = "<group>"; };
 		EBF9F24721797F14002FEC0E /* JuSubFruits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuSubFruits.h; sourceTree = "<group>"; };
@@ -1031,6 +1037,7 @@
 				EBC34786221549920094295D /* Variable */,
 				EBAC0D4B216C442D00B610B1 /* draw */,
 				EB3FA8492224CE70004A239B /* Language */,
+				EBE79A4623CEB7F50003C761 /* JuInputView */,
 				EB88D4232154C29000BA082B /* AppDelegate.h */,
 				EB88D4242154C29000BA082B /* AppDelegate.m */,
 				EB88D4262154C29000BA082B /* ViewController.h */,
@@ -1389,6 +1396,17 @@
 			path = StackView;
 			sourceTree = "<group>";
 		};
+		EBE79A4623CEB7F50003C761 /* JuInputView */ = {
+			isa = PBXGroup;
+			children = (
+				EB1834AC23D06EF000392690 /* UIColor+Dark.h */,
+				EB1834AD23D06EF100392690 /* UIColor+Dark.m */,
+				EBE79A4723CEB8350003C761 /* JuVerifyCodeInputView.h */,
+				EBE79A4823CEB8350003C761 /* JuVerifyCodeInputView.m */,
+			);
+			path = JuInputView;
+			sourceTree = "<group>";
+		};
 		EBF9F243217975C7002FEC0E /* ClassCluster */ = {
 			isa = PBXGroup;
 			children = (
@@ -1710,9 +1728,11 @@
 				EB59F9A821E6E34A00562C75 /* JuSubSubLoad.m in Sources */,
 				EB59F9BC21E6E36200562C75 /* JuEncryption.m in Sources */,
 				EBBEC74821703CEE003EEE50 /* JUMediator.m in Sources */,
+				EB1834AE23D06EF100392690 /* UIColor+Dark.m in Sources */,
 				EBA8D5B9219EAD87006F848A /* HMShop.m in Sources */,
 				EBF9F2822179AB0F002FEC0E /* FFactory.m in Sources */,
 				EBF9F2942179ABE1002FEC0E /* AFFactoryMantou.m in Sources */,
+				EBE79A4923CEB8350003C761 /* JuVerifyCodeInputView.m in Sources */,
 				EBF9F26A2179A9AC002FEC0E /* SFFactory.m in Sources */,
 				EBA8D5B8219EAD87006F848A /* JuWaterflowLayout.m in Sources */,
 				EB59F9AB21E6E34A00562C75 /* NoneClass.m in Sources */,
@@ -1973,7 +1993,7 @@
 					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTAccount/Source/CarrierLogin",
 				);
 				INFOPLIST_FILE = JuTestTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2005,7 +2025,7 @@
 					"$(PROJECT_DIR)/JuTestTest/WebJS/MTSkinManage/MTSkinManageDemo/Pods/MTAccount/Source/CarrierLogin",
 				);
 				INFOPLIST_FILE = JuTestTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

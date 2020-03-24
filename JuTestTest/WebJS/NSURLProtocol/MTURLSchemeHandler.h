@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
 #define MTURLSkinScheme  @"mtskinmanage"
-#define MTOriginalScheme @"https"
+#define MTOriginalScheme @"http"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MTURLSchemeHandler : NSObject<WKURLSchemeHandler>

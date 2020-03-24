@@ -35,27 +35,25 @@
 
     [self.view addSubview:_mt_WebView];
     _mt_WebView.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
-
+    [JuCookieManage setCookieWithUserCC:_mt_WebView.configuration.userContentController cookieValue:@"jutewei1234567899"];
 //    NSString *accountPath=[[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"MTAccountWebUI"];
 //      accountPath=[accountPath stringByAppendingString:@"/index.html#/account"];
 //
 //      NSURL *url=[NSURL URLWithString:accountPath];
 
-    NSURL *url=[NSURL URLWithString:@"http://192.168.8.2/test/tokenTest.html"];
-//       NSURL *url=[NSURL URLWithString:@"http://192.168.8.2/test.html"];
-    NSString *path=[MTSKWebDataManage resourceCachePath:url];
+    NSURL *url=[NSURL URLWithString:[MTURLSchemeHandler getCustomScheme:@"http://192.168.8.2/test/tokenTest.html"]];
+    NSURL *baseUrl=[NSURL URLWithString:@"http://192.168.8.2/test/tokenTest.html"];
+    NSString *path=[MTSKWebDataManage resourceCachePath:baseUrl];
+    NSURL *locaUrl=[NSURL fileURLWithPath:path];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-//    //        if ([SHNetStatus sharedNet].sh_connectionRequired) {
-//    [request setCachePolicy:NSURLRequestReloadIgnoringLocalCacheData];
-//    //        }
+//    [JuCookieManage setCookieWithRequest:request cookieValue:@"jutewei1234567899"];
     [request setTimeoutInterval:30];
     [self.mt_WebView loadRequest:request];
-//    [self.mt_WebView loadHTMLString:<#(nonnull NSString *)#> baseURL:<#(nullable NSURL *)#>]
 //    [self loadHtml];
 
 }
 -(void)loadHtml{
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:self.mt_WebView.URL];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.8.2/test/tokenTest.html"]];
       //        访问有些网页会被循环调用，设置HTTPHeaderFields User-Agent  可避免
 
       NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];

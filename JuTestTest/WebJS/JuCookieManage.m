@@ -20,15 +20,16 @@
     return manager;
 }
 //在初始化 WKWebView 的时候，通过 WKUserScript 设置，使用Javascript 注入 Cookie。
-+(void)setCookieWithUserCC:(WKUserContentController *)userContentController{
-    WKUserScript * cookieScript = [[WKUserScript alloc] initWithSource: @"document.cookie ='CookieKey=CookieValue';"injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:NO];
++(void)setCookieWithUserCC:(WKUserContentController *)userContentController cookieValue:(NSString *)cookieValue{
+    NSString *cookieJs=[NSString stringWithFormat:@"document.cookie ='zhu=%@';document.cookie ='juTokenTest=zhutianwei1';document.cookie ='juTokenDomument=223456789823456';", cookieValue];
+    WKUserScript * cookieScript = [[WKUserScript alloc] initWithSource:cookieJs injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:NO];
     [userContentController addUserScript:cookieScript];
 }
 
 /// 请求t提加cookie
 /// @param request 网络请求
-+(void)setCookieWithRequest:(NSMutableURLRequest *)request{
-    [request setValue:[NSString stringWithFormat:@"%@=%@",@"CookieKey", @"CookieValue"] forHTTPHeaderField:@"Cookie"];
++(void)setCookieWithRequest:(NSMutableURLRequest *)request cookieValue:(NSString *)cookieValue{
+    [request setValue:[NSString stringWithFormat:@"%@=%@",@"zhu", cookieValue] forHTTPHeaderField:@"Cookie"];
 }
 
 /// 设置cookie

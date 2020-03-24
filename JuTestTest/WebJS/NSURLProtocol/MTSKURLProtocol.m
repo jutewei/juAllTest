@@ -34,7 +34,7 @@ static NSString* const JMTProtocol = @"JMTProtocol";
 - (void)startLoading{
     NSMutableURLRequest *mutableReqeust = [[self request] mutableCopy];
     [NSURLProtocol setProperty:@(YES) forKey:JMTProtocol inRequest:mutableReqeust];
-    NSData *data=[MTSKWebDataManage getWebKitCache:mutableReqeust.URL.absoluteString];
+    NSData *data=[MTSKWebDataManage getWebKitCache:mutableReqeust.URL];
     if (data) {
         //标示该request已经处理过了，防止无限循环
         NSURLResponse *response = [[NSURLResponse alloc] initWithURL:self.request.URL
